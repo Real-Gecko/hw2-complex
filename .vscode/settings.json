@@ -1,0 +1,38 @@
+{
+    "files.associations": {
+        "*.anim": "lua",
+        "*.campaign": "lua",
+        "*.cloud": "lua",
+        "*.dustcloud": "lua",
+        "*.events": "lua",
+        "*.flare": "lua",
+        "*.joints": "lua",
+        "*.level": "lua",
+        "*.lod": "lua",
+        "*.madstate": "lua",
+        "*.mc": "lua",
+        "*.miss": "lua",
+        "*.mres": "lua",
+        "*.mtga": "lua",
+        "*.navs": "lua",
+        "*.nebula": "lua",
+        "*.pebble": "lua",
+        "*.resource": "lua",
+        "*.ship": "lua",
+        "*.stats": "lua",
+        "*.subs": "lua",
+        "*.ti": "lua",
+        "*.wepn": "lua",
+        "*.wf": "lua"
+    },
+    "Lua.workspace.library": [
+        "/home/realgecko/Development/hw2-complex/globals",
+        "/home/realgecko/Development/hw2-complex/vanilla/Homeworld2/scripts",
+        "/home/realgecko/Development/hw2-complex/vanilla/Homeworld2/ui/newui"
+    ],
+    "files.exclude": {
+        "*.big": true,
+        "Animatics": true
+    },
+    "Lua.diagnostics.disable": ["lowercase-global", "duplicate-index"]
+}
