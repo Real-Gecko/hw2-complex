@@ -5,8 +5,8 @@
 -   [x] Decompile remaining files
 -   [x] Remove LuaDC header from decompiled files
 -   [x] Fix syntax errors
--   [ ] Format code with `lua-format`
--   [ ] Remove files that're identical to those in Homeworld2.big
+-   [?] Format code
+-   [x] Remove files that're identical to those in Homeworld2.big
 
 #### Improvements
 
