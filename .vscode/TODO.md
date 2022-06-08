@@ -2,7 +2,7 @@
 
 -   [x] Remove unused files
 -   [x] Remove `ship/hgn_hyperspaceplatform` as it seems broken
--   [ ] Decompile remaining files
+-   [x] Decompile remaining files
 -   [ ] Remove LuaDC header from decompiled files
 -   [ ] Fix syntax errors
 -   [ ] Format code with `lua-format`
