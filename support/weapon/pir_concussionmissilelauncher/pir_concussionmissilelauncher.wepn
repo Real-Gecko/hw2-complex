@@ -1,0 +1,15 @@
+StartWeaponConfig(NewWeaponType, "Fixed", "Missile", "Vgr_SmallSmallMissile", "Normal", 140, 2625, 0, 0, 0, 0, 1, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "SpawnWeaponFire", "Target", 0, 0, "Vgr_SmallMissileBurst")
+AddWeaponResult(NewWeaponType, "Miss", "SpawnWeaponFire", "Target", 0, 0, "Vgr_SmallMissileBurst")
+setPenetration(NewWeaponType, 5, 1,
+{ 
+    Unarmoured = 0.75, 
+},  
+{ 
+    LightArmour = 0.9, 
+},  
+{ 
+    PlanetKillerArmour = 0, })
+setAccuracy(NewWeaponType, 1)
+setAngles(NewWeaponType, 40, 0, 0, 0, 0)
+setMiscValues(NewWeaponType, 0, 3)

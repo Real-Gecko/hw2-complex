@@ -1,0 +1,13 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","kinetic_superfx","Normal",5500,20000,0,0,0,0,1,1,1,1,0,0,1,0,40,40,.1,"Normal",1,0,0)
+
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",800,1200,"")
+
+setAngles(NewWeaponType,0,-180,180,-15,60)
+
+setMiscValues(NewWeaponType,50,.25)
+
+setPenetration(NewWeaponType,20,1)
+
+setAccuracy(NewWeaponType,1)
+
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/sp_elements/FafnirSteps")

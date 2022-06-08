@@ -1,0 +1,24 @@
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "InstantHit", "VanaarJetBeamD", "Normal", 0, 7750, 0, 6, 2, 0, 20, 0, 1, 14, 0, 0, 1, 1, 20, 20, 0.1, "Normal", 1, 0, 2000)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 19500, 20500, "")
+AddWeaponResult(NewWeaponType, "Hit", "Push", "Target", -60, -60, "")
+setPenetration(NewWeaponType, 75, 1, 
+{ 
+    PlanetKillerArmour = 0, 
+}, 
+{ 
+    SubSystemArmour = 0.3, 
+}, 
+{ 
+    MediumArmour = 0.5, })
+setAccuracy(NewWeaponType, 1, 
+{ 
+    Fighter = 0, 
+}, 
+{ 
+    Corvette = 0, 
+}, 
+{ 
+    munition = 0, })
+setAngles(NewWeaponType, 0, -136, 136, -1, 50)
+setMiscValues(NewWeaponType, 0, 0.4)
+addAnimTurretSound(NewWeaponType, "Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON")

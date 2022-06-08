@@ -1,0 +1,35 @@
+-- LuaDC version 0.9.19
+-- 16/05/2005 22.49.52
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+StartWeaponConfig(NewWeaponType, "Gimble", "InstantHit", "VanaarJetBeam", "Normal", 0, 7000*1.4, 0, 9, 2.5, 0, 20, 0, 1, 16, 0, 0, 1, 0, 20, 20, 0.1, "Normal", 1, 0, 2000)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 16000, 16000, "")
+AddWeaponResult(NewWeaponType, "Hit", "Push", "Target", -60, -60, "")
+setPenetration(NewWeaponType, 75, 1, 
+{ 
+    PlanetKillerArmour = 0, 
+}, 
+{ 
+    SubSystemArmour = 0.3, 
+}, 
+{ 
+    MediumArmour = 0.5, })
+setAccuracy(NewWeaponType, 1, 
+{ 
+    Fighter = 0, 
+}, 
+{ 
+    Corvette = 0, 
+}, 
+{ 
+    SmallCapitalShip = 2.5, 
+}, 
+{ 
+    BigCapitalShip = 2.5,     
+}, 
+{ 
+    munition = 0, })
+setAngles(NewWeaponType, 12, 0, 0, 0, 0)
+
+

@@ -1,0 +1,5 @@
+
+HGN_PLASMA_INHIBITOR_Open_OnSet = function(ship)
+    startAnim(ship, "spin")
+    setLoopCount(ship, "spin", 100000)   --infinite looping
+end

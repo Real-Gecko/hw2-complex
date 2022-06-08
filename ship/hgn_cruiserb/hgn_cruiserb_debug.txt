@@ -1,0 +1,43 @@
+FORM Length=8
+VERS= 512
+FORM Length=30
+NAME= Homeworld2 Multi Mesh File
+FORM Length=3266443
+HVMD
+NRML1
+STAT Length=78
+Name: hw2Shader, Type: ship
+No. Layers: 2
+Layer 1: 5 | 4 | 0 | $diffuse
+Layer 2: 5 | 4 | 1 | $glow
+NRML2
+STAT Length=101
+Name: hw2Shader2, Type: badge
+No. Layers: 3
+Layer 1: 5 | 4 | 2 | $mask
+Layer 2: 5 | 4 | 3 | $diffuse
+Layer 3: 5 | 4 | 4 | $glow
+NRML3
+STAT Length=138
+Name: hw2Shader1, Type: thruster
+No. Layers: 4
+Layer 1: 5 | 4 | 5 | $diffuseOn
+Layer 2: 5 | 4 | 6 | $diffuseOff
+Layer 3: 5 | 4 | 7 | $glowOn
+Layer 4: 5 | 4 | 8 | $glowOff
+LMIP Length=1398286
+Name Length=58
+C:\Users\reihem\Documents\HGN_Sword_Cruiser_tex1_diff1.dds
+Type=DXT5
+MIP Levels=11
+DDS Graphic
+MIP Level 1: 1024 x 1024, Size=1048576
+MIP Level 2: 512 x 512, Size=262144
+MIP Level 3: 256 x 256, Size=65536
+MIP Level 4: 128 x 128, Size=16384
+MIP Level 5: 64 x 64, Size=4096
+MIP Level 6: 32 x 32, Size=1024
+MIP Level 7: 16 x 16, Size=256
+MIP Level 8: 8 x 8, Size=64
+MIP Level 9: 4 x 4, Size=16
+MIP Level 10: 2 x 2, Size=4

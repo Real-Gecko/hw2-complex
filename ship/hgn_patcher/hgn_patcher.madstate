@@ -1,0 +1,12 @@
+HGN_PATCHER_RepairStart_OnSet = function(ship) 
+    setState(ship, "RepairStart", 1)     
+end
+HGN_PATCHER_RepairDo_OnSet = function(ship)        
+    startEffect(ship, "Repairing")    
+    setState(ship, "RepairDo", 1)
+end
+HGN_PATCHER_RepairEnd_OnSet = function(ship)    
+    endEffect(ship, "Repairing")    
+    setState(ship, "RepairEnd", 1)    
+end
+

@@ -1,0 +1,24 @@
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Bullet", "Kinetic_Small", "Special Attack", 6000, 12750*1.4, 0, 0, 0, 0, 1, 1, 1, 0.8, 0, 0, 1, 1, 135, 135, 0.5, "Normal", 1, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 28, 43, "")
+setPenetration(NewWeaponType, 5, 0.5,
+{ 
+    Unarmoured = 2, 
+},
+{ 
+    LightArmour = 3, 
+}, 
+{ 
+    MediumArmour = 4, 
+}, 
+{ 
+    HeavyArmour = 4, 
+}, 
+{ 
+    MineArmour = 0.85, 
+})
+setAccuracy(NewWeaponType, 0,                    
+{ 
+    munition = 0.575, })
+setAngles(NewWeaponType, 0, -160, 160, -8, 70)
+setMiscValues(NewWeaponType, 1.4, 0.3)
+addAnimTurretSound(NewWeaponType, "Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON")

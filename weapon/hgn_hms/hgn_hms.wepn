@@ -1,0 +1,5 @@
+StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "hgn_hms", "Normal", 5000, 5000*1.4, 0, 0, 0, 0, 1, 0, 0, 50, 0, 0, 1, 1, 0, 0, 0.5, "Normal", 0, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 10, 10, "")
+setPenetration(NewWeaponType, 5, 1)
+setAccuracy(NewWeaponType, 1)
+setAngles(NewWeaponType, 90, 0, 0, 0, 0)

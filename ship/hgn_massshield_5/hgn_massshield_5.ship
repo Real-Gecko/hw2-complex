@@ -1,0 +1,135 @@
+NewShipType = StartShipConfig()
+NewShipType.displayedName = "Heavy Mass Shield (Up)"
+NewShipType.sobDescription = "Mass Shield Emitter"
+NewShipType.maxhealth = 2000000
+--NewShipType.regentime = 1000
+--NewShipType.minRegenTime = 100
+NewShipType.alwaysInRenderList = 0
+NewShipType.frontArmourDamage = 0.09
+NewShipType.sideArmourDamage = 0.09
+NewShipType.rearArmourDamage = 1
+NewShipType.isTransferable = 0
+NewShipType.useEngagementRanges = 1
+NewShipType.unitCapsNumber = 0
+NewShipType.SquadronSize = 1
+NewShipType.passiveFormation = "Spear"
+NewShipType.defensiveFormation = "x"
+NewShipType.aggressiveFormation = "Claw"
+NewShipType.mass = 10000
+NewShipType.collisionMultiplier = 0.4
+NewShipType.thrusterMaxSpeed = 0
+NewShipType.mainEngineMaxSpeed = 0
+NewShipType.rotationMaxSpeed = 0
+NewShipType.thrusterAccelTime = 2
+NewShipType.thrusterBrakeTime = 1
+NewShipType.mainEngineAccelTime = 2
+NewShipType.mainEngineBrakeTime = 1
+NewShipType.rotationAccelTime = 2
+NewShipType.rotationBrakeTime = 1
+NewShipType.thrusterUsage = 0
+NewShipType.accelerationAngle = 0
+NewShipType.mirrorAngle = 0
+NewShipType.secondaryTurnAngle = 0
+NewShipType.maxBankingAmount = 0
+NewShipType.descendPitch = 0.1
+NewShipType.goalReachEpsilon = 0
+NewShipType.slideMoveRange = 0
+NewShipType.controllerType = "None"
+NewShipType.useTargetRandom = 1
+NewShipType.targetRandomPointXMin = -0.6
+NewShipType.targetRandomPointXMax = 0.6
+NewShipType.targetRandomPointYMin = -0.6
+NewShipType.targetRandomPointYMax = 0.6
+NewShipType.targetRandomPointZMin = -0.1
+NewShipType.targetRandomPointZMax = 0.1
+NewShipType.dustCloudDamageTime = 500
+NewShipType.nebulaDamageTime = 1000
+NewShipType.MinimalFamilyToFindPathAround = "MotherShip"
+NewShipType.BuildFamily = "massshield"
+NewShipType.AttackFamily = "BigCapitalShip"
+NewShipType.DockFamily = "massshield_5"
+NewShipType.AvoidanceFamily = "MotherShip"
+NewShipType.DisplayFamily = "Weapon"
+NewShipType.AutoFormationFamily = "Fighter"
+NewShipType.CollisionFamily = "Big"
+NewShipType.ArmourFamily = "HeavyArmour"
+NewShipType.UnitCapsFamily = "Fighter"
+NewShipType.UnitCapsShipType = "massshield_5"
+NewShipType.fighterValue = 0
+NewShipType.corvetteValue = 0
+NewShipType.frigateValue = 0
+NewShipType.neutralValue = 0
+NewShipType.antiFighterValue = 0
+NewShipType.antiCorvetteValue = 0
+NewShipType.antiFrigateValue = 0
+NewShipType.totalValue = 0
+NewShipType.buildCost = 3000
+NewShipType.buildTime = 100
+NewShipType.buildPriorityOrder = 25
+NewShipType.retaliationRange = 5000
+NewShipType.retaliationDistanceFromGoal = 0
+NewShipType.visualRange = 0
+NewShipType.prmSensorRange = 0
+NewShipType.secSensorRange = 0
+NewShipType.detectionStrength = 1
+NewShipType.mouseOverMinFadeSize = 0
+NewShipType.mouseOverMaxFadeSize = 0
+NewShipType.healthBarStyle = 1
+NewShipType.nlips = 0
+NewShipType.nlipsRange = 0
+NewShipType.nlipsFar = 0
+NewShipType.nlipsFarRange = 0
+NewShipType.SMRepresentation = "Mesh"
+NewShipType.meshRenderLimit = 0
+NewShipType.dotRenderLimit = 0
+NewShipType.visibleInSecondary = 0
+NewShipType.minLOD = 0
+NewShipType.goblinsStartFade = 0
+NewShipType.goblinsOff = 0
+NewShipType.upLOD = 0
+NewShipType.upLOD = 0
+NewShipType.upLOD = 0
+NewShipType.downLOD = 0
+NewShipType.downLOD = 0
+NewShipType.downLOD = 0
+NewShipType.selectionLimit = 0
+NewShipType.preciseSelectionLimit = 0
+NewShipType.preciseATILimit = 0
+NewShipType.selectionPriority = 0
+NewShipType.minimumZoomFactor = 0
+NewShipType.militaryUnit = 0
+NewShipType.SMHighlightDistMin = 0
+NewShipType.SMHighlightDistMax = 0
+addAbility(NewShipType, "MoveCommand", 0, 0)
+addAbility(NewShipType, "CanDock", 1, 0)
+addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1, "", "JustShoot")
+NewShipType.dockTimeBetweenTwoFormations = 0
+NewShipType.dockTimeBeforeStart = 0
+NewShipType.dockNrOfShipsInDockFormation = 0
+NewShipType.dockFormation = "delta"
+NewShipType.queueFormation = "dockline"
+NewShipType.dontDockWithOtherRaceShips = 1
+NewShipType.ignoreRaceWhenDocking = 0
+addAbility(NewShipType, "CanLaunch")
+NewShipType.launchTimeBetweenTwoFormations = 0
+NewShipType.launchTimeBeforeStart = 0
+NewShipType.launchNrOfShipsInDockFormation = 0
+NewShipType.launchFormation = "delta"
+addAbility(NewShipType, "ParadeCommand", 1)
+
+addAbility(NewShipType, "CanBeRepaired")
+
+LoadSharedModel(NewShipType, "hgn_massshield_1")
+
+StartShipWeaponConfig(NewShipType,"hgn_hms","Weapon_w","")
+
+addShield(NewShipType, "EMP", 100000, 100)
+NewShipType.battleScarMaxTriBase = 0
+NewShipType.battleScarMaxTriInc = 0
+NewShipType.sobDieTime = 0
+NewShipType.sobSpecialDieTime = 0
+NewShipType.specialDeathSpeed = 0
+NewShipType.chanceOfSpecialDeath = 0
+NewShipType.deadSobFadeTime = 0
+NewShipType.trailLinger = 0
+

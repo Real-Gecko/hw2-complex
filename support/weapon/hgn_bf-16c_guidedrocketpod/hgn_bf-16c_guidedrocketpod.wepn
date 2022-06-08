@@ -1,0 +1,39 @@
+StartWeaponConfig(NewWeaponType,"Gimble","Missile","Hgn_GuidedRocketSmall","Normal",900,3600,0,0,0,0,1,1,0,6,0,0,0,0,0,0,0.1,"Normal",0,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth", "Target", 340, 340, "")
+AddWeaponResult(NewWeaponType,"Hit","Disable","Target",3,3,"")
+--AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"mod_rocketburst_BF-16C")
+--AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"mod_rocketburst_BF-16C")
+setPenetration(NewWeaponType,15,1,{
+  PlanetKillerArmour = 0,
+},{
+  Unarmoured = 0.5,
+},{
+  MediumArmour = 0.6,
+},{
+  HeavyArmour = 0.8,
+},{
+  LightArmour = 0.7,
+},{
+  SubSystemArmour = 1.8,
+})
+setAccuracy(NewWeaponType,1,{
+  Fighter = 0.04,
+},{
+  Corvette = 0.04,
+},{
+  Frigate = 0.5,
+},{
+  Capturer = 0.5,
+},{
+  SmallCapitalShip = 0.6,
+},{
+  BigCapitalShip = 0.6,
+},{
+  Resource = 0.3,
+},{
+  ResourceLarge = 0.5,
+},{
+  SubSystem = 1,
+})
+setAngles(NewWeaponType,6,0,0,0,0)
+setMiscValues(NewWeaponType,0,0)

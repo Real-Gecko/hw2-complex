@@ -1,0 +1,9 @@
+hitfx = "dmg_massive_sphere_spark_spray"
+bulletfx = "kinetic_large_bullet"
+nopenetratefx = "dmg_massive_sphere_spark_spray"
+deathtype = "deathCannon"
+scartype = "Kinetic_Large/Kinetic_Large"
+hit_clamp = {
+  1,
+  1,
+}

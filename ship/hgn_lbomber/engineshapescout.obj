@@ -1,0 +1,28 @@
+# Wavefront Object File.
+# Created by Cold Fusion HOD Editor v3.1.5
+# Date: 04-06-2011; Time: 12:26:37
+# 
+
+# Mesh Part #1
+g Part1
+usemtl Material_-1
+
+v 0,4635003 0,4376225 0,1304431
+vn 0 0 1
+
+v -0,4635003 0,4376225 0,1304431
+vn 0 0 1
+
+v -0,3297629 -0,1085749 0,1304431
+vn 0 0 1
+
+v 0,3297629 -0,1085749 0,1304431
+vn 0 0 1
+# 4 vertice(s) in part #1.
+
+f 1/1/1 2/2/2 3/3/3
+f 1/1/1 3/3/3 4/4/4
+# 2 listed triangle(s).
+# 1  Mesh part(s).
+
+# EOF

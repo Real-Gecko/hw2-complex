@@ -1,0 +1,131 @@
+filerange 10712 10830
+rangestart 10712 10830
+10712	Recon Fighter
+10713	Adv. Recon Fighter
+/////	SPECIALIZED
+/////	Anti-Fighter
+10714	Anti-Fighter
+10715	Heavy Anti-Fighter
+10716	Adv. Anti-Fighter
+/////	Anti-Corvette
+10717	Anti-Corvette
+10718	Heavy Anti-Corvette
+10719	Adv. Anti-Corvette
+/////	Anti-Frigate
+10720	Anti-Frigate
+10721	Heavy Anti-Frigate
+10722	Long-Range Anti-Frigate
+10723	Adv. Anti-Frigate
+/////	Anti-Capital
+10724	Anti-Capital Ship
+10725	Heavy Anti-Capital Ship
+10726	Long-Range Anti-Capital Ship
+10727	Autonomous Anti-Capital Ship
+10728	Adv. Anti-Capital Ship
+/////	Anti-Misc
+10729	Anti-Subsystem
+10730	Anti-Missile/Bomb/Mine
+10731	Adv. Anti-Missile/Bomb/Mine
+/////	MULTIROLE
+/////	Anti-Fighter/Corvette
+10732	Anti-Fighter/Corvette
+10733	Adv. Anti-Fighter/Corvette
+/////	Anti-Corvette/Frigate
+10734	Anti-Corvette/Frigate
+10735	Adv. Anti-Corvette/Frigate
+/////	Anti-Frigate/Capital
+10736	Anti-Frigate/Capital Ship
+10737	Long-Range Anti-Frigate/Capital Ship
+10738	Adv. Anti-Frigate/Capital Ship
+/////	Misc
+10739	Mine Layer/Sweeper
+10740	Capture Ship
+/////	OTHER
+/////	Production
+10741	Basic Production
+10742	Standard Production
+10743	Central Production
+10744	Enhanceable Production
+10745	Super-Capital Production
+10746	Production/Combat Support
+10747	[extra]
+10748	[extra]
+/////	Support Stations
+10749	Crew Training/Housing
+10750	Energy Production
+10751	Research & Development
+10752	Adaptable Platform
+/////	Defense Shields
+10753	Defense Field Emitter
+10754	Mass Defense Shield
+/////	
+10755	Customizable Platform
+/////	Ripwaves
+10756	Vessel of Spatial Doom
+10757	Weapon of Spatial Doom
+10758	Weapon of Lesser Doom
+10759	Spatial Distortion Bomb
+/////	Station
+10760	Perimeter Station
+10761	Zone Control Station
+/////	HS Gate
+10762	Hyperspace Gate
+/////	Transports
+10763	Support/Heavy Transport
+10764	Heavy Support Transport
+/////	Resource-Related
+10765	Resource Generation
+10766	Resource Harvester
+10767	Resource Support/Drop-Off
+10768	Resource Barge
+10769	Resource Trader
+10770	Resource Drop-Off
+10771	Adv. Resource Drop-Off
+/////	Drone
+10772	Repair Drone
+10773	[extra]
+10774	[extra]
+10775	[extra]
+10776	[extra]
+10777	[extra]
+10778	[extra]
+10779	[extra]
+/////	Misc
+10780	Mothership's Core
+10781	Evacuation Transport
+10782	Crew Transport
+10783	Combat Enhancement
+10784	Combat Support
+10785	EMP Support
+/////	Probes
+10786	Disposable Recon
+10787	Disposable Anti-Cloak
+10788	Disposable Anti-Sensor
+/////	Special Missiles
+10789	Asteroid Smasher
+/////	Megaliths
+/////	Misc Subsystems
+10800	Enables Hyperspace Jumps
+10805	Manufacturing Enhancer
+10806	Defense Enhancer
+10807	Anti-Radiation Field Emitter
+10808	Mobility Enhancer
+10809	RU Gathering Enhancer
+10810	Repair System Enhancer
+10811	Civilian Habitat Module
+10812	Communication Systems Module
+10813	Defensive Systems Module
+10814	Armor
+10815	Ablative Shield Emitter
+10816	Disruption Field Emitter
+10817	Tier I Research
+10818	Tier II Research
+10819	Tier III Research
+10820	Launcher of Spatial Doom
+10821	Crew Capacity Expansion
+10822	Officer Capacity Expansion
+10823	RU Storage Expansion
+10824	Suppressive Fire Turret
+10825	RU Generator/Gathering Improver
+/////	[empty] to 10830
+rangeend 

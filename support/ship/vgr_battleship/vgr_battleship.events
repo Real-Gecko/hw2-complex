@@ -1,0 +1,565 @@
+effects = 
+{ 
+    animations = 
+    { 
+        animation1 = 
+         {
+		
+            name = "Weapon_RsideTur4", 
+            length = 1.2, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, }, 
+        animation2 = 
+        { 
+            name = "Weapon_LsideTur4", 
+            length = 1.2, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, }, 
+		animation3 = 
+        { 
+            name = "Weapon_TopMis", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, },
+			   
+		animation4 = 
+        { 	   
+			name = "Weapon_LsideTur1", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, }, 
+        animation5 = 
+        { 
+            name = "Weapon_LsideTur2", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, }, 
+		animation4 = 
+        { 
+            name = "Weapon_LsideTur3", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, },
+		animation5 = 
+        {
+			name = "Weapon_RsideTur1", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, }, 
+        animation6 = 
+        { 
+            name = "Weapon_RsideTur2", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, }, 
+		animation7 = 
+        { 
+            name = "Weapon_RsideTur3", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, },
+			   
+			   
+			   
+			   
+			   
+		animation8 = 
+        { 	   
+			name = "Weapon_LsideTur5", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, }, 
+				
+        animation9 = 
+        { 
+            name = "Weapon_RsideTur5", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, }, 
+			   
+		animation10 = 
+        { 
+            name = "Weapon_Ttur1", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, },
+			   
+		animation11 = 
+        {
+			name = "Weapon_Ttur2", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, }, 
+				
+        animation12 = 
+        { 
+            name = "Weapon_Dtur1", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, }, 
+			   
+		animation13 = 
+        { 
+            name = "Weapon_Dtur2", 
+            length = 3, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+               { "", }, }, },
+			   
+
+    events = 
+    { 
+
+        event1 = 
+            { 
+                { "anim", "Weapon_RsideTur4", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_RsideTur4_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+        event2 = 
+            { 
+                { "anim", "Weapon_RsideTur4", }, 
+                { "animtime", "0.3", }, 
+                { "marker", "Weapon_RsideTur4Slave_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+        event3 = 
+            { 
+                { "anim", "Weapon_RsideTur4", }, 
+                { "animtime", "0.6", }, 
+                { "marker", "Weapon_RsideTur4Slave1_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+        event4 = 
+            { 
+                { "anim", "Weapon_RsideTur4", }, 
+                { "animtime", "0.9", }, 
+                { "marker", "Weapon_RsideTur4Slave2_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 	
+        event5 = 
+            { 
+                { "anim", "Weapon_LsideTur4", }, 
+                { "animtime", "0.0", }, 
+                { "marker", "Weapon_LsideTur4_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+        event6 = 
+            { 
+                { "anim", "Weapon_LsideTur4", }, 
+                { "animtime", "0.3", }, 
+                { "marker", "Weapon_LsideTur4Slave_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+        event7 = 
+            { 
+                { "anim", "Weapon_LsideTur4", }, 
+                { "animtime", "0.6", }, 
+                { "marker", "Weapon_LsideTur4Slave1_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+        event8 = 
+            { 
+                { "anim", "Weapon_LsideTur4", }, 
+                { "animtime", "0.9", }, 
+                { "marker", "Weapon_LsideTur4Slave2_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            },
+			
+			
+			
+		event9 = 
+            { 
+                { "anim", "Fire_Missle", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_TopMis", }, 
+                { "fx", "torpedo_steam_spray", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH", }, 
+                { "fx_scale", "1", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+        event10 = 
+            { 
+                { "anim", "Fire_Missle", }, 
+                { "animtime", "0.1", }, 
+                { "marker", "Weapon_TopMisSlave", }, 
+                { "fx", "torpedo_steam_spray", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH", }, 
+                { "fx_scale", "1", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+        event11 = 
+            { 
+                { "anim", "Fire_Missle", }, 
+                { "animtime", "0.2", }, 
+                { "marker", "Weapon_TopMisSlave1", }, 
+                { "fx", "torpedo_steam_spray", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH", }, 
+                { "fx_scale", "1", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+        event12 = 
+            { 
+                { "anim", "Fire_Missle", }, 
+                { "animtime", "0.3", }, 
+                { "marker", "Weapon_TopMisSlave2", }, 
+                { "fx", "torpedo_steam_spray", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH", }, 
+                { "fx_scale", "1", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event13 = 
+            { 
+                { "anim", "Fire_Missle", }, 
+                { "animtime", "0.4", }, 
+                { "marker", "Weapon_TopMisSlave3", }, 
+                { "fx", "torpedo_steam_spray", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH", }, 
+                { "fx_scale", "1", }, 
+                { "fx_nlips", "on", }, 
+            },
+		event14 = 
+            { 
+                { "anim", "Fire_Missle", }, 
+                { "animtime", "0.5", }, 
+                { "marker", "TopMisSlave4", }, 
+                { "fx", "torpedo_steam_spray", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH", }, 
+                { "fx_scale", "1", }, 
+                { "fx_nlips", "on", }, 
+			},
+			
+			
+			
+			
+		event15 = 
+            { 
+                { "anim", "Weapon_RsideTur1", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_RsideTur1_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event16 = 
+            { 
+                { "anim", "Weapon_RsideTur1", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_RsideTur1Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event17 = 
+            { 
+                { "anim", "Weapon_RsideTur2", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_RsideTur2_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event18 = 
+            { 
+                { "anim", "Weapon_RsideTur2", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_RsideTur2Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            },
+		event19 = 
+            { 
+                { "anim", "Weapon_RsideTur3", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_RsideTur3_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event20 = 
+            { 
+                { "anim", "Weapon_RsideTur3", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_RsideTur3Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            },		
+		event21 = 
+            { 
+                { "anim", "Weapon_LsideTur1", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_LsideTur1_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event22 = 
+            { 
+                { "anim", "Weapon_LsideTur1", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_LsideTur1Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            },
+		event23 = 
+            { 
+                { "anim", "Weapon_LsideTur2", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_LsideTur2_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event24 = 
+            { 
+                { "anim", "Weapon_LsideTur2", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_LsideTur2Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            },
+		event25 = 
+            { 
+                { "anim", "Weapon_LsideTur3", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_LsideTur3_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event26 = 
+            { 
+                { "anim", "Weapon_LsideTur3", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_LsideTur3Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "0.5", }, 
+                { "fx_nlips", "on", }, 
+            },
+			
+			
+			
+			
+			
+			
+			
+		event27 = 
+            { 
+                { "anim", "Weapon_RsideTur5", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_RsideTur5_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/CARRIER/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event28 = 
+            { 
+                { "anim", "Weapon_RsideTur5", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_RsideTur5Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event29 = 
+            { 
+                { "anim", "Weapon_LsideTur5", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_LsideTur5_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event30 = 
+            { 
+                { "anim", "Weapon_LsideTur5", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_LsideTur5Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            },
+		event31 = 
+            { 
+                { "anim", "Weapon_Ttur1", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_Ttur1_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event32 = 
+            { 
+                { "anim", "Weapon_Ttur1", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_Ttur1Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            },		
+		event33 = 
+            { 
+                { "anim", "Weapon_Ttur2", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_Ttur2_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event34 = 
+            { 
+                { "anim", "Weapon_Ttur2", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_Ttur2Slave", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            },
+		event35 = 
+            { 
+                { "anim", "Weapon_Dtur1", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_Dtur1_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event36 = 
+            { 
+                { "anim", "Weapon_Dtur1", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_Dtur1Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            },
+		event37 = 
+            { 
+                { "anim", "Weapon_Dtur2", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_Dtur2_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, 
+		event38 = 
+            { 
+                { "anim", "Weapon_Dtur2", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_Dtur2Slave_Muzzle", }, 
+                { "fx", "sunfire_squirt", }, 
+                { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL", }, 
+                { "fx_scale", "2", }, 
+                { "fx_nlips", "on", }, 
+            }, }, }

@@ -1,0 +1,12 @@
+VGR_PROBE_SMALLHSBEACON_Open_OnSet = function(ship)
+    stopAnim(ship, "Close")
+    startAnim(ship, "Open")
+    startEffect(ship, "Open")
+    setPauseTime(ship, "Open", 1000)
+end
+
+--VGR_PROBE_SMALLHSBEACON_Close_OnSet = function(ship)
+    --stopAnim(ship, "Open")
+    --startAnim(ship, "Close")
+    --setPauseTime(ship, "Close", 1000)
+--end

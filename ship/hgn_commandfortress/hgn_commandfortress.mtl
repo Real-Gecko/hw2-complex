@@ -1,0 +1,48 @@
+newmtl hw2Shader6
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+map_Kd .\V_Comm_Top_EXPORT.DDS
+
+newmtl hw2Shader1
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+map_Kd .\V_Comm_Bottom_Hub_EXPORT.DDS
+
+newmtl hw2Shader2
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+map_Kd .\V_Comm_Base_EXPORT.DDS
+
+newmtl hw2Shader5
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+map_Kd .\V_Comm_Peirs_EXPORT.DDS
+
+newmtl V_Comm_Badge
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+map_Kd .\V_Comm_Badge_EXPORT.DDS
+
+newmtl lambert1
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+
+

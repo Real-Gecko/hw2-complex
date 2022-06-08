@@ -1,0 +1,31 @@
+-- LuaDC version 0.9.19
+-- 30/10/2004 5.31.48
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Bullet", "Vgr_Laser", "Normal Only", 4000, 9000, 0, 0, 0, 0, 1, 1, 1, 7, 0, 0, 0, 0, 60, 30, 0.1, "Normal", 0, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 3000, 3000, "")
+setPenetration(NewWeaponType, 50, 1, 
+{ 
+    TurretArmour = 0.5, 
+}, 
+{ 
+    PlanetKillerArmour = 0, 
+}, 
+{ 
+    SubSystemArmour = 0.3, })
+setAccuracy(NewWeaponType, 1, 
+{ 
+    Fighter = 0.1, 
+}, 
+{ 
+    Corvette = 0.08, 
+}, 
+{ 
+    munition = 0.1, 
+}, 
+{ 
+    Frigate = 0.4, 
+    damage = 1, })
+setAngles(NewWeaponType,0,-130,130,-8,40)
+setMiscValues(NewWeaponType,2.5,0.5)

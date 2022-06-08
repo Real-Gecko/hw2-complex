@@ -1,0 +1,22 @@
+# Converted from 'C:\Documents and Settings\Beghins\Desktop\Homeworld2\Data\ship\hgn_ionturret\hgn_ionturret.hod'
+# Wavfront OBJect created by Cold Fusion HOD Editor
+#	- By 4E534B
+# Date: 10-22-2007 Time: 18:30:13
+#
+#  Engine Shape: EngineShape2
+v -2,329872 4,345733 -4,038933
+v 1,069968 4,345734 -4,038936
+v -2,329873 -3,963133 -4,038936
+f 1 2 3
+v -2,329873 -3,963133 -4,038936
+v 1,069968 4,345734 -4,038936
+v 1,069968 -3,963133 -4,038936
+f 4 5 6
+v 1,069968 -3,963133 -4,038936
+v 1,069968 4,345734 -4,038936
+v 3,048669 -3,233709 -4,038934
+f 7 8 9
+v 3,048669 -3,233709 -4,038934
+v 1,069968 4,345734 -4,038936
+v 3,048669 3,616309 -4,038934
+f 10 11 12

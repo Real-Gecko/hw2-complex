@@ -1,0 +1,274 @@
+filerange 9500 9999
+rangestart 9500 9999
+////	====	SETTINGS AND DESCRIPTIONS	=====
+9501	Starting Resources
+9502	CHOOSE INITIAL RESOURCE UNIT AMOUNT. HAVING FEWER INITIAL RESOURCES WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal (3000)</c>)
+9503	Starting Fleet
+9504	CHOOSE THE NUMBER/VARIETY OF STARTING SHIPS. STARTING WITH FEWER SHIPS WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=80FF00>Mothership, 6 Collectors</c>)
+9505	Starting Military Rank
+9506	CHOOSE THE INITIAL MILITARY RANK. A LOWER STARTING RANK WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Ensign (10)</c>)
+9507	Resource Multiplier
+9508	ADJUST THE AMOUNT OF RESOURCES CONTAINED IN ASTEROID CLUSTERS. A LOWER RESOURCE MULTIPLIER WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9509	Honour Point Rate
+9510	CHOOSE THE RATE AT WHICH HONOR POINTS ARE GAINED. A LOWER RATE WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9511	Research Point Rate
+9512	CHOOSE THE RATE AT WHICH RESEARCH POINTS ARE GAINED. A LOWER RATE WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9513	Construction Rate
+9514	CHOOSE THE SHIP/SUBSYSTEM CONTSTRUCTION RATE. A LOWER SPEED WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9515	Resourcing Rate
+9516	CHOOSE THE RATE FOR HARVESTING, FUSING AND MINING RUs. A LOWER RATE WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9517	Recruiting Rate
+9518	CHOOSE THE RECRUITING OPERATIONS RATE FOR CREW/OFFICERS. A LOWER RATE WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9519	Experience Rate
+9520	CHOOSE THE RATE AT WHICH UNITS GAIN EXPERIENCE. A LOWER RATE WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9521	Power Rate
+9522	CHOOSE POWER PRODUCTION RATE. A LOWER RATE WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9523	Hyperspace Cost
+9524	CHOOSE THE COST MODIFIER FOR USING HYPERSPACE. A HIGHER COST MODIFIER WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9525	Rank Salary
+9526	CHOOSE ANNUAL RANK SALARY. A REDUCED SALARY WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9527	Battle Duration
+9528	CHOOSE THE OVERALL DURATION FOR BATTLES. A SHORTER BATTLE DURATION WILL LEAD TO A MORE TACTICAL MATCH (Default: <c=00FF00>Normal</c>)
+9529	Unit Mobility
+9530	CHOOSE UNIT SPEED AND DRIVE MANEUVERABILITY (Default: Realistic)
+9531	AI Aids
+9532	CHOOSE THE FREQUENCY FOR AI AIDS (BONUS SHIPS/RESOURCE INJECTIONS) (Default: <c=00FF00>Low</c>)
+9533	AI Attack Frequency
+9534	RARE: AI ATTACKS RARELY, BUT WITH A LARGE FORCE; CONSTANTLY: AI ATTACKS FREQUENTLY, BUT WITH ONLY A FEW SHIPS (Default: <c=00FF00>Balanced</c>)
+9535	Starting Location
+9536	CHOOSE THE TYPE OF START LOCATION (Default: Fixed)
+9537	Static Teams
+9538	PREVENT PLAYERS FROM CHANGING TEAMS (Default: No)
+9539	Primary Objective
+9540	CHOOSE THE WINNING CONDITION (Default: Destroy Production)
+9541	Secondary Objectives
+9542	ENABLE/DISABLE SECONDARY OBJECTIVES (Default: Disable)
+9543	Diplomacy Fee
+9544	CHOOSE THE ANNUAL DIPLOMACY FEE (ALLIED PLAYERS WITH LOWER SCORES WILL PAY AN ANNUAL FEE TO PLAYER WITH THE HIGHEST SCORE) (Default: Disabled)
+9545	Complex Help
+9546	ENABLE/DISABLE THE COMPLEX IN-GAME HELP INTERFACE (Default: Enable)
+9547	Personnel Capacity
+9548	CHOOSE THE MAXIMUM CREW/OFFICER CAPACITY OF FLEETS. HIGHER CAPACITY WILL CAUSE LAG ON LESS POWERFUL PCs (Default: <c=00FF00>Normal</c>)
+9549	Auto Save
+9550	CHOOSE THE TIMER FOR AUTO SAVE (SINGLE-PLAYER ONLY) (Default: Disabled)
+9551	System Clock
+9552	CHOOSE THE GAME PARAMETER UPDATE FREQUENCY (Default: Low-End Systems)
+9553	Enable Intro
+9554	SHOW OPENING CUTSCENE (Default: Yes)
+////	===SETTING CHOICES===
+9555	<c=FFFFFF>Map's Default</c>
+9556	<c=FF0000>Small (1000)</c>
+9557	<c=00FF00>Normal (3000)</c>
+9558	<c=00FF80>Large (5000)</c>
+9559	<c=00FFFF>Very Large (7000)</c>
+9560	<c=FF8212>Test (Dev./11000)</c>
+////	Starting Fleet
+9561	<c=88FF00>Mothership</c>
+9562	<c=44FF00>Mothership, 3 Collectors</c>
+9563	<c=00FF00>Mothership, 6 Collectors</c>
+9564	<c=00FF44>Support</c>
+9565	<c=00FF88>Fleet</c>
+9566	<c=00FFFF>Empire</c>
+////	Initial Honour (Rank)
+9567	<c=00FFFF>0 (None)</c>
+9568	<c=00FF00>10 (Ensign)</c>
+9569	<c=22FF00>20 (Ensign)</c>
+9570	<c=44FF00>30 (Lieutenant)</c>
+9571	<c=88FF00>80 (Commander)</c>
+9572	<c=FFFF00>150 (Captain)</c>
+9573	<c=FF8800>240 (Commodore)</c>
+9574	<c=FF4400>350 (Admiral)</c>
+9575	<c=FF0000>480 (Fleet Admiral)</c>
+////	Resource Multiplier
+9576	<c=FF0000>Scarce</c>
+9577	<c=00FF00>Normal</c>
+9578	<c=00FF80>Common</c>
+9579	<c=00FFFF>Plentiful</c>
+////	Rates (Research, Experience, Power, Build, Recruiting, Resourcing, 
+9580	<c=FF0000>Low</c>
+9581	<c=00FF00>Normal</c>
+9582	<c=00FF80>High</c>
+9583	<c=00FFFF>Maximum</c>
+////	Hyperspace Cost
+9585	<c=FF0000>Expensive</c>
+9586	<c=00FF00>Normal</c>
+9587	<c=00FF80>Small</c>
+9588	<c=00FFFF>Miniscule</c>
+////	Rank Salary
+9589	<c=FF0000>Disabled</c>
+9590	<c=FF8000>Frugal</c>
+9591	<c=00FF00>Normal</c>
+9592	<c=00FF80>Large</c>
+9593	<c=00FFFF>Extravagant</c>
+////	Battle Duration
+9594	<c=FF0000>Short</c>
+9595	<c=00FF00>Normal</c>
+9596	<c=00FF80>Long</c>
+9597	<c=00FFFF>Extended</c>
+////	Unit Behavior
+9598	Realistic
+9599	Dramatic
+////	AI Aid Frequency
+9600	<c=00FFFF>Very Low</c>
+9601	<c=00FF00>Low</c>
+9602	<c=80FF00>Normal</c>
+9603	<c=FFFF00>High</c>
+9604	<c=FF0000>Maximum</c>
+////	Attack Frequency
+9605	<c=00FFFF>Hardly Ever</c>
+9606	<c=0080FF>Rarely</c>
+9607	<c=00FF00>Balanced</c>
+9608	<c=FFFF00>Frequent</c>
+9609	<c=FF0000>Constant</c>
+////	Win Condition
+9610	<c=00FF00>Destroy Mothership</c>
+9611	<c=00FF80>Destroy Production</c>
+9612	<c=00FFFF>Destroy All</c>
+9613	<c=FF0000>Store 100000 RUs</c>
+////	Secondary Objectives
+9615	<c=606060>None/Disabled</c>
+9616	<c=FF8000>Resource Race</c>
+9617	<c=FF4000>Rank Race</c>
+9618	<c=FF2000>Domain Race</c>
+9619	<c=FF0000>All</c>
+////	Diplomacy Fee
+9620	<c=00FF00>Disabled</c>
+9621	<c=11FF00>Small</c>
+9622	<c=22FF00>Normal</c>
+9623	<c=44FF00>Large</c>
+9624	<c=88FF00>Massive</c>
+////	Complex Help
+9625	<c=FFFFFF>Enabled</c>
+9626	<c=606060>Disabled</c>
+////	Unit Cap/Personnel Capacity
+9627	<c=FF0000>Low</c>
+9628	<c=00FF00>Normal</c>
+9629	<c=00FF80>High</c>
+9630	<c=00FFFF>Maximum</c>
+////	Auto Save
+9631	None/Disabled
+9632	5 Years
+9633	10 Years
+9634	15 Years
+////	System Clock
+9635	Low-End Systems
+9636	Normal
+9637	High-End Systems
+////	Show Introduction
+9639	<c=606060>No</c>
+9640	<c=FFFFFF>Yes</c>
+////	Starting Location Mode
+9641	<c=FF00FF>Random</c>
+9742	<c=00FF00>Fixed</c>
+////	DEV SETTINGS
+9743	<c=FF8212>Test (Dev./Extreme)</c>
+9744	<c=FF8212>Test (Dev./All)</c>
+9745	<c=FF8212>Test (Dev./Sandbox)</c>
+9746	<c=FF8212>Test (Dev./Movies)</c>
+9747	<c=FF8212>Test (Dev./Disable)</c>
+9748	<c=FF8212>Test (Dev./No AI)</c>
+////	/===========================\
+////	| IN-GAME HELP SECTION      |
+////	\===========================/
+9749	Military Rank
+9750	Military Rank
+9751	Represents the progress of your naval career. Rank advancement is dependent on the amount of Honor Points you have earned; with higher ranks granting access to more crew and officer recruits, better research opportunities and also improving the rank renumeration recieved at the end of each year (if rank renumeration is enabled). To advance to higher ranks build the unlocked ranks on the <c=0095d9>CREW STATION</c> (Hiigarans), Vaygr advance automatically.\n7 ranks are available (with the minimum required honor in parentheses):\n  - Ensign (0)\n  - Lieutenant (30)\n  - Commander (80)\n  - Captain (150)\n  - Commodore (240)\n  - Admiral (350)\n  - Fleet Admiral (480)
+9752	Honour
+9753	Honour
+9754	Honor represents the trust your fleet has in you and is needed to advance your rank.\nTo increase your Honour:\n  - Build units and subsystems\n  - Research technologies, abilities and upgrades\n  - Harvest resources and salvage debris\n  - Destroy enemy ships
+9755	Crew/Officers
+9756	Crew and Officers
+9757	You have a limited number of crew and officers; each ship requires a certain amount of crew and capital ships typically requires a one or more officers.  To increase the maximum available crew or officers, you must advance to higher ranks; then build the unlocked crew and officer barracks on the <c=0095d9>CREW STATION</c> (Hiigarans) or research the appropriate topic (Vaygr). If a ship is destroyed, the number of crew and officers will be removed from the amount available, Hiigarans will have to wait for the lost crew and officers to be replenished. The Vaygr losses are generally replaced immediately.
+9758	Game Year
+9759	Game Year
+9760	Represents the progression of time ingame. At the end of each game year, several things will happen:\n  - Maintenance costs for all constructed ships and subsystems are paid\n  - If the Fusion ability was researched, you will recieve the generated RUs\n  - Members of an alliance will pay any required tribute costs to whichever member has the highest Player Score.
+9761	Energy
+9762	Energy
+9763	Total energy production capabilities of fleet; having a surplus of energy production grants bonuses to production speeds and also enhances the mobility and offensive capabilities of all ships in the fleet. To increase the energy produced:\nHIIGARANS\n  - Build Power Modules on production ships\n  - Build a <c=0095d9>POWER STATION</c>\n  - Build Toroidal Magnets on the Power Station\n  - Research Power Production upgrades\nVAYGR\n  - Research Power Production\n  - Build Power Modules on <c=0095d9>FLAGSHIP</c> and/or <c=0095d9>SHIPYARD</c>
+9764	Research Score
+9765	Research Score
+9766	Represents currrent resource investment towards new technologies.\nHIIGARAN technology advances by building the next available research module on the <c=0095d9>RESEARCH STATION</c>, but to unlock each division requires investing enough RUs in research to raise the Research Score.\n  - 1st: RESEARCH Division (0)\n  - 2nd: SCIENCE Division (125)\n  - 3rd: ENGINEERING Division (450)\nVAYGR only require having the appropriate rank and at least one Research Division aboard any ship (Flagship, Carrier or Shipyard).
+9767	Maintenance
+9768	Maintenance Cost
+9769	All ships require yearly maintenance to remain operating at the optimal effectivess.  At the end of each game year, the cost to maintain all ships and subsystems is totaled, and then subtracted from the fleet's currently stored RUs.  If there isn't enought to cover the cost, ships will start to lose their effectiveness, dealing less damage with weapons and moving with reduced mobility.
+9770	RUs
+9771	RUs
+9772	Abbreviation for 'Resource Units'. RUs are obtained by harvesting from the various clusters of asteroids scattered about the map, by salvaging the wreckage from destroyed ships (both ancient and recent), and establishing Trade Networks with allied players. To harvest/salvage RUs build <c=0095d9>RESOURCE COLLECTORS</c>, to estabilish a trade network build <c=0095d9>TRADE CONVOYS</c>. Once the appropriate technologies are researched, RUs may also be obtained by RU Fusion from the Hiigaran <c=0095d9>SCAVENGER</c> and Hiigaran/Vaygr <c=0095d9>MOBILE REFINERIES</c>, after researching the appropriate topic.
+9773	Fusion
+9774	RU Fusion
+9775	The mobile workcenters of fleet resourcing operations (<c=0095d9>SCAVENGERS</c> and/or <c=0095d9>MOBILE REFINERIES</c>) can be enhanced through research or subsystems to autonomously generate RUs from the miniscule amounts of free-floating dust and gas found in space; RUs gained from fusion are given in a lump sum at the end of each game year.
+9776	Mining Base
+9777	Mining Base
+9778	Many battlefields have <c=0095d9>MINING BASES</c> scattered around, which are currently controlled by independent but hostile forces. To make use of them, a fleet will need to do the following:\n  - Capture the Mining Base with <c=0095d9>MARINE</c> or <c=0095d9>INFILTRATION FRIGATES</c>\n  - Dock <c=0095d9>RESOURCE COLLECTORS</c> with the Mining Base to begin mining operations\n  - Build a <c=0095d9>MINING CONTAINER</c> to transport mined resources back to a production ship for use by the fleet.
+9779	Debris
+9780	Debris
+9781	Long forgotten civilizations waged war on truly massive scales.  The remnants of those battles can sometimes still be found in the form of massive derelict hull fragments, simply called 'Debris'.  Once captured using <c=0095d9>MARINE</c> or <c=0095d9>INFILTRATOR FRIGATES</c>, these remnants provide 1300 RUs each game year.\nAlternatively, captured debris can be scuttled to produce a large number of salvageable-sized fragments; which can then be gathered by <c=0095d9>RESOURCE COLLECTORS</c> and brought to a production-capable ship for rapid conversion to RUs.
+9782	Megaliths
+9783	Megaliths
+9784	Scattered among the stars are remnants of ancient and extinct advanced spacefaring civilizations. These now derelict remains (called <c=0095d9>MEGALITHS</c>) are still functioning to a degree, and can be used to enhance the capabilities of the fleet that finds them.  Different Megaliths grant different enhancements.\nTo make use of these bonuses, the Megaliths must be captured using a <c=0095d9>MARINE</c> or <c=0095d9>INFILTRATOR FRIGATE</c>.
+9785	Trade Network
+9786	Trade Network
+9787	Fleets with considerable stored quantities of RUs would be advised to build one or more <c=0095d9>TRADE CONVOYS</c>. Trade Convoys will automatically ferry RUs between you and allied players.  Note that allied players with lower Player Scores will be charged a diplomacy fee in RUs (if match has DIPLOMACY FEES enabled) to use the trade network.  The fee is payed at the end of each game year to the player with the highest game score.
+9788	Remote Monitor
+9789	Remote Monitor (Ability)
+9790	The level of security your fleet uses to encrypt sensitive data transmissions across subspace; and conversely, your fleet's ability to decrypt the data transmissions of other fleets. Using any available sensor array, you'll be provided with a rough idea of the capabilities of other fleets in the area.
+9791	Planets
+9792	Planet Management
+9793	Space is filled with many planets that can be colonized to generate RUs. To colonize a planet, the <c=0095d9>MOTHERSHIP</c> or <c=0095d9>FLAGSHIP</c> needs to be moved to within 5 km of the planet and kept there. Once colonized, the Interface will indicate that the planet is 'Colonized and Operating'.\nThe quantity of RUs generated is dependent on the population of the planet. Population increases is the Mothership/Flagship or the Orbital Station is present in the orbit. Constructing an <c=0095d9>ORBITAL STATION</c> provides additional room for population growth.\nThe presence of an enemy ships near a colonized planet will cause all RU operations to pause, until the hostile ships is pushed out of the planet's orbit or destroyed.
+////	PRIMARY OBJECTIVES
+9800	Complex Skirmish - Destroy Mother/Flagships
+9801	<c=FFA500>Primary Objective</c> : <c=4080FF>Destroy all enemy Motherships and/or Flagships, while protecting our own.</c>
+9802	Complex Skirmish - Destroy Production
+9803	<c=FFA500>Primary Objective</c> : <c=4080FF>Destroy all enemy production-capable ships, while keeping at least one of our production-capable ships alive.</c>
+9804	Complex Skirmish - Annihilation
+9805	<c=FFA500>Primary Objective</c> : <c=4080FF>Destroy all enemy forces, while keeping at least one of our ships alive.</c>
+9806	Complex Skirmish - Store 100000 RUs
+9807	<c=FFA500>Primary Objective</c> : <c=4080FF>The first fleet to accumulates 100000 RUs wins</c>
+////	SECONDARY OBJECTIVES
+////	-------Resource Race
+9808	Accumulate 10000 RUs
+9809	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first Player to accumulates 10000 RUs will be awarded with 5000 RUs and 5 Honor points</c>
+9810	<c=80FF00>Secondary Objective (Accumulate 10000 RUs) completed!</c>
+9811	Accumulate 20000 RUs
+9812	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first Player to accumulates 20000 RUs will be awarded with 10000 RUs and 10 Honor points</c>
+9813	<c=80FF00>Secondary Objective (Accumulate 20000 RUs) completed!</c>
+9814	Accumulate 40000 RUs
+9815	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first Player to accumulates 40000 RUs will be awarded with 20000 RUs and 20 Honor points</c>
+9816	<c=80FF00>Secondary Objective (Accumulate 40000 RUs) completed!</c>
+////	-------Rank Race
+9817	Attain Lieutenant Rank
+9818	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first Player to attain the Lieutenant rank will be awarded with 2000 RUs and 2 Honor points
+9819	<c=80FF00>Secondary Objective (Attain Lieutenant Rank) completed!</c>
+
+9820	Attain Commander Rank
+9821	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first Player to attain the Commander rank will be awarded 4000 RUs and 4 Honor points
+9822	<c=80FF00>Secondary Objective (Attain Commander Rank) completed!</c>
+
+9823	Attain Captain Rank
+9824	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first Player to attain the Captain rank will be awarded 6000 RUs and 6 Honor points
+9825	<c=80FF00>Secondary Objective (Attain Captain Rank) completed!</c>
+
+9826	Attain Commodore Rank
+9827	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first Player to attain the Commodore rank will be awarded with 8000 RUs and 8 Honor points
+9828	<c=80FF00>Secondary Objective (Attain Commodore Rank) completed!</c>
+
+9829	Attain Admiral Rank
+9830	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first Player to attain the Admiral rank will be awarded with 10000 RUs and 10 Honor points
+9831	<c=80FF00>Secondary Objective (Attain Admiral Rank) completed!</c>
+
+9832	Attain Fleet Admiral Rank
+9833	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first Player to attain the Fleet Admiral rank will be awarded with 12000 RUs and 12 Honor points
+9834	<c=80FF00>Secondary Objective (Attain Fleet Admiral Rank) completed!</c>
+////	-------Megalith Race
+9835	Capture Mining Base
+9836	<c=FF8500>Secondary Objective</c> : <c=80FFA5>The first player to capture a Mining Base will be awarded with an extra 5000 RUs and 5 Honor points</c>
+9837	<c=80FF00>Secondary Objective (Capture Mining Base) completed!</c>
+////	ERRATA
+////	Additional Options
+9900	Match Logging
+9901	Enable Complex Match logging; "replace" means the existing log is cleared out before logging the current match; "append" means that the current match is logged after the previous logs.
+////	Options
+9930	<c=606060>Disabled</c>
+9931	<c=FFFFFF>Enabled (Replace)</c>
+9932	<c=FFFFFF>Enabled (Append)</c>
+rangeend 

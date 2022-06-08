@@ -1,0 +1,35 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","kinetic_Small_75mm","Normal",1250,12600*1.4,0,0,0,0,1,1,1,0.2,0.6,0.6,1,1,120,120,0.1,"Normal",1,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",30,30,"")
+setPenetration(NewWeaponType,3,1,{
+  PlanetKillerArmour = 0,
+},{
+  Unarmoured = 1,
+},{
+  LightArmour = 0.75,
+},{
+  MediumArmour = 0.8,
+},{
+  ResArmour = 0.8,
+})
+setAccuracy(NewWeaponType,0.825,{
+  Fighter = 0.125,
+},{
+  Corvette = 0.125,
+},{
+  munition = 0.125,
+},{
+  Frigate = 0.85,
+},{
+  Capturer = 0.75,
+},{
+  SmallCapitalShip = 0.9,
+},{
+  BigCapitalShip = 0.9,
+},{
+  ResourceLarge = 0.9,
+},{
+  Resource = 0.8,
+})
+setAngles(NewWeaponType,0,-180,180,-2,75)
+setMiscValues(NewWeaponType,3,0.5)
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON")

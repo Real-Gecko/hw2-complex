@@ -1,0 +1,15 @@
+hitfx = ""
+bulletfx = ""
+nopenetratefx = ""
+deathtype = ""
+scartype = ""
+fire_sfx = ""
+hit_sfx = ""
+firefx = ""
+hit_clamp = 
+    { 1, 1, }
+    
+       
+
+
+

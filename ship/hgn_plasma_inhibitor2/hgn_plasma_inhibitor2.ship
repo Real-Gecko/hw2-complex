@@ -1,0 +1,37 @@
+NewShipType = StartShipConfig()
+NewShipType.maxhealth = 100000
+NewShipType.regentime = 1
+NewShipType.minRegenTime = 1
+NewShipType.frontArmourDamage = 0.01
+NewShipType.sideArmourDamage = 0.01
+NewShipType.rearArmourDamage = 0.01
+NewShipType.passiveFormation = "Broad"
+NewShipType.defensiveFormation = "Delta"
+NewShipType.aggressiveFormation = "Claw"
+NewShipType.mass = 0
+NewShipType.dustCloudDamageTime = 0
+NewShipType.nebulaDamageTime = 0
+NewShipType.BuildFamily = "AddCore"
+NewShipType.AttackFamily = "UnAttackable"
+NewShipType.AvoidanceFamily = "None"
+NewShipType.DisplayFamily = "Utility"
+NewShipType.CollisionFamily = "Small"
+NewShipType.UnitCapsFamily = "Stop"
+NewShipType.buildCost = 1
+NewShipType.buildTime = 1
+NewShipType.visualRange = 0
+NewShipType.prmSensorRange = 0
+NewShipType.secSensorRange = 0
+NewShipType.mouseOverMinFadeSize = 0
+NewShipType.mouseOverMaxFadeSize = 0
+NewShipType.SMRepresentation = "Mesh"
+NewShipType.meshRenderLimit = 0
+NewShipType.visibleInSecondary = 0
+NewShipType.selectionLimit = 0
+NewShipType.preciseSelectionLimit = 0
+NewShipType.preciseATILimit = 0
+NewShipType.selectionPriority = 0
+NewShipType.militaryUnit = 0
+addAbility(NewShipType, "HyperspaceInhibitorAbility", 1, 8000)
+AddShipAbility(NewShipType, "HyperspaceInhibitor", 1, "ThisShipOnly", 0)
+LoadSharedModel(NewShipType, "ns")

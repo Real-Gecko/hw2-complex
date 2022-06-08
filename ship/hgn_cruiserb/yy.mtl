@@ -1,0 +1,27 @@
+﻿newmtl hw2Shader
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd HGN_Sword_Cruiser_tex1_diff.dds
+
+newmtl hw2Shader2
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd HGN_Crossbow_Cruiser_Badge[1].dds
+
+newmtl hw2Shader1
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd HGN_Sword_Cruiser_Burner[2].dds
+

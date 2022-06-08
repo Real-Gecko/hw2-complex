@@ -1,0 +1,18 @@
+filerange 17094 17378
+rangestart 17094 17378
+/////	//========================\\
+/////	||        HIIGARAN        ||
+/////   \\========================//
+17094	Ablative Shield Recharge: Level 1
+17095	Fleet CV Shld Recharge+
+17096	<b>Effect</b>\n<c=41af41>+50% shield recharge rate</c>\n<c=9d9ddf>Cost: 900 RUs\nTime: 65 s</c>\n<b>Requires:</b>\n<c=e7bd59>Super-Capital Facility\nScience Division</c>
+17097	Ablative Shield Duration: Level 1
+17098	Fleet CV Shld Duration+
+17099	<b>Effect</b>\n<c=41af41>+50% shield duration</c>\n<c=9d9ddf>Cost: 1000 RUs\nTime: 70 s</c>\n<b>Requires:</b>\n<c=e7bd59>Super-Capital Facility\nScience Division</c>
+/////	//========================\\
+/////	||         VAYGR          ||
+/////   \\========================//
+// 17236	
+// 17237	
+// 17238	
+rangeend 

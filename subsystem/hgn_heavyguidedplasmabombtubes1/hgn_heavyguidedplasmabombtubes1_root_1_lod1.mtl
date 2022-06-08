@@ -1,0 +1,31 @@
+#
+# hgn_heavyguidedplasmabombtubes_Root_1_lod1.mtl
+#
+
+newmtl E:\HW2_Work\bcsubs\hulldiffuse
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd C:\Programmi\Sierra\Homeworld2\Data\subsystem\hgn_heavyguidedplasmabombtubes\E:\HW2_Work\bcsubs\hulldiffuse[1].BMP
+
+newmtl E:\HW2_Work\bcsubs\hullglow
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd C:\Programmi\Sierra\Homeworld2\Data\subsystem\hgn_heavyguidedplasmabombtubes\E:\HW2_Work\bcsubs\hullglow[1].BMP
+
+newmtl E:\HW2_Work\bcsubs\hulldiffuse
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd C:\Programmi\Sierra\Homeworld2\Data\subsystem\hgn_heavyguidedplasmabombtubes\E:\HW2_Work\bcsubs\hulldiffuse[1].BMP
+
+newmtl E:\HW2_Work\bcsubs\hullglow
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd C:\Programmi\Sierra\Homeworld2\Data\subsystem\hgn_heavyguidedplasmabombtubes\E:\HW2_Work\bcsubs\hullglow[1].BMP

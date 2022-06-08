@@ -1,0 +1,26 @@
+filerange 17400 17539
+rangestart 17400 17539
+/////	These are for the ship-specific topics
+/////	FIGHTERS
+17400	Scout Upgrades
+17401	Bomber Upgrades
+17402	Spy Upgrades
+17403	X-Bomber Upgrades
+17404	Intruder Upgrades
+17405	Shiry Upgrades
+/////	CORVETTES
+17420	Gunship Upgrades
+17421	Pulsar Gunship Upgrades
+17422	Plasma Corvette Upgrades
+17424	Minegun Corvette Upgrades
+17425	Mechgun Corvette Upgrades
+/////	FRIGATES
+/////	CAPITALS
+17460	Cruiser Upgrades
+17461	Destroyer Upgrades
+/////	PLATFORMS
+17480	Platforms Upgrades
+17485	Sentinel Upgrades
+/////	MISC
+17500	Hiigaran Fleet
+rangeend 

@@ -1,0 +1,54 @@
+﻿newmtl agamemnon_enginebase
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd agamemnon_enginebase.dds
+
+newmtl agamemnon_bottom
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd agamemnon_bottom.dds
+
+newmtl agamemnon_middle
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd agamemnon_base.dds
+
+newmtl agamemnon_engines
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd agamemnon_eng_idle.dds
+
+newmtl agamemnon_hull
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd agamemnon_hull.dds
+
+newmtl agamemnon_dockarm
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd agamemnon_dockarm.dds
+

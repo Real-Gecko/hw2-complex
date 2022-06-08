@@ -1,0 +1,125 @@
+﻿newmtl ps1
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd ps1_diff.dds
+
+newmtl engineflaps
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd engineflaps_diffuse.dds
+
+newmtl blck
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd blck_diffuse.dds
+
+newmtl engines
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd engines_off_diffuse.dds
+
+newmtl hangar
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd Hanger1.dds
+
+newmtl engineshouseing
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd EnginesHousing_Diff.dds
+
+newmtl teting_222222
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd teting2222_____1_diff.dds
+
+newmtl wd
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd wd_diff.dds
+
+newmtl ant
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd ant_diffuse.dds
+
+newmtl topwindows
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd topwindowrow_diff.dds
+
+newmtl siding
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd siding_diffuse.dds
+
+newmtl frontcolor
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+
+newmtl calip_front
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd Calip_front1_diffuse.dds
+
+newmtl hazzard1
+illum 2
+Kd 204 204 204
+Ka 51 51 51
+Ks 0 0 0
+Ke 0 0 0
+Ns 0
+map_Kd Hazzard1_diffuse.dds
+
