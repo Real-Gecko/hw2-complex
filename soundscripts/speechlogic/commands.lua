@@ -655,7 +655,7 @@ function CommandMoveGiven(shipnm, targetnm)
         return
     end
 
-    if shipname == "Hgn_ProximitySensor" then
+    if genericShipName == "Hgn_ProximitySensor" then
         playSpeechActor("Command_Probe_Selected", NameAllPilot, NumAllPilots, Frequency_Command)
         return
     end

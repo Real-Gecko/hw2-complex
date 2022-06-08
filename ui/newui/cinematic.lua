@@ -1,134 +1,126 @@
-cinematic = 
-{ 
-    size = 
-        { 330, 137, 146, 206, }, 
-    stylesheet = "HW2StyleSheet", 
-    pixelUVCoords = 1,   
-    clickThrough = 1,  
-    RootElementSettings = 
-    { 
-        backgroundColor = "FEColorBackground1", }, 
-; 
+cinematic = {
+	size = { 330, 137, 146, 206, },
+	stylesheet = "HW2StyleSheet",
+	pixelUVCoords = 1,
+	clickThrough = 1,
+	RootElementSettings = {
+		backgroundColor = "FEColorBackground1", };
 
---esc
+	--esc
 	{
 		type = "Frame",
-		position = {0,0},
-		size = {120, 20},		
-		backgroundColor = "IGColorBackground1",		
-		;					
+		position = { 0, 0 },
+		size = { 120, 20 },
+		backgroundColor = "IGColorBackground1";
 		{
 			type = "Frame",
-			position = {1, 1},
-			size = {20,20},			
+			position = { 1, 1 },
+			size = { 20, 20 },
 			BackgroundGraphic = {
 				texture = "data:ui\\newui\\ingameicons\\esc.tga",
-				textureUV = {0,0,128,128},
+				textureUV = { 0, 0, 128, 128 },
 				color = OUTLINECOLOR,
-			},			
-		},		
-		{		        
+			},
+		},
+		{
 			type = "TextLabel",
-			position = {24, 1},
-			size = {100,  20},
-			name = "esc",	      			
+			position = { 24, 1 },
+			size = { 100, 20 },
+			name = "esc",
 			Text = {
-			  text = "ESC",
+				text = "ESC",
 				textStyle = "IGHeading2",
-				hAlign = "Left",				
+				hAlign = "Left",
 				color = "FEColorHeading3",
-			},			
-		},		
+			},
+		},
 	},
 	--f1
 	{
 		type = "Frame",
-		position = {0,22},
-		size = {120, 20},		
-		backgroundColor = "IGColorBackground1",		
-		;					
+		position = { 0, 22 },
+		size = { 120, 20 },
+		backgroundColor = "IGColorBackground1";
 		{
 			type = "Frame",
-			position = {1, 1},
-			size = {20,20},			
+			position = { 1, 1 },
+			size = { 20, 20 },
 			BackgroundGraphic = {
 				texture = "data:ui\\newui\\ingameicons\\f1.tga",
-				textureUV = {0,0,128,128},
+				textureUV = { 0, 0, 128, 128 },
 				color = OUTLINECOLOR,
-			},			
-		},		
-		{		        
+			},
+		},
+		{
 			type = "TextLabel",
-			position = {24, 1},
-			size = {120,  20},
-			name = "f1",	      			
+			position = { 24, 1 },
+			size = { 120, 20 },
+			name = "f1",
 			Text = {
-			  text = "Camera speed",
+				text = "Camera speed",
 				textStyle = "IGHeading2",
-				hAlign = "Left",				
+				hAlign = "Left",
 				color = "FEColorHeading3",
-			},			
-		},		
+			},
+		},
 	},
-	--f2	
+	--f2
 	{
 		type = "Frame",
-		position = {0,44},
-		size = {120, 20},		
-		backgroundColor = "IGColorBackground1",		
-		;					
+		position = { 0, 44 },
+		size = { 120, 20 },
+		backgroundColor = "IGColorBackground1";
 		{
 			type = "Frame",
-			position = {1, 1},
-			size = {20,20},			
+			position = { 1, 1 },
+			size = { 20, 20 },
 			BackgroundGraphic = {
 				texture = "data:ui\\newui\\ingameicons\\f2.tga",
-				textureUV = {0,0,128,128},
+				textureUV = { 0, 0, 128, 128 },
 				color = OUTLINECOLOR,
-			},			
-		},		
-		{		        
+			},
+		},
+		{
 			type = "TextLabel",
-			position = {24, 1},
-			size = {120,  20},
-			name = "f2",	      			
+			position = { 24, 1 },
+			size = { 120, 20 },
+			name = "f2",
 			Text = {
-			  text = "Camera mode",
+				text = "Camera mode",
 				textStyle = "IGHeading2",
-				hAlign = "Left",				
+				hAlign = "Left",
 				color = "FEColorHeading3",
-			},			
-		},		
+			},
+		},
 	},
-	--f3	
+	--f3
 	{
 		type = "Frame",
-		position = {0,66},
-		size = {120, 20},		
-		backgroundColor = "IGColorBackground1",		
-		;					
+		position = { 0, 66 },
+		size = { 120, 20 },
+		backgroundColor = "IGColorBackground1";
 		{
 			type = "Frame",
-			position = {1, 1},
-			size = {20,20},			
+			position = { 1, 1 },
+			size = { 20, 20 },
 			BackgroundGraphic = {
 				texture = "data:ui\\newui\\ingameicons\\f2.tga",
-				textureUV = {0,0,128,128},
+				textureUV = { 0, 0, 128, 128 },
 				color = OUTLINECOLOR,
-			},			
-		},		
-		{		        
+			},
+		},
+		{
 			type = "TextLabel",
-			position = {24, 1},
-			size = {120,  20},
-			name = "f3",	      			
+			position = { 24, 1 },
+			size = { 120, 20 },
+			name = "f3",
 			Text = {
-			  text = "Camera selection",
+				text = "Camera selection",
 				textStyle = "IGHeading2",
-				hAlign = "Left",				
+				hAlign = "Left",
 				color = "FEColorHeading3",
-			},			
-		},		
-	},	
-		
+			},
+		},
+	},
+
 }

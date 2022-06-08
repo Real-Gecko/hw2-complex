@@ -1,42 +1,38 @@
 -- LUA CONFIG FOR THE MAIN MENU UISCREEN
-NewMainMenu =
-{
-	size = {0, 0, 800, 600},
+NewMainMenu = {
+	size = { 0, 0, 800, 600 },
 	stylesheet = "HW2StyleSheet",
 
-	RootElementSettings =
-	{
+	RootElementSettings = {
 		-- black background for letterbox effect
-		backgroundColor = {0,0,0,255},
+		backgroundColor = { 0, 0, 0, 255 },
 	},
 
 	-- Flags
 	-- Enter pixel coords for texture coords
-	pixelUVCoords = 1,
+	pixelUVCoords = 1;
 
---	Hotkeys =
---	{
---		{
---			"FE_ExitToWindows()",
---			INKE_KeyDown,
---			0,
---			"Exit to operating system",
---			{
---				ALTKEY,
---				F4KEY
---			}
---		},
---	},
-	;
+	--	Hotkeys =
+	--	{
+	--		{
+	--			"FE_ExitToWindows()",
+	--			INKE_KeyDown,
+	--			0,
+	--			"Exit to operating system",
+	--			{
+	--				ALTKEY,
+	--				F4KEY
+	--			}
+	--		},
+	--	},
 	{
 		type = "Frame",
-		position = {0, 100},
-		size = {800, 400},
-		BackgroundGraphic =
-		{
-			size = {800, 400},
+		position = { 0, 100 },
+		size = { 800, 400 },
+		BackgroundGraphic = {
+			size = { 800, 400 },
 			texture = "DATA:UI/NewUI/Background/load_background.mres",
-			textureUV = {0, 56, 800, 455},
+			textureUV = { 0, 56, 800, 455 },
 		},
 	},
 	-- Panel frame
@@ -44,87 +40,82 @@ NewMainMenu =
 		type = "Frame",
 		autosize = 1,
 		backgroundColor = "FEColorBackground1",
---		backgroundColor =  {100,100,100,255},
-		position = {513, 164},
+		--		backgroundColor =  {100,100,100,255},
+		position = { 513, 164 },
 		autoarrange = 1,
 		autoarrangeWidth = 304,
 		autoarrangeSpace = 0,
-		maxSize = {273, 500},
-		;
+		maxSize = { 273, 500 };
 		-- Spacer
 		{
 			type = "Frame",
-			size = {304, 2},			
+			size = { 304, 2 },
 		},
 		-- Panel Title
 		{
 			type = "TextLabel",
-			size = {304, 13},
-			Text =
-			{
+			size = { 304, 13 },
+			Text = {
 				textStyle = "FEHeading3",
 				-- MAIN MENU
 				text = "$2617",
-				offset = {8, 0},
+				offset = { 8, 0 },
 			},
 		},
 		-- Spacer
 		{
 			type = "Frame",
-			size = {304, 2},			
+			size = { 304, 2 },
 		},
 		-- Panel Subtitle
 		{
 			type = "TextLabel",
-			name = "m_lblSubTitle",			
-			size = {304, 10},
-			Text =
-			{
+			name = "m_lblSubTitle",
+			size = { 304, 10 },
+			Text = {
 				textStyle = "FEHeading4",
 				-- SELECT//
 				text = "$2618",
-				offset = {8, 0},
+				offset = { 8, 0 },
 			},
 		},
 		-- Spacer
 		{
 			type = "Frame",
-			size = {304, 4},			
+			size = { 304, 4 },
 		},
 		-- Left edge spacer
 		{
 			type = "Frame",
-			size = {4, 50},
---			backgroundColor = {100,100,100,255},
+			size = { 4, 50 },
+			--			backgroundColor = {100,100,100,255},
 		},
 		{
 			type = "ListBox",
---			outerBorderWidth = 2,
+			--			outerBorderWidth = 2,
 			borderColor = "FEColorOutline",
---			hugBottom = 1,
-			position = {0,0},
-			size = {264,155},
+			--			hugBottom = 1,
+			position = { 0, 0 },
+			size = { 264, 155 },
 			autoarrange = 1,
 			autoarrangeSpace = 2,
-			autoarrangeWidth = 256,
-			;
+			autoarrangeWidth = 256;
 
---=============================================================================
--- Buttons
---		
-			
+			--=============================================================================
+			-- Buttons
+			--
+
 			{
 				type = "ListBoxItem",
 				autosize = 1,
 				autoarrange = 1,
-				autoarrangeSpace = 1,
-				;
+				autoarrangeSpace = 1;
 				{
 					type = "TextButton",
 					buttonStyle = "FEButtonStyle1",
 					-- Player VS CPU
 					text = "$2604",
-					name = "btnPlayerVsCPU",	
+					name = "btnPlayerVsCPU",
 					width = 240,
 				},
 			},
@@ -132,8 +123,7 @@ NewMainMenu =
 				type = "ListBoxItem",
 				autosize = 1,
 				autoarrange = 1,
-				autoarrangeSpace = 1,
-				;	
+				autoarrangeSpace = 1;
 				{
 					type = "TextButton",
 					buttonStyle = "FEButtonStyle1",
@@ -148,8 +138,7 @@ NewMainMenu =
 				type = "ListBoxItem",
 				autosize = 1,
 				autoarrange = 1,
-				autoarrangeSpace = 1,
-				;			
+				autoarrangeSpace = 1;
 				{
 					type = "TextButton",
 					buttonStyle = "FEButtonStyle1",
@@ -158,14 +147,13 @@ NewMainMenu =
 					-- Check for patch
 					text = "$2605",
 					onMouseClicked = [[UI_ShowScreen("PatchScreen", eTransition);]],
-				},	
+				},
 			},
 			{
 				type = "ListBoxItem",
 				autosize = 1,
 				autoarrange = 1,
-				autoarrangeSpace = 1,
-				;	
+				autoarrangeSpace = 1;
 				{
 					type = "TextButton",
 					buttonStyle = "FEButtonStyle1",
@@ -173,9 +161,8 @@ NewMainMenu =
 					text = "$2616",
 					name = "btnProfile",
 					width = 240,
-	
-					onMouseClicked =
-					[[
+
+					onMouseClicked = [[
 						UI_SetNextScreen("UserProfile", "NewMainMenu");
 						UI_SetPreviousScreen("UserProfile", "NewMainMenu");
 						UI_ShowScreen("UserProfile", eTransition);
@@ -186,8 +173,7 @@ NewMainMenu =
 				type = "ListBoxItem",
 				autosize = 1,
 				autoarrange = 1,
-				autoarrangeSpace = 1,
-				;
+				autoarrangeSpace = 1;
 				{
 					type = "TextButton",
 					buttonStyle = "FEButtonStyle1",
@@ -197,13 +183,12 @@ NewMainMenu =
 					width = 240,
 					onMouseClicked = [[UI_ShowScreen("FEGameOptions", eTransition)]],
 				},
-			},			
+			},
 			{
 				type = "ListBoxItem",
 				autosize = 1,
 				autoarrange = 1,
-				autoarrangeSpace = 1,
-				;
+				autoarrangeSpace = 1;
 				{
 					type = "TextButton",
 					buttonStyle = "FEButtonStyle1",
@@ -218,8 +203,7 @@ NewMainMenu =
 				type = "ListBoxItem",
 				autosize = 1,
 				autoarrange = 1,
-				autoarrangeSpace = 1,
-				;
+				autoarrangeSpace = 1;
 				{
 					type = "TextButton",
 					buttonStyle = "FEButtonStyle1",
@@ -235,8 +219,7 @@ NewMainMenu =
 				type = "ListBoxItem",
 				autosize = 1,
 				autoarrange = 1,
-				autoarrangeSpace = 1,
-				;
+				autoarrangeSpace = 1;
 				{
 					type = "TextButton",
 					buttonStyle = "FEButtonStyle1",
@@ -252,8 +235,7 @@ NewMainMenu =
 				type = "ListBoxItem",
 				autosize = 1,
 				autoarrange = 1,
-				autoarrangeSpace = 1,
-				;
+				autoarrangeSpace = 1;
 				{
 					type = "TextButton",
 					buttonStyle = "FEButtonStyle1",
@@ -265,22 +247,21 @@ NewMainMenu =
 					visible = 0,
 				},
 			},
-			
 
---=============================================================================
+
+			--=============================================================================
 		},
 		-- Spacer (This keeps the width as well)
 		{
 			type = "Frame",
-			size = {300, 0},
+			size = { 300, 0 },
 		},
 		{
 			type = "Frame",
 			autoarrange = 1,
 			autoarrangeSpace = 5,
 			autoarrangeWidth = 256,
-			size = {300, 20},
-			;
+			size = { 300, 20 };
 			{
 				type = "TextButton",
 				buttonStyle = "FEButtonStyle2",
@@ -295,71 +276,70 @@ NewMainMenu =
 		-- bottom Spacer
 		{
 			type = "Frame",
-			size = {300,4},
---			backgroundColor = {100,100,100,255},
+			size = { 300, 4 },
+			--			backgroundColor = {100,100,100,255},
 		},
 	},
-		
+
 	-- Comment out this frame if you dont want the build info...
---	{
---		type = "Frame",
---		autosize = 1,
---		position = {2, 600 - 15},
---		;
-		-- Version number
-		{
-			type = "TextLabel",
-			name = "lblVersion",
-			size = {400, 13},
-			position = {578-400,518-56},
-			Text =
-			{	
-				text = "$1221",
-				font = "ButtonFont",
-				hAlign = "Right",
-				vAlign = "Top",
-				color = {119,166,191,255},
-				offset = {-2, 0},
-			},
+	--	{
+	--		type = "Frame",
+	--		autosize = 1,
+	--		position = {2, 600 - 15},
+	--		;
+	-- Version number
+	{
+		type = "TextLabel",
+		name = "lblVersion",
+		size = { 400, 13 },
+		position = { 578 - 400, 518 - 56 },
+		Text = {
+			text = "$1221",
+			font = "ButtonFont",
+			hAlign = "Right",
+			vAlign = "Top",
+			color = { 119, 166, 191, 255 },
+			offset = { -2, 0 },
 		},
---		-- Build number
---		{
---			type = "TextLabel",
---			name = "lblBuildNumber",
---			visible = 0,
---			size = {400, 13},
---			position = {0,13},
---			Text =
---			{				
---				font = "ListBoxItemFont",
---				color = {255,255,255, 255},
---			},
---		},
---		-- Builder name
---		{
---			type = "TextLabel",
---			name = "lblBuilderName",
---			visible = 0, 
---			size = {400, 13},
---			position = {0,26},
---			Text =
---			{				
---				font = "ListBoxItemFont",
---				color = {255,255,255, 255},
---			},
---		},
---		-- Data path
---		{
---			type = "TextLabel",
---			name = "lblDataPath",
---			visible = 0,
---			size = {400, 13},
---			position = {0,39},
---			Text =
---			{				
---				font = "ListBoxItemFont",
---				color = {255,255,255, 255},
---			},
---		},
---	},
+	},
+	--		-- Build number
+	--		{
+	--			type = "TextLabel",
+	--			name = "lblBuildNumber",
+	--			visible = 0,
+	--			size = {400, 13},
+	--			position = {0,13},
+	--			Text =
+	--			{
+	--				font = "ListBoxItemFont",
+	--				color = {255,255,255, 255},
+	--			},
+	--		},
+	--		-- Builder name
+	--		{
+	--			type = "TextLabel",
+	--			name = "lblBuilderName",
+	--			visible = 0,
+	--			size = {400, 13},
+	--			position = {0,26},
+	--			Text =
+	--			{
+	--				font = "ListBoxItemFont",
+	--				color = {255,255,255, 255},
+	--			},
+	--		},
+	--		-- Data path
+	--		{
+	--			type = "TextLabel",
+	--			name = "lblDataPath",
+	--			visible = 0,
+	--			size = {400, 13},
+	--			position = {0,39},
+	--			Text =
+	--			{
+	--				font = "ListBoxItemFont",
+	--				color = {255,255,255, 255},
+	--			},
+	--		},
+	--	},
 }

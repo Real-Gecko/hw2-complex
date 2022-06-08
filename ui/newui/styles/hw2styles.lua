@@ -10,39 +10,37 @@ HW2StyleSheet = {
 	defaultDropDownListBoxStyle = "FEDropDownListBoxStyle",
 	defaultTextInputStyle = "DefaultTextInputStyle",
 	defaultTableStyle = "FETableStyle",
-	
+
 	-- Flags
 	pixelUVCoords = 1, -- Enter pixel coords for texture coords
-	
+
 	--------------------------------------------------------------------------------------
 	-- GENERIC STRING ATTRIBUTES
 	StringAttributes = {
-		;
-		
 		{
 			name = "FEColorHeading1",
-			string = "66,132,164,255",		-- Blue
+			string = "66,132,164,255", -- Blue
 		},
 		{
 			name = "FEColorHeading2",
-			string = "255,255,255,255",	-- White
+			string = "255,255,255,255", -- White
 		},
 		{
 			name = "FEColorHeading3",
-			string = "255,216,0,255",		-- Yellow
+			string = "255,216,0,255", -- Yellow
 		},
 		{
 			name = "FEColorHeading4",
-			string = "255,255,255,255",	-- White
+			string = "255,255,255,255", -- White
 		},
 		{
-			name = "FEColorBackground1", 	-- Screen panel background
+			name = "FEColorBackground1", -- Screen panel background
 			string = "0,0,0,170",
 			--string = "100, 0, 0, 100", --debug
 		},
 		{
-			name = "FEColorBackground2", 	-- Modal window background (when whole screen darkens)
-			string = "0,0,0,127",--69
+			name = "FEColorBackground2", -- Modal window background (when whole screen darkens)
+			string = "0,0,0,127", --69
 			--string = "255, 255, 255, 150",--debug
 		},
 		{
@@ -51,14 +49,14 @@ HW2StyleSheet = {
 			--string = "0, 100, 0, 200", -- debug
 		},
 		{
-			name = "FEColorOutline", 	
+			name = "FEColorOutline",
 			string = "65,130,165,255",
 		},
 		{
-			name = "FEColorPopupOutline", 	
+			name = "FEColorPopupOutline",
 			string = "55,150,255,255",
 		},
-		
+
 		-- ELEMENT COLORS
 		{
 			name = "FEColorScrollButtonDefault",
@@ -80,10 +78,10 @@ HW2StyleSheet = {
 			name = "FEColorDisabled",
 			string = "151,151,151,255",
 		},
-		
+
 		-- IN GAME ATTRIBUTES
 		{
-			name = "IGColorBackground1", 	-- Window background
+			name = "IGColorBackground1", -- Window background
 			string = "0,0,0,150",
 		},
 		{
@@ -146,350 +144,346 @@ HW2StyleSheet = {
 			name = "IGColorButtonDisabledText",
 			string = "48,108,136,255",
 		},
-		
+
 		-- FACILITY BUTTONS
 		{
 			name = "IGColorFacilityDisabled",
 			string = "255,255,255,200",
 		},
 	},
-	
-	
+
+
 	--------------------------------------------------------------------------------------
 	-- DEFAULT STYLES
-	
+
 	DefaultTextStyle = {
 		type = "Text",
-		color = {255,255,255,255},			
+		color = { 255, 255, 255, 255 },
 		hAlign = "Left",
 		vAlign = "Middle",
 		font = "ButtonFont",
-	},	
-	
+	},
+
 	-- This is the default style for ALL interface elements
 	DefaultStyle = {
 		type = "InterfaceElement",
-		position = {0, 0},
-		size = {100, 100},
+		position = { 0, 0 },
+		size = { 100, 100 },
 		enabled = 1,
 		visible = 1,
 	},
-		
+
 	DefaultButtonStyle = {
 		type = "Button",
 		-- We dont actually have to specify this here because if we dont, the loader will use the default style, which is set to "DefaultStyle"
-		style = "DefaultStyle", 
-		
+		style = "DefaultStyle",
+
 		toggleButton = 0, -- This means that the default button will is not a toggle button
-		pressed = 0,        -- This means that the button is not pressed by default
-		
-		size = {120, 13},  -- Override
+		pressed = 0, -- This means that the button is not pressed by default
+
+		size = { 120, 13 }, -- Override
 	},
-		
-	
+
+
 	-- Default ScrollBar Style
 	DefaultScrollBar_ScrollVertButtonStyle = {
 		type = "Button",
-		
-		size = {13,13},				
+
+		size = { 13, 13 },
 		soundOnClicked = "SFX_ScrollButtonClick",
 	},
-	
+
 	DefaultScrollBar_ScrollHorzButtonStyle = {
 		type = "Button",
-		
-		size = {13,13},				
+
+		size = { 13, 13 },
 		soundOnClicked = "SFX_ScrollButtonClick",
 	},
-	
+
 	DefaultScrollBar_TrackVertStyle = {
-		size = {13, 17},
-		minSize = {13, 17},
-		
+		size = { 13, 17 },
+		minSize = { 13, 17 },
+
 		borderWidth = 1,
 		backgroundColor = "FEColorScrollButtonDefault",
 		borderColor = "FEColorScrollButtonDefault", -- blue
-		
+
 		pressedColor = "FEColorScrollButtonPressed",
 		pressedBorderColor = "FEColorScrollButtonOver", -- white
-		
+
 		overColor = "FEColorScrollButtonDefault",
 		overBorderColor = "FEColorScrollButtonOver", -- white
-		
+
 		disabledColor = "FEColorScrollButtonDisabled", -- grey
 		disabledBorderColor = "FEColorScrollButtonDisabled", -- grey
-		
+
 		DefaultGraphic = {
-			size = {11, 15},
+			size = { 11, 15 },
 			texture = "DATA:UI\\NewUI\\Styles\\ScrollGripVert.mres",
-			textureUV = {0, 0, 11, 15},
-			color = {16,94,160,255},
+			textureUV = { 0, 0, 11, 15 },
+			color = { 16, 94, 160, 255 },
 		},
-		
+
 		soundOnClicked = "", -- No sound on trackbar
 		soundOnReleased = "SFX_ScrollBarPage",
 	},
-	
+
 	DefaultScrollBar_TrackHorzStyle = {
-		size = {17, 13},
-		minSize = {17, 13},
-		
+		size = { 17, 13 },
+		minSize = { 17, 13 },
+
 		borderWidth = 1,
 		backgroundColor = "FEColorScrollButtonDefault",
 		borderColor = "FEColorScrollButtonDefault", -- blue
-		
+
 		pressedColor = "FEColorScrollButtonPressed",
 		pressedBorderColor = "FEColorScrollButtonOver", -- white
-		
+
 		overColor = "FEColorScrollButtonDefault",
 		overBorderColor = "FEColorScrollButtonOver", -- white
-		
+
 		disabledColor = "FEColorScrollButtonDisabled", -- grey
 		disabledBorderColor = "FEColorScrollButtonDisabled", -- grey
-		
+
 		DefaultGraphic = {
-			size = {15, 11},
+			size = { 15, 11 },
 			texture = "DATA:UI\\NewUI\\Styles\\ScrollGripHorz.mres",
-			textureUV = {0, 0, 15, 11},
-			color = {16,94,160,255},
+			textureUV = { 0, 0, 15, 11 },
+			color = { 16, 94, 160, 255 },
 		},
-		
+
 		soundOnClicked = "", -- No sound on trackbar
 		soundOnReleased = "SFX_ScrollBarPage",
 	},
-	
+
 	DefaultScrollBarStyle = {
 		type = "ScrollBar",
-		
-		range = {0, 100},
+
+		range = { 0, 100 },
 		scrollPosition = 0,
 		stepSize = 5,
 		pageSize = 20,
 		orientation = "Vertical",
-		
+
 		soundOnPage = "SFX_ScrollBarPage",
-		
+
 		TrackFrame = {
 			type = "Frame",
-			backgroundColor = {53,163,250,50},
+			backgroundColor = { 53, 163, 250, 50 },
 		},
-		
+
 		-- The scroll buttons will use the scroll button style and overide the name and graphics properties
 		UpButton = {
 			type = "Button",
 			buttonStyle = "DefaultScrollBar_ScrollVertButtonStyle",
-			size = { 13, 15},
-			
-			disabledColor = {0,0,0,0},
+			size = { 13, 15 },
+
+			disabledColor = { 0, 0, 0, 0 },
 			DisabledGraphic = {
-				position = {0, 0},
-				size = {13, 13},
+				position = { 0, 0 },
+				size = { 13, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_disabled.mres",
-				textureUV = { 0, 0, 13, 13},
+				textureUV = { 0, 0, 13, 13 },
 				color = "FEColorScrollButtonDisabled",
-			},
-			;
+			};
 			{
 				type = "Button",
-				size = {13,13},
-				position = {0,0},
-				
+				size = { 13, 13 },
+				position = { 0, 0 },
+
 				giveParentMouseInput = 1,
-				
+
 				borderWidth = 1,
-				
+
 				backgroundColor = "FEColorScrollButtonDefault",
 				borderColor = "FEColorScrollButtonDefault",
-				
+
 				pressedColor = "FEColorScrollButtonDefault",
 				pressedBorderColor = "FEColorScrollButtonOver", -- white
-				
+
 				overColor = "FEColorScrollButtonDefault",
 				overBorderColor = "FEColorScrollButtonOver",
-				
+
 				disabledColor = "FEColorScrollButtonDisabled", -- grey
 				disabledBorderColor = "FEColorScrollButtonDisabled", -- grey
-				
-				
+
+
 				DefaultGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_default.mres",
-					textureUV = { 0, 0, 13, 13},
+					textureUV = { 0, 0, 13, 13 },
 				},
 				OverGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_default.mres",
-					textureUV = { 0, 0, 13, 13},
+					textureUV = { 0, 0, 13, 13 },
 				},
 				PressedGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_pressed.mres",
-					textureUV = { 0, 0, 13, 13},
+					textureUV = { 0, 0, 13, 13 },
 				},
 			},
 		},
 		DownButton = {
 			type = "Button",
 			buttonStyle = "DefaultScrollBar_ScrollVertButtonStyle",
-			size = { 13, 15},
-			
-			disabledColor = {0,0,0,0},
+			size = { 13, 15 },
+
+			disabledColor = { 0, 0, 0, 0 },
 			DisabledGraphic = {
-				position = {0, 2},
-				size = {13, 13},
+				position = { 0, 2 },
+				size = { 13, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_disabled.mres",
-				textureUV = { 0, 13, 13, 0},
+				textureUV = { 0, 13, 13, 0 },
 				color = "FEColorScrollButtonDisabled",
-			},
-			;
+			};
 			{
 				type = "Button",
-				size = {13,13},
-				position = {0,2},
-				
+				size = { 13, 13 },
+				position = { 0, 2 },
+
 				giveParentMouseInput = 1,
-				
+
 				borderWidth = 1,
-				
+
 				backgroundColor = "FEColorScrollButtonDefault",
 				borderColor = "FEColorScrollButtonDefault",
-				
+
 				pressedColor = "FEColorScrollButtonDefault",
 				pressedBorderColor = "FEColorScrollButtonOver", -- white
-				
+
 				overColor = "FEColorScrollButtonDefault",
 				overBorderColor = "FEColorScrollButtonOver",
-				
+
 				disabledColor = "FEColorScrollButtonDisabled", -- grey
 				disabledBorderColor = "FEColorScrollButtonDisabled", -- grey
-				
-				
+
+
 				DefaultGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_default.mres",
-					textureUV = { 0, 13, 13, 0},
+					textureUV = { 0, 13, 13, 0 },
 				},
 				OverGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_default.mres",
-					textureUV = { 0, 13, 13, 0},
+					textureUV = { 0, 13, 13, 0 },
 				},
 				PressedGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_pressed.mres",
-					textureUV = { 0, 13, 13, 0},
+					textureUV = { 0, 13, 13, 0 },
 				},
 			},
 		},
 		LeftButton = {
 			type = "Button",
 			buttonStyle = "DefaultScrollBar_ScrollHorzButtonStyle",
-			size = { 15, 13},
-			
-			disabledColor = {0,0,0,0},
+			size = { 15, 13 },
+
+			disabledColor = { 0, 0, 0, 0 },
 			DisabledGraphic = {
-				position = {0, 0},
-				size = {13, 13},
+				position = { 0, 0 },
+				size = { 13, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\horz_disabled.mres",
-				textureUV = { 0, 0, 13, 13},
+				textureUV = { 0, 0, 13, 13 },
 				color = "FEColorScrollButtonDisabled",
-			},
-			;
+			};
 			{
 				type = "Button",
-				size = {13,13},
-				position = {0,0},
-				
+				size = { 13, 13 },
+				position = { 0, 0 },
+
 				giveParentMouseInput = 1,
-				
+
 				borderWidth = 1,
-				
+
 				backgroundColor = "FEColorScrollButtonDefault",
 				borderColor = "FEColorScrollButtonDefault",
-				
+
 				pressedColor = "FEColorScrollButtonDefault",
 				pressedBorderColor = "FEColorScrollButtonOver", -- white
-				
+
 				overColor = "FEColorScrollButtonDefault",
 				overBorderColor = "FEColorScrollButtonOver",
-				
+
 				disabledColor = "FEColorScrollButtonDisabled", -- grey
 				disabledBorderColor = "FEColorScrollButtonDisabled", -- grey
-				
-				
+
+
 				DefaultGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\horz_default.mres",
-					textureUV = { 0, 0, 13, 13},
+					textureUV = { 0, 0, 13, 13 },
 				},
 				OverGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\horz_default.mres",
-					textureUV = { 0, 0, 13, 13},
+					textureUV = { 0, 0, 13, 13 },
 				},
 				PressedGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\horz_pressed.mres",
-					textureUV = { 0, 0, 13, 13},
+					textureUV = { 0, 0, 13, 13 },
 				},
 			},
 		},
-		
+
 		RightButton = {
 			type = "Button",
 			buttonStyle = "DefaultScrollBar_ScrollHorzButtonStyle",
-			size = { 15, 13},
-			
-			disabledColor = {0,0,0,0},
+			size = { 15, 13 },
+
+			disabledColor = { 0, 0, 0, 0 },
 			DisabledGraphic = {
-				position = {2, 0},
-				size = {13, 13},
+				position = { 2, 0 },
+				size = { 13, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\horz_disabled.mres",
-				textureUV = { 13, 0, 0, 13},
+				textureUV = { 13, 0, 0, 13 },
 				color = "FEColorScrollButtonDisabled",
-			},
-			;
+			};
 			{
 				type = "Button",
-				size = {13,13},
-				position = {2,0},
-				
+				size = { 13, 13 },
+				position = { 2, 0 },
+
 				giveParentMouseInput = 1,
-				
+
 				borderWidth = 1,
-				
+
 				backgroundColor = "FEColorScrollButtonDefault",
 				borderColor = "FEColorScrollButtonDefault",
-				
+
 				pressedColor = "FEColorScrollButtonDefault",
 				pressedBorderColor = "FEColorScrollButtonOver", -- white
-				
+
 				overColor = "FEColorScrollButtonDefault",
 				overBorderColor = "FEColorScrollButtonOver",
-				
+
 				disabledColor = "FEColorScrollButtonDisabled", -- grey
 				disabledBorderColor = "FEColorScrollButtonDisabled", -- grey
-				
-				
+
+
 				DefaultGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\horz_default.mres",
-					textureUV = { 13, 0, 0, 13},
+					textureUV = { 13, 0, 0, 13 },
 				},
 				OverGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\horz_default.mres",
-					textureUV = { 13, 0, 0, 13},
+					textureUV = { 13, 0, 0, 13 },
 				},
 				PressedGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\horz_pressed.mres",
-					textureUV = { 13, 0, 0, 13},
+					textureUV = { 13, 0, 0, 13 },
 				},
 			},
 		},
-		
-		
+
+
 		-- Since no button style is defined for these, they will use the default button style to init.
 		-- However, we override the size, name and graphics of the default button style
 		TrackVertButton = {
@@ -502,71 +496,71 @@ HW2StyleSheet = {
 			buttonStyle = "DefaultScrollBar_TrackHorzStyle",
 		},
 	},
-	
+
 	DefaultScrollViewStyle = {
 		type = "ScrollView",
-		
+
 		-- overrides
 		name = "noNameScrollView",
-		size = {250, 250},
+		size = { 250, 250 },
 		--backgroundColor = {0,0,0,255},
 		scrollHorz = 1,
 		scrollVert = 1,
-		contentsSize = {500,500},
-		scrollPosition = {0, 0},
-		
+		contentsSize = { 500, 500 },
+		scrollPosition = { 0, 0 },
+
 		VertScrollBar = {
 			type = "ScrollBar",
-			
+
 			name = "DefaultScrollView_vertScrollBar",
-			orientation = "Vertical",						
+			orientation = "Vertical",
 		},
-		
+
 		HorzScrollBar = {
 			type = "ScrollBar",
-			
+
 			name = "DefaultScrollView_horzScrollBar",
-			orientation = "Horizontal",						
+			orientation = "Horizontal",
 		},
 	},
 	DefaultTextInputStyle = {
 		type = "TextInput",
-		
+
 		cursorPosition = 0,
 		cursorDelay = 350,
-		
+
 		cursorWidth = 1,
-		cursorColor = {255,255,255,255},
-		
+		cursorColor = { 255, 255, 255, 255 },
+
 		autosize = 0,
 		marginWidth = 3,
-		
+
 		maxTextLength = 256,
-			
-		Text = {			
-			color = {255,255,255,255},
+
+		Text = {
+			color = { 255, 255, 255, 255 },
 			font = "ButtonFont",
 			vAlign = "Middle",
-			hAlign = "Left",	
+			hAlign = "Left",
 		},
-		
+
 		soundOnPressed = "SFX_TextInputClicked",
 		soundOnAccept = "SFX_TextInputAccept",
 	},
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- FRONT END STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
-	
-	
-	
+
+
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- TEXT STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
@@ -576,70 +570,70 @@ HW2StyleSheet = {
 		color = "FEColorHeading1",
 		vAlign = "Middle",
 		hAlign = "Left",
-		offset = {0, 0},
-	},	
+		offset = { 0, 0 },
+	},
 	FEHeading2 = {
 		type = "Text",
 		font = "Heading2Font",
 		color = "FEColorHeading2",
 		vAlign = "Middle",
 		hAlign = "Left",
-		offset = {0, 0},
-	},	
+		offset = { 0, 0 },
+	},
 	FEHeading3 = {
 		type = "Text",
 		font = "Heading3Font",
-		color = "FEColorHeading3",		
+		color = "FEColorHeading3",
 		vAlign = "Middle",
 		hAlign = "Left",
-		offset = {0, 0},	
-	},	
+		offset = { 0, 0 },
+	},
 	FEHeading4 = {
 		type = "Text",
 		font = "Heading4Font",
 		color = "FEColorHeading4",
 		vAlign = "Middle",
 		hAlign = "Left",
-		offset = {0, 0},
+		offset = { 0, 0 },
 	},
 	FEHelpTipTextStyle = {
 		type = "Text",
-		font = "ButtonFont",	
-		color = {255,255,255,255},
+		font = "ButtonFont",
+		color = { 255, 255, 255, 255 },
 		vAlign = "Middle",
-		hAlign = "Left",		
+		hAlign = "Left",
 	},
-	
+
 	FEButtonTextStyle = {
 		type = "Text",
-		font = "ButtonFont",	
-		color = {255,215,0,255},
+		font = "ButtonFont",
+		color = { 255, 215, 0, 255 },
 		vAlign = "Middle",
 		hAlign = "Center",
 	},
 	FEListBoxItemTextStyle = {
 		type = "Text",
 		font = "ButtonFont",
-		color = {255,255,255,255},
+		color = { 255, 255, 255, 255 },
 		vAlign = "Middle",
 		hAlign = "Left",
-		offset = {4,0},
+		offset = { 4, 0 },
 	},
 	FETableTitleTextStyle = {
 		type = "Text",
 		textStyle = "FEButtonTextStyle",
-		color = {0,0,0,255},
+		color = { 0, 0, 0, 255 },
 		vAlign = "Middle",
 		hAlign = "Left",
-		offset = {4, 0},	
+		offset = { 4, 0 },
 	},
 	FETableCellTextStyle = {
 		type = "Text",
 		font = "ListBoxItemFont",
 		vAlign = "Middle",
 		hAlign = "Left",
-		offset = {4, 0},	
-		color = {255,255,255,255},
+		offset = { 4, 0 },
+		color = { 255, 255, 255, 255 },
 	},
 
 	SubtitleSPTextStyle = {
@@ -647,258 +641,248 @@ HW2StyleSheet = {
 		font = "SPSubtitleFont",
 		vAlign = "Top",
 		hAlign = "Left",
-		offset = {4, 0},	
-		color = {255,255,255,255},
+		offset = { 4, 0 },
+		color = { 255, 255, 255, 255 },
 	},
 	SubtitleGenericTextStyle = {
 		type = "Text",
 		font = "GenericSubtitleFont",
 		vAlign = "Top",
 		hAlign = "Left",
-		offset = {4, 0},	
-		color = {255,255,255,255},
+		offset = { 4, 0 },
+		color = { 255, 255, 255, 255 },
 	},
 	SubtitleLocationCardTextStyle = {
 		type = "Text",
 		font = "LocationCardFont",
 		vAlign = "Top",
 		hAlign = "Center",
-		offset = {0, 0},	
-		color = {255,255,255,255},
+		offset = { 0, 0 },
+		color = { 255, 255, 255, 255 },
 	},
 	FEPopupBackgroundStyle = {
 		type = "InterfaceElement",
 		backgroundColor = "FEColorDialog",
-			
+
 		BackgroundGraphic = {
 			texture = "DATA:UI\\NewUI\\Elements\\popup_background.mres",
-			textureUV = { 0, 0, 16, 128},
+			textureUV = { 0, 0, 16, 128 },
 			stretchOnDraw = 1,
-			color = {0, 48, 136, 255},
+			color = { 0, 48, 136, 255 },
 		},
 	},
 
-	
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- BUTTON STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
-	
-	FEButtonStyle1 = 
-	{
-		type 				= "Button",
-		size 				= {120, 13},
-			
+
+	FEButtonStyle1 = {
+		type = "Button",
+		size = { 120, 13 },
+
 		BackgroundGraphic = {
 			texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1Inside.mres",
 			textureUV = { 0, 0, 16, 13 },
 		},
-		textColor			= {255,215,0,255},
-		
-		OverGraphic = {
+		textColor         = { 255, 215, 0, 255 },
+
+		OverGraphic   = {
 			texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1InsideOver.mres",
 			textureUV = { 0, 0, 16, 13 },
 		},
-		overTextColor			= {255,215,0,255},
-		
-		PressedGraphic = {
+		overTextColor = { 255, 215, 0, 255 },
+
+		PressedGraphic   = {
 			texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1InsidePressed.mres",
 			textureUV = { 0, 0, 16, 13 },
 		},
-		pressedTextColor			= {255,215,0,255},
-		
-		DisabledGraphic = {
+		pressedTextColor = { 255, 215, 0, 255 },
+
+		DisabledGraphic   = {
 			texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1InsideDisabled.mres",
 			textureUV = { 0, 0, 16, 13 },
 			color = "FEColorDisabled",
 		},
-		disabledTextColor			= "FEColorDisabled",
+		disabledTextColor = "FEColorDisabled",
 
 		-- NOTE: if you dont want a sound to play onEnter, use FEButtonStyle1NoEnterSound
-		soundOnEnter 		= "SFX_ButtonEnter",
-		soundOnClicked 		= "SFX_ButtonClick",
-		
-		Text = 
-		{
+		soundOnEnter   = "SFX_ButtonEnter",
+		soundOnClicked = "SFX_ButtonClick",
+
+		Text = {
 			textStyle = "FEButtonTextStyle",
-		},
-		;
-		
+		};
+
 		{
 			type = "Button",
-			position = {0, 0},
+			position = { 0, 0 },
 			--size = { 800, 13},
 			resizeToParent = 1,
 			visible = 1,
 			BackgroundGraphic = {
-				size = { 3, 13},
+				size = { 3, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1Edge.mres",
 				textureUV = { 0, 0, 3, 13 },
 			},
 			OverGraphic = {
-				size = { 3, 13},
+				size = { 3, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1EdgeOver.mres",
 				textureUV = { 0, 0, 3, 13 },
 			},
 			PressedGraphic = {
-				size = { 3, 13},
+				size = { 3, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1EdgePressed.mres",
 				textureUV = { 0, 0, 3, 13 },
 			},
 			DisabledGraphic = {
-				size = { 3, 13},
+				size = { 3, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1EdgeDisabled.mres",
 				textureUV = { 0, 0, 3, 13 },
 				color = "FEColorDisabled",
 			},
-			giveParentMouseInput = 1,
-		
-			;
+			giveParentMouseInput = 1;
 			{
 				type = "Button",
-				position = {0, 0},
+				position = { 0, 0 },
 				hAlign = "Right",
 				visible = 1,
-				size = { 800, 13},
+				size = { 800, 13 },
 				--resizeToParent = 1,
 				BackgroundGraphic = {
-					position = { 797, 0},
-					size = { 3, 13},
+					position = { 797, 0 },
+					size = { 3, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1Edge.mres",
 					textureUV = { 3, 0, 0, 13 },
 				},
 				OverGraphic = {
-					position = { 797, 0},
-					size = { 3, 13},
+					position = { 797, 0 },
+					size = { 3, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1EdgeOver.mres",
 					textureUV = { 3, 0, 0, 13 },
 				},
 				PressedGraphic = {
-					position = { 797, 0},
-					size = { 3, 13},
+					position = { 797, 0 },
+					size = { 3, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1EdgePressed.mres",
 					textureUV = { 3, 0, 0, 13 },
 				},
 				DisabledGraphic = {
-					position = { 797, 0},
-					size = { 3, 13},
+					position = { 797, 0 },
+					size = { 3, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\Button1\\Button1EdgeDisabled.mres",
 					textureUV = { 3, 0, 0, 13 },
 					color = "FEColorDisabled",
 				},
 				giveParentMouseInput = 1,
 			},
-		
+
 		},
 	},
-	
-	FEButtonStyle2 = 
-	{
-		type 				= "Button",
-		size 				= {120, 13},
-			
+
+	FEButtonStyle2 = {
+		type = "Button",
+		size = { 120, 13 },
+
 		BackgroundGraphic = {
 			texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2Inside.mres",
 			textureUV = { 0, 0, 16, 13 },
 		},
-		textColor			= {255,215,0,255},
-		
-		OverGraphic = {
+		textColor         = { 255, 215, 0, 255 },
+
+		OverGraphic   = {
 			texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2InsideOver.mres",
 			textureUV = { 0, 0, 16, 13 },
 		},
-		overTextColor			= {255,215,0,255},
-		
-		PressedGraphic = {
+		overTextColor = { 255, 215, 0, 255 },
+
+		PressedGraphic   = {
 			texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2InsidePressed.mres",
 			textureUV = { 0, 0, 16, 13 },
 		},
-		pressedTextColor			= {255,215,0,255},
-		
-		DisabledGraphic = {
+		pressedTextColor = { 255, 215, 0, 255 },
+
+		DisabledGraphic   = {
 			texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2InsideDisabled.mres",
 			textureUV = { 0, 0, 16, 13 },
 			color = "FEColorDisabled",
 		},
-		disabledTextColor			= "FEColorDisabled",
+		disabledTextColor = "FEColorDisabled",
 
 		-- NOTE: if you dont want an onEnter sound for your button, use FEButtonStyle2NoEnterSound instead!
-		soundOnEnter 		= "SFX_ButtonEnter",
-		soundOnClicked 		= "SFX_ButtonClick",
-		
-		Text = 
-		{
+		soundOnEnter   = "SFX_ButtonEnter",
+		soundOnClicked = "SFX_ButtonClick",
+
+		Text = {
 			textStyle = "FEButtonTextStyle",
-		},
-		;
-		
+		};
+
 		{
 			type = "Button",
-			position = {0, 0},
+			position = { 0, 0 },
 			--size = { 800, 13},
 			resizeToParent = 1,
 			visible = 1,
 			BackgroundGraphic = {
-				size = { 3, 13},
+				size = { 3, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2Edge.mres",
 				textureUV = { 0, 0, 3, 13 },
 			},
 			OverGraphic = {
-				size = { 3, 13},
+				size = { 3, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2EdgeOver.mres",
 				textureUV = { 0, 0, 3, 13 },
 			},
 			PressedGraphic = {
-				size = { 3, 13},
+				size = { 3, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2EdgePressed.mres",
 				textureUV = { 0, 0, 3, 13 },
 			},
 			DisabledGraphic = {
-				size = { 3, 13},
+				size = { 3, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2EdgeDisabled.mres",
 				textureUV = { 0, 0, 3, 13 },
 				color = "FEColorDisabled",
 			},
-			giveParentMouseInput = 1,
-		
-			;
+			giveParentMouseInput = 1;
 			{
 				type = "Button",
-				position = {0, 0},
+				position = { 0, 0 },
 				hAlign = "Right",
 				visible = 1,
-				size = { 800, 13},
+				size = { 800, 13 },
 				--resizeToParent = 1,
 				BackgroundGraphic = {
-					position = { 797, 0},
-					size = { 3, 13},
+					position = { 797, 0 },
+					size = { 3, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2Edge.mres",
 					textureUV = { 3, 0, 0, 13 },
 				},
 				OverGraphic = {
-					position = { 797, 0},
-					size = { 3, 13},
+					position = { 797, 0 },
+					size = { 3, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2EdgeOver.mres",
 					textureUV = { 3, 0, 0, 13 },
 				},
 				PressedGraphic = {
-					position = { 797, 0},
-					size = { 3, 13},
+					position = { 797, 0 },
+					size = { 3, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2EdgePressed.mres",
 					textureUV = { 3, 0, 0, 13 },
 				},
 				DisabledGraphic = {
-					position = { 797, 0},
-					size = { 3, 13},
+					position = { 797, 0 },
+					size = { 3, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\Button2\\Button2EdgeDisabled.mres",
 					textureUV = { 3, 0, 0, 13 },
 					color = "FEColorDisabled",
 				},
 				giveParentMouseInput = 1,
 			},
-		
+
 		},
 	},
-	
+
 	-- These are used for buttons that are not meant to have enter sounds (eg. menus)
 	FEButtonStyle1NoEnterSound = {
 		type = "Button",
@@ -910,238 +894,236 @@ HW2StyleSheet = {
 		buttonStyle = "FEButtonStyle1",
 		soundOnEnter = "",
 	},
-	
-	
+
+
 	FETabButtonStyle = {
-		type 				= "Button",
-		size 				= {90, 15},
-			
-		borderWidth 		= 2,
-		
-		backgroundColor          = {0,0,0,0},
-		borderColor 		= "FEColorOutline",
-		textColor			= "FEColorOutline",
-		
-		overColor 			= {0,175,255,127},
-		overBorderColor 		= "FEColorOutline",
-		overTextColor		= {255,215,0,255},
-		
-		pressedColor 		= "FEColorOutline",
-		pressedBorderColor 	= "FEColorOutline",
-		pressedTextColor 	= {255,255,255,255},
-		
-		disabledColor 		= {0, 0, 0, 255},
-		disabledBorderColor 	= {152, 152, 152, 255},
-		disabledTextColor 	= {152, 152, 152, 255},
-		
-		flashColor 			= {255,255,255,255},
-		
-		soundOnEnter 		= "SFX_TabEnter",
+		type = "Button",
+		size = { 90, 15 },
+
+		borderWidth = 2,
+
+		backgroundColor = { 0, 0, 0, 0 },
+		borderColor     = "FEColorOutline",
+		textColor       = "FEColorOutline",
+
+		overColor       = { 0, 175, 255, 127 },
+		overBorderColor = "FEColorOutline",
+		overTextColor   = { 255, 215, 0, 255 },
+
+		pressedColor       = "FEColorOutline",
+		pressedBorderColor = "FEColorOutline",
+		pressedTextColor   = { 255, 255, 255, 255 },
+
+		disabledColor       = { 0, 0, 0, 255 },
+		disabledBorderColor = { 152, 152, 152, 255 },
+		disabledTextColor   = { 152, 152, 152, 255 },
+
+		flashColor = { 255, 255, 255, 255 },
+
+		soundOnEnter = "SFX_TabEnter",
 	},
-	
-	
-	
+
+
+
 	FEListBoxItemButtonStyle = {
-		type = "Button",		
-		
-		size = {192, 13},
-		
+		type = "Button",
+
+		size = { 192, 13 },
+
 		borderWidth = 1,
-		
-		borderColor = {0,0,0,0},
-		backgroundColor = {33,54,77,255},
-		
-		overBorderColor = {0,0,0,0},
-		overColor = {17, 95, 161, 255},
-		
-		pressedBorderColor = {56, 162,250,255},
-		pressedColor = {17, 95, 161, 255},
-		
-		disabledColor 		= {50,50,50,255},
-		disabledBorderColor 	= {152, 152, 152, 255},
-		disabledTextColor 	= {152, 152, 152, 255},
-		
-		soundOnEnter 		= "SFX_ListBoxItemEnter",
-		soundOnClicked 		= "SFX_ListBoxItemClick",
+
+		borderColor = { 0, 0, 0, 0 },
+		backgroundColor = { 33, 54, 77, 255 },
+
+		overBorderColor = { 0, 0, 0, 0 },
+		overColor = { 17, 95, 161, 255 },
+
+		pressedBorderColor = { 56, 162, 250, 255 },
+		pressedColor = { 17, 95, 161, 255 },
+
+		disabledColor       = { 50, 50, 50, 255 },
+		disabledBorderColor = { 152, 152, 152, 255 },
+		disabledTextColor   = { 152, 152, 152, 255 },
+
+		soundOnEnter   = "SFX_ListBoxItemEnter",
+		soundOnClicked = "SFX_ListBoxItemClick",
 	},
 	FETableTitleButtonStyle = {
 		backgroundColor = "FEColorOutline",
 		defaultColor = "FEColorOutline",
-		overColor = {200,200,200,255},
-		pressedColor = {255,255,255,255},
-		
-		soundOnEnter 		= "SFX_ButtonEnter",
-		soundOnClicked 		= "SFX_ButtonClick",
+		overColor = { 200, 200, 200, 255 },
+		pressedColor = { 255, 255, 255, 255 },
+
+		soundOnEnter   = "SFX_ButtonEnter",
+		soundOnClicked = "SFX_ButtonClick",
 	},
 	FECheckBoxButtonStyle = {
 		type = "Button",
-		
+
 		toggleButton = 1,
-		size = {13, 13},
-		
-		backgroundColor          = {33,54,77,255},
-		borderColor 		= {56,162,250,255},
-		borderWidth 		= 2,
-		
-		disabledColor 		= {50,50,50,255},
-		disabledBorderColor 	= {152, 152, 152, 255},
-		disabledTextColor 	= {152, 152, 152, 255},
-		
-		flashColor 			= {254,116,7,  255},
-		
-		soundOnButtonPressed	= "SFX_CheckBoxUnchecked",
+		size = { 13, 13 },
+
+		backgroundColor = { 33, 54, 77, 255 },
+		borderColor     = { 56, 162, 250, 255 },
+		borderWidth     = 2,
+
+		disabledColor       = { 50, 50, 50, 255 },
+		disabledBorderColor = { 152, 152, 152, 255 },
+		disabledTextColor   = { 152, 152, 152, 255 },
+
+		flashColor = { 254, 116, 7, 255 },
+
+		soundOnButtonPressed = "SFX_CheckBoxUnchecked",
 		soundOnButtonUnpressed = "SFX_CheckBoxChecked",
-		
+
 		PressedGraphic = {
-			size = {13,13},
+			size = { 13, 13 },
 			texture = "DATA:\\UI\\NewUI\\Elements\\checkbox.mres",
-			textureUV = {0,0,13,13},
-			color = {56,162,250,255},
+			textureUV = { 0, 0, 13, 13 },
+			color = { 56, 162, 250, 255 },
 		},
-		
+
 		DisabledPressedGraphic = {
-			size = {13,13},
+			size = { 13, 13 },
 			texture = "DATA:\\UI\\NewUI\\Elements\\checkbox.mres",
-			textureUV = {0,0,13,13},
-			color = {152,152,152,255},
+			textureUV = { 0, 0, 13, 13 },
+			color = { 152, 152, 152, 255 },
 		},
 	},
-	
+
 	--  FIXME: use check box for temp
 	FERadioButtonStyle = {
 		type = "Button",
 		buttonStyle = "FECheckBoxButtonStyle",
 	},
-	
+
 	FEReadyButtonStyle = {
 		type = "Button",
 		buttonStyle = "FECheckBoxButtonStyle",
 		soundOnButtonPressed = "SFX_ReadyButtonChecked",
 		soundOnButtonUnpressed = "SFX_ReadyButtonUnchecked",
 	},
-	
-	
-		
-	
-	
-	
-	
+
+
+
+
+
+
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- OTHER STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
 	FEScrollBarStyle = {
 		type = "ScrollBar",
-		scrollBarStyle = "DefaultScrollBarStyle",		
+		scrollBarStyle = "DefaultScrollBarStyle",
 	},
-	
+
 	FEListBoxStyle = {
 		type = "ListBox",
-		size = {256, 256},
-		
+		size = { 256, 256 },
+
 		selected = 0,
-		leftScroll = 0,       -- Do not use left handed scroll bar by default
+		leftScroll = 0, -- Do not use left handed scroll bar by default
 		showScrollBar = 1, -- Enable scroll bar by default
-		
+
 		ScrollBar = {
-			type = "ScrollBar",			
-			-- Again, since we dont specify a style, this will use the default scroll bar style			
+			type = "ScrollBar",
+			-- Again, since we dont specify a style, this will use the default scroll bar style
 			name = "ListBoxStyle_scrollBar",
 		},
 		marginHeight = 2,
 		scrollBarSpace = 2,
 	},
-	
+
 	FEDropDownListBoxStyle = {
-		type = "DropDownListBox",	
-		
-		size = { 208, 13},
-		
+		type = "DropDownListBox",
+
+		size = { 208, 13 },
+
 		itemsToShowOnDrop = 10,
-		
+
 		soundOnClicked = "SFX_DropDownListClick",
-		
+
 		--borderWidth = 1,
 		--borderColor = "FEColorScrollButtonDefault",
 		--overBorderColor = "FEColorScrollButtonPressed",
 		--pressedBorderColor = "FEColorScrollButtonPressed",
-		
+
 		ListBox = {
 			type = "ListBox",
 			name = "listLevelsListBox",
 			listBoxStyle = "FEListBoxStyle",
-			size = { 208, 130},
-			backgroundColor = {0,0,0,235},
+			size = { 208, 130 },
+			backgroundColor = { 0, 0, 0, 235 },
 			scrollBarSpace = 1,
 			soundOnExit = "",
 		},
-		
+
 		Button = {
 			type = "Button",
 			buttonStyle = "DefaultScrollBar_ScrollVertButtonStyle",
-			size = { 15, 13},
-			
-			disabledColor = {0,0,0,0},
+			size = { 15, 13 },
+
+			disabledColor = { 0, 0, 0, 0 },
 			DisabledGraphic = {
-				position = {2,0},
-				size = {13, 13},
+				position = { 2, 0 },
+				size = { 13, 13 },
 				texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_disabled.mres",
-				textureUV = { 0, 13, 13, 0},
+				textureUV = { 0, 13, 13, 0 },
 				color = "FEColorScrollButtonDisabled",
 			},
-			
-			soundOnClicked = "SFX_DropDownListClick",
-			
-			;
+
+			soundOnClicked = "SFX_DropDownListClick";
 			{
 				type = "Button",
-				size = {13,13},
-				position = {2,0},
+				size = { 13, 13 },
+				position = { 2, 0 },
 				giveParentMouseInput = 1,
-				
+
 				borderWidth = 1,
-				
+
 				backgroundColor = "FEColorScrollButtonDefault",
 				borderColor = "FEColorScrollButtonDefault",
-				
+
 				pressedColor = "FEColorScrollButtonDefault",
 				pressedBorderColor = "FEColorScrollButtonOver", -- white
-				
+
 				overColor = "FEColorScrollButtonDefault",
 				overBorderColor = "FEColorScrollButtonOver",
-				
+
 				disabledColor = "FEColorScrollButtonDisabled", -- grey
 				disabledBorderColor = "FEColorScrollButtonDisabled", -- grey
-				
+
 				DefaultGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_default.mres",
-					textureUV = { 0, 13, 13, 0},
+					textureUV = { 0, 13, 13, 0 },
 				},
 				PressedGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_pressed.mres",
-					textureUV = { 0, 13, 13, 0},
+					textureUV = { 0, 13, 13, 0 },
 				},
 				OverGraphic = {
-					size = {13, 13},
+					size = { 13, 13 },
 					texture = "DATA:UI\\NewUI\\Styles\\ArrowButtons\\vert_pressed.mres",
-					textureUV = { 0, 13, 13, 0},
+					textureUV = { 0, 13, 13, 0 },
 				},
 			},
 		},
-		
+
 		--Button = {
 		---	type = "Button",
 		--	-buttonStyle = "DefaultScrollBar_ScrollVertButtonStyle",
 		--	size = { 15, 13},
-		---	
+		---
 		--	-giveParentMouseInput = 1,
-		--	
+		--
 		--	borderWidth = 1,
 		--	borderColor = "FEColorScrollButtonDefault",
 		--	overBorderColor = {255,255,255,255},
 		--	pressedBorderColor = {255,255,255,255},
-			
+
 		--	DefaultGraphic = {
 		--		position = { 2, 0},
 		---		size = {13, 13},
@@ -1171,98 +1153,96 @@ HW2StyleSheet = {
 		--		color = "FEColorDisabled",
 		--	},
 		--},
-		
-		soundOnEnter 	= "SFX_DropDownListEnter",
-		
+
+		soundOnEnter = "SFX_DropDownListEnter",
+
 	},
-	
+
 	FETextInputStyle = {
 		type = "TextInput",
-		size = {120, 13},
-		
+		size = { 120, 13 },
+
 		borderWidth = 1,
-		
-		backgroundColor = { 62, 86, 98, 255},
-		borderColor = { 112, 157, 180, 255},
+
+		backgroundColor = { 62, 86, 98, 255 },
+		borderColor = { 112, 157, 180, 255 },
 		borderWidth = 1,
-			
-		Text = {			
-			color = {255,255,255,255},
+
+		Text = {
+			color = { 255, 255, 255, 255 },
 			font = "ButtonFont",
 			vAlign = "Middle",
-			hAlign = "Left",	
+			hAlign = "Left",
 		},
-		
+
 		-- sound set in default style
 	},
-	
+
 	FEChatTextInputStyle = {
 		type = "TextInput",
-		
-		size = {120, 21},
+
+		size = { 120, 21 },
 		borderColor = "FEColorOutline",
 		borderWidth = 2,
-		
+
 		marginWidth = 5,
-			
-		Text = {			
-			color = {255,255,255,255},
+
+		Text = {
+			color = { 255, 255, 255, 255 },
 			font = "ButtonFont",
 			vAlign = "Middle",
-			hAlign = "Left",	
+			hAlign = "Left",
 		},
-		
+
 		-- sound set in default style
 	},
-		
+
 	FETableStyle = {
 		type = "Table",
-		size = {300, 200},
-		
-		backgroundColor = {0,0,0,255},
-		
+		size = { 300, 200 },
+
+		backgroundColor = { 0, 0, 0, 255 },
+
 		showColumnTitles = 1,
 		showRowTitles = 0,
-				
+
 		headerSpacing = 6,
-		
-		cellSpacing = {2, 2},
-		
+
+		cellSpacing = { 2, 2 },
+
 		sortByColumn = 0,
-		
+
 		defaultRowHeight = 15,
-		defaultColWidth = 100, 
-		
+		defaultColWidth = 100,
+
 		titleHeight = 15,
-		
+
 		-- scrollview
 		scrollHorz = 0,
 		scrollVert = 1,
-		contentsSize = {300,400},
-		scrollPosition = {0, 0},
-		
+		contentsSize = { 300, 400 },
+		scrollPosition = { 0, 0 },
+
 		selectedRowColor = "FEColorOutline",
-		
+
 		DefaultColTitleCell = {
-			type = "TableCell",			
-			name = "hw2tablecoltitle",
-			;
+			type = "TableCell",
+			name = "hw2tablecoltitle";
 			{
 				type = "TextButton",
-				
+
 				buttonStyle = "FETableTitleButtonStyle",
-								
+
 				Text = {
 					textStyle = "FETableTitleTextStyle",
 				},
 			},
 		},
-		
+
 		DefaultCell = {
 			type = "TableCell",
 			name = "hw2tablecell",
-			giveParentMouseInput = 1,
-			;
+			giveParentMouseInput = 1;
 			{
 				type = "TextLabel",
 				name = "lblDefaultCell",
@@ -1272,51 +1252,51 @@ HW2StyleSheet = {
 					textStyle = "FEListBoxItemTextStyle",
 					vAlign = "Middle",
 					hAlign = "Left",
-					color = {255,255,255,255},
+					color = { 255, 255, 255, 255 },
 				},
 			},
 		},
 	},
-	
+
 	FESliderStyle = {
 		type = "ScrollBar",
 		orientation = "Horizontal",
 		resizeToParent = 0,
-		size = {212, 13},
-		range = {0, 100},
+		size = { 212, 13 },
+		range = { 0, 100 },
 		stepSize = 1,
 		pageSize = 20,
 		TrackVertButton = {
 			type = "Button",
 			buttonStyle = "DefaultScrollBar_TrackVertStyle",
-			maxSize = {13, 17}, -- The trackbars do not resize on the slider controls
+			maxSize = { 13, 17 }, -- The trackbars do not resize on the slider controls
 		},
 		TrackHorzButton = {
 			type = "Button",
 			name = "trackHorzButton",
 			buttonStyle = "DefaultScrollBar_TrackHorzStyle",
-			maxSize = {17, 13},-- The trackbars do not resize on the slider controls
+			maxSize = { 17, 13 }, -- The trackbars do not resize on the slider controls
 		},
 	},
-	
+
 	FESliderLabelStyle = {
 		type = "InterfaceElement",
 		borderColor = "FEColorScrollButtonDefault",
 		borderWidth = 1,
-		backgroundColor = {0,175,255,127},
-		size = {40, 13},
+		backgroundColor = { 0, 175, 255, 127 },
+		size = { 40, 13 },
 		marginWidth = 4,
 		Text = {
 			font = "ButtonFont",
 			vAlign = "Middle",
 			hAlign = "Right",
-			color = {255,255,255,255},
-		},		
+			color = { 255, 255, 255, 255 },
+		},
 	},
-	
+
 	FEBorderListBoxStyle = {
 		type = "ListBox",
-		size = { 200, 100},
+		size = { 200, 100 },
 		borderColor = "IGColorOutline",
 		borderWidth = 1,
 		marginWidth = 3,
@@ -1326,38 +1306,38 @@ HW2StyleSheet = {
 
 	FEInfoButtonStyle = {
 		type = "Button",
-		size = {16,16},
+		size = { 16, 16 },
 		DefaultGraphic = {
 			texture = "data:ui/newui/network/infobutton.mres",
-			textureUV = {0,0,16,16},
-			color = {56,162,250},
+			textureUV = { 0, 0, 16, 16 },
+			color = { 56, 162, 250 },
 		},
 		OverGraphic = {
 			texture = "data:ui/newui/network/infobutton.mres",
-			textureUV = {0,0,16,16},
-			color = {255,255,255,255},
+			textureUV = { 0, 0, 16, 16 },
+			color = { 255, 255, 255, 255 },
 		},
 		PressedGraphic = {
 			texture = "data:ui/newui/network/infobutton.mres",
-			textureUV = {0,0,16,16},
-			color = {255,255,255,255},
+			textureUV = { 0, 0, 16, 16 },
+			color = { 255, 255, 255, 255 },
 		},
-	},	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	},
+
+
+
+
+
+
+
+
+
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- IN GAME STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
-	
-	
+
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- TEXT STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
@@ -1365,41 +1345,41 @@ HW2StyleSheet = {
 		type = "Text",
 		textStyle = "FEHeading3",
 	},
-	
+
 	IGHeading2 = {
 		type = "Text",
 		textStyle = "FEHeading4",
 	},
-	
-	IGHeading3 = { 
+
+	IGHeading3 = {
 		type = "Text",
 		textStyle = "FEHeading4",
 	},
-	
+
 	IGButtonTextStyle = {
 		type = "Text",
 		textStyle = "FEButtonTextStyle",
 	},
-	
+
 	IGListBoxItemTextStyle = {
 		type = "Text",
 		textStyle = "FEListBoxItemTextStyle",
 	},
-		
-	
+
+
 	IGListBoxItemButtonStyle = {
 		type = "Button",
 		buttonStyle = "FEListBoxItemButtonStyle",
 	},
-	
+
 	IGHelpTipTextStyle = {
 		type = "Text",
-		font = "ButtonFont",	
-		color = {255,255,255,255},
+		font = "ButtonFont",
+		color = { 255, 255, 255, 255 },
 		vAlign = "Middle",
-		hAlign = "Left",		
+		hAlign = "Left",
 	},
-	
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- BUTTON STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
@@ -1407,56 +1387,56 @@ HW2StyleSheet = {
 		type = "Button",
 		buttonStyle = "FEButtonStyle1",
 	},
-	
+
 	IGButtonStyle1NoEnterSound = {
 		type = "Button",
 		buttonStyle = "FEButtonStyle1NoEnterSound",
 	},
-	
+
 	IGRadioButtonStyle = {
 		type = "Button",
-		
-		size = {120, 30},
-		
+
+		size = { 120, 30 },
+
 		toggleButton = 1,
-		
+
 		DefaultGraphic = {
-			size = {13,13},
+			size = { 13, 13 },
 			texture = "data:ui\\newui\\elements\\radio_button.mres",
-			textureUV = {0,0,13,13},
+			textureUV = { 0, 0, 13, 13 },
 			color = "FEColorScrollButtonDefault",
 		},
 		OverGraphic = {
-			size = {13,13},
+			size = { 13, 13 },
 			texture = "data:ui\\newui\\elements\\radio_button.mres",
-			textureUV = {0,0,13,13},
+			textureUV = { 0, 0, 13, 13 },
 			color = "FEColorScrollButtonOver",
 		},
 		PressedGraphic = {
-			size = {13,13},
+			size = { 13, 13 },
 			texture = "data:ui\\newui\\elements\\radio_button.mres",
-			textureUV = {28,0,41,13},
+			textureUV = { 28, 0, 41, 13 },
 			color = "FEColorScrollButtonOver",
 		},
 		DisabledGraphic = {
-			size = {13,13},
+			size = { 13, 13 },
 			texture = "data:ui\\newui\\elements\\radio_button.mres",
-			textureUV = {0,0,13,13},
+			textureUV = { 0, 0, 13, 13 },
 			color = "FEColorScrollButtonDisabled",
 		},
-		
+
 		soundOnClicked = "SFX_CheckBoxChecked",
 	},
-	
+
 	IGRadioButtonTextStyle = {
 		type = "Text",
 		font = "ButtonFont",
-		color = {255,255,255,255},
+		color = { 255, 255, 255, 255 },
 		hAlign = "Left",
 		vAlign = "Middle",
-		offset = {16,0},
+		offset = { 16, 0 },
 	},
-	
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- OTHER STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
@@ -1464,560 +1444,558 @@ HW2StyleSheet = {
 		type = "ListBox",
 		listBoxStyle = "FEListBoxStyle",
 	},
-	
+
 	IGDropDownListBoxStyle = {
 		type = "DropDownListBox",
 		dropDownListBoxStyle = "FEDropDownListBoxStyle",
 	},
-	
+
 	IGCheckBoxStyle = {
 		type = "Button",
 		buttonStyle = "FECheckBoxButtonStyle",
 	},
-	
+
 	IGTabButtonStyle = {
-		type 				= "Button",
-		buttonStyle 		= "FETabButtonStyle",
-		borderColor 		= "FEColorPopupOutline",
-		textColor			= "FEColorPopupOutline",
-		overBorderColor 		= "FEColorPopupOutline",
-		pressedColor 		= "FEColorPopupOutline",
-		pressedBorderColor 	= "FEColorPopupOutline",
-		pressedTextColor 	= {0,0,0,255},
-		
+		type               = "Button",
+		buttonStyle        = "FETabButtonStyle",
+		borderColor        = "FEColorPopupOutline",
+		textColor          = "FEColorPopupOutline",
+		overBorderColor    = "FEColorPopupOutline",
+		pressedColor       = "FEColorPopupOutline",
+		pressedBorderColor = "FEColorPopupOutline",
+		pressedTextColor   = { 0, 0, 0, 255 },
+
 	},
-	
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- BUILD MENU STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
 	BuildManagerButton1 = {
 		type = "Button",
 		buttonStyle = "IGButtonStyle1",
-		
-		size = {23,23},
+
+		size = { 23, 23 },
 	},
-	
+
 	BuildManagerButton2 = {
 		type = "Button",
 		buttonStyle = "FEButtonStyle2",
 	},
-	
+
 	IGButtonFacility = {
 		type = "Button",
-		
-		size = {17,19},
-		
-		soundOnEnter 		= "SFX_FacilityTabEnter",
-			
-		flashColor = {0,0,0,0},
-		flashBorderColor = {0,0,0,0},
+
+		size = { 17, 19 },
+
+		soundOnEnter = "SFX_FacilityTabEnter",
+
+		flashColor = { 0, 0, 0, 0 },
+		flashBorderColor = { 0, 0, 0, 0 },
 		borderWidth = 1,
 	},
-	
+
 	IGButtonShowAll = {
 		type = "Button",
 		buttonStyle = "IGButtonFacility",
-		size = {209,15},
-			
+		size = { 209, 15 },
+
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_showall.mres",
-			textureUV = {0,0,206,15},
-		},		
+			textureUV = { 0, 0, 206, 15 },
+		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_showall.mres",
-			textureUV = {0,15,206,30},
+			textureUV = { 0, 15, 206, 30 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_showall.mres",
-			textureUV = {0,15,206,30},
-			color = {255,255,255,255},
+			textureUV = { 0, 15, 206, 30 },
+			color = { 255, 255, 255, 255 },
 		},
-		
-		textColor = {0,255,66,200},
-		overTextColor = {0,255,66,255},
-		pressedTextColor = {0,0,0,255},
-		
+
+		textColor = { 0, 255, 66, 200 },
+		overTextColor = { 0, 255, 66, 255 },
+		pressedTextColor = { 0, 0, 0, 255 },
+
 		Text = {
 			font = "ButtonFont",
 			hAlign = "Center",
 			vAlign = "Middle",
 		}
 	},
-	
+
 	IGButtonOrders = {
 		type = "Button",
 		buttonStyle = "IGButtonFacility",
-		size = {209,15},
-			
+		size = { 209, 15 },
+
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_showall.mres",
-			textureUV = {0,0,206,15},
-		},		
+			textureUV = { 0, 0, 206, 15 },
+		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_showall.mres",
-			textureUV = {0,15,206,30},
+			textureUV = { 0, 15, 206, 30 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_showall.mres",
-			textureUV = {0,0,206,15},			
-		},		
+			textureUV = { 0, 0, 206, 15 },
+		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_showall.mres",
-			textureUV = {0,15,206,30},
-			color = {255,255,255,255},
-		},		
-		textColor = {0,255,66,200},
-		overTextColor = {0,255,66,255},
-		pressedTextColor = {0,0,0,255},
-		
+			textureUV = { 0, 15, 206, 30 },
+			color = { 255, 255, 255, 255 },
+		},
+		textColor = { 0, 255, 66, 200 },
+		overTextColor = { 0, 255, 66, 255 },
+		pressedTextColor = { 0, 0, 0, 255 },
+
 		Text = {
 			font = "ButtonFont",
 			hAlign = "Center",
 			vAlign = "Middle",
 		}
 	},
-	
-	IGButtonFighter = {	
+
+	IGButtonFighter = {
 		type = "Button",
 		buttonStyle = "IGButtonFacility",
-			
+
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm.mres",
-			textureUV = {0,0,24,25},
+			textureUV = { 0, 0, 24, 25 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build.mres",
-			textureUV = {0,0,24,25},
+			textureUV = { 0, 0, 24, 25 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over.mres",
-			textureUV = {0,0,24,25},
+			textureUV = { 0, 0, 24, 25 },
 		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {0,0,24,25},
+			textureUV = { 0, 0, 24, 25 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {0,0,24,25},
-			color = {255,255,255,255},
+			textureUV = { 0, 0, 24, 25 },
+			color = { 255, 255, 255, 255 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none.mres",
-			textureUV = {0,0,24,25},
+			textureUV = { 0, 0, 24, 25 },
 			color = "IGColorFacilityDisabled",
 		},
-		
-		
+
+
 	},
-	IGButtonCorvette = {	
-		type = "Button",
-		buttonStyle = "IGButtonFacility",			
-		DefaultGraphic = {
-			texture = "data:ui\\newui\\facility\\facilities_icons_norm.mres",
-			textureUV = {0,25,24,50},
-		},
-		BackgroundGraphic2 = {
-			texture = "data:ui\\newui\\facility\\facilities_icons_no_build.mres",
-			textureUV = {0,25,24,50},
-		},
-		OverGraphic = {
-			texture = "data:ui\\newui\\facility\\facilities_icons_over.mres",
-			textureUV = {0,25,24,50},
-		},
-		FlashGraphic = {
-			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {0,25,24,50},
-			color = {255,255,255,255},
-		},
-		PressedGraphic = {
-			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {0,25,24,50},
-		},
-		DisabledGraphic = {
-			texture = "data:ui\\newui\\facility\\facilities_icons_none.mres",
-			textureUV = {0,25,24,50},
-			color = "IGColorFacilityDisabled",
-		},
-	},
-	IGButtonFrigate = {	
+	IGButtonCorvette = {
 		type = "Button",
 		buttonStyle = "IGButtonFacility",
-		
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm.mres",
-			textureUV = {0,50,24,75},
+			textureUV = { 0, 25, 24, 50 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build.mres",
-			textureUV = {0,50,24,75},
-		},
-		FlashGraphic = {
-			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {0,50,24,75},
-			color = {255,255,255,255},
+			textureUV = { 0, 25, 24, 50 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over.mres",
-			textureUV = {0,50,24,75},
+			textureUV = { 0, 25, 24, 50 },
+		},
+		FlashGraphic = {
+			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
+			textureUV = { 0, 25, 24, 50 },
+			color = { 255, 255, 255, 255 },
 		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {0,50,24,75},
+			textureUV = { 0, 25, 24, 50 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none.mres",
-			textureUV = {0,50,24,75},
+			textureUV = { 0, 25, 24, 50 },
 			color = "IGColorFacilityDisabled",
 		},
 	},
-	IGButtonCapital = {	
+	IGButtonFrigate = {
 		type = "Button",
-		buttonStyle = "IGButtonFacility",		
+		buttonStyle = "IGButtonFacility",
+
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm.mres",
-			textureUV = {0,75,24,100},
+			textureUV = { 0, 50, 24, 75 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build.mres",
-			textureUV = {0,75,24,100},
+			textureUV = { 0, 50, 24, 75 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {0,75,24,100},
-			color = {255,255,255,255},
+			textureUV = { 0, 50, 24, 75 },
+			color = { 255, 255, 255, 255 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over.mres",
-			textureUV = {0,75,24,100},
+			textureUV = { 0, 50, 24, 75 },
 		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {0,75,24,100},
+			textureUV = { 0, 50, 24, 75 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none.mres",
-			textureUV = {0,75,24,100},
+			textureUV = { 0, 50, 24, 75 },
 			color = "IGColorFacilityDisabled",
-		},		
+		},
 	},
-	IGButtonCapitalNew = {	
+	IGButtonCapital = {
 		type = "Button",
-		buttonStyle = "IGButtonFacility",			
+		buttonStyle = "IGButtonFacility",
+		DefaultGraphic = {
+			texture = "data:ui\\newui\\facility\\facilities_icons_norm.mres",
+			textureUV = { 0, 75, 24, 100 },
+		},
+		BackgroundGraphic2 = {
+			texture = "data:ui\\newui\\facility\\facilities_icons_no_build.mres",
+			textureUV = { 0, 75, 24, 100 },
+		},
+		FlashGraphic = {
+			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
+			textureUV = { 0, 75, 24, 100 },
+			color = { 255, 255, 255, 255 },
+		},
+		OverGraphic = {
+			texture = "data:ui\\newui\\facility\\facilities_icons_over.mres",
+			textureUV = { 0, 75, 24, 100 },
+		},
+		PressedGraphic = {
+			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
+			textureUV = { 0, 75, 24, 100 },
+		},
+		DisabledGraphic = {
+			texture = "data:ui\\newui\\facility\\facilities_icons_none.mres",
+			textureUV = { 0, 75, 24, 100 },
+			color = "IGColorFacilityDisabled",
+		},
+	},
+	IGButtonCapitalNew = {
+		type = "Button",
+		buttonStyle = "IGButtonFacility",
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm_n.mres",
-			textureUV = {0,25,24,50},
+			textureUV = { 0, 25, 24, 50 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build_n.mres",
-			textureUV = {0,25,24,50},
+			textureUV = { 0, 25, 24, 50 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down_n.mres",
-			textureUV = {0,25,24,50},
-			color = {255,255,255,255},
+			textureUV = { 0, 25, 24, 50 },
+			color = { 255, 255, 255, 255 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over_n.mres",
-			textureUV = {0,25,24,50},
-		},		
+			textureUV = { 0, 25, 24, 50 },
+		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down_n.mres",
-			textureUV = {0,25,24,50},
+			textureUV = { 0, 25, 24, 50 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none_n.mres",
-			textureUV = {0,25,24,50},
+			textureUV = { 0, 25, 24, 50 },
 			color = "IGColorFacilityDisabled",
 		},
 	},
-	IGButtonCapitalNewNew = {	
+	IGButtonCapitalNewNew = {
 		type = "Button",
-		buttonStyle = "IGButtonFacility",			
+		buttonStyle = "IGButtonFacility",
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm_n.mres",
-			textureUV = {0,52,24,77},
+			textureUV = { 0, 52, 24, 77 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build_n.mres",
-			textureUV = {0,52,24,77},
+			textureUV = { 0, 52, 24, 77 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down_n.mres",
-			textureUV = {0,52,24,77},
-			color = {255,255,255,255},
+			textureUV = { 0, 52, 24, 77 },
+			color = { 255, 255, 255, 255 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over_n.mres",
-			textureUV = {0,52,24,77},
-		},		
+			textureUV = { 0, 52, 24, 77 },
+		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down_n.mres",
-			textureUV = {0,52,24,77},
+			textureUV = { 0, 52, 24, 77 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none_n.mres",
-			textureUV = {0,52,24,77},
+			textureUV = { 0, 52, 24, 77 },
 			color = "IGColorFacilityDisabled",
 		},
 	},
-	IGButtonVuoto = {	
+	IGButtonVuoto = {
 		type = "Button",
-		buttonStyle = "IGButtonFacility",			
+		buttonStyle = "IGButtonFacility",
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm_n.mres",
-			textureUV = {0,79,24,104},
+			textureUV = { 0, 79, 24, 104 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build_n.mres",
-			textureUV = {0,79,24,104},
+			textureUV = { 0, 79, 24, 104 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down_n.mres",
-			textureUV = {0,79,24,104},
-			color = {255,255,255,255},
+			textureUV = { 0, 79, 24, 104 },
+			color = { 255, 255, 255, 255 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over_n.mres",
-			textureUV = {0,79,24,104},
-		},		
+			textureUV = { 0, 79, 24, 104 },
+		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down_n.mres",
-			textureUV = {0,79,24,104},
+			textureUV = { 0, 79, 24, 104 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none_n.mres",
-			textureUV = {0,79,24,104},
+			textureUV = { 0, 79, 24, 104 },
 			color = "IGColorFacilityDisabled",
 		},
 	},
-	IGButtonPlatform = {	
+	IGButtonPlatform = {
 		type = "Button",
 		buttonStyle = "IGButtonFacility",
-		
+
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm.mres",
-			textureUV = {24,0,48,25},
+			textureUV = { 24, 0, 48, 25 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build.mres",
-			textureUV = {24,0,48,25},
+			textureUV = { 24, 0, 48, 25 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {24,0,48,25},
-			color = {255,255,255,255},
+			textureUV = { 24, 0, 48, 25 },
+			color = { 255, 255, 255, 255 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over.mres",
-			textureUV = {24,0,48,25},
+			textureUV = { 24, 0, 48, 25 },
 		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {24,0,48,25},
+			textureUV = { 24, 0, 48, 25 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none.mres",
-			textureUV = {24,0,48,25},
+			textureUV = { 24, 0, 48, 25 },
 			color = "IGColorFacilityDisabled",
 		},
 	},
-	IGButtonUtility = {	
+	IGButtonUtility = {
 		type = "Button",
 		buttonStyle = "IGButtonFacility",
-			
+
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm.mres",
-			textureUV = {24,25,48,50},
+			textureUV = { 24, 25, 48, 50 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build.mres",
-			textureUV = {24,25,48,50},
+			textureUV = { 24, 25, 48, 50 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {24,25,48,50},
-			color = {255,255,255,255},
+			textureUV = { 24, 25, 48, 50 },
+			color = { 255, 255, 255, 255 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over.mres",
-			textureUV = {24,25,48,50},
+			textureUV = { 24, 25, 48, 50 },
 		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {24,25,48,50},
+			textureUV = { 24, 25, 48, 50 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none.mres",
-			textureUV = {24,25,48,50},
+			textureUV = { 24, 25, 48, 50 },
 			color = "IGColorFacilityDisabled",
 		},
 	},
-	IGButtonSubsystemModules = {	
+	IGButtonSubsystemModules = {
 		type = "Button",
 		buttonStyle = "IGButtonFacility",
-		
+
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm.mres",
-			textureUV = {24,50,48,75},
+			textureUV = { 24, 50, 48, 75 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build.mres",
-			textureUV = {24,50,48,75},
+			textureUV = { 24, 50, 48, 75 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over.mres",
-			textureUV = {24,50,48,75},
+			textureUV = { 24, 50, 48, 75 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {24,50,48,75},
-			color = {255,255,255,255},
+			textureUV = { 24, 50, 48, 75 },
+			color = { 255, 255, 255, 255 },
 		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {24,50,48,75},
+			textureUV = { 24, 50, 48, 75 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none.mres",
-			textureUV = {24,50,48,75},
+			textureUV = { 24, 50, 48, 75 },
 			color = "IGColorFacilityDisabled",
 		},
 	},
-	IGButtonSubsystemSensors = {	
+	IGButtonSubsystemSensors = {
 		type = "Button",
 		buttonStyle = "IGButtonFacility",
-		
+
 		DefaultGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_norm.mres",
-			textureUV = {24,75,48,100},
+			textureUV = { 24, 75, 48, 100 },
 		},
 		BackgroundGraphic2 = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_no_build.mres",
-			textureUV = {24,75,48,100},
+			textureUV = { 24, 75, 48, 100 },
 		},
 		FlashGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {24,75,48,100},
-			color = {255,255,255,255},
+			textureUV = { 24, 75, 48, 100 },
+			color = { 255, 255, 255, 255 },
 		},
 		OverGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_over.mres",
-			textureUV = {24,75,48,100},
+			textureUV = { 24, 75, 48, 100 },
 		},
 		PressedGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_down.mres",
-			textureUV = {24,75,48,100},
+			textureUV = { 24, 75, 48, 100 },
 		},
 		DisabledGraphic = {
 			texture = "data:ui\\newui\\facility\\facilities_icons_none.mres",
-			textureUV = {24,75,48,100},
+			textureUV = { 24, 75, 48, 100 },
 			color = "IGColorFacilityDisabled",
 		},
 	},
-	
+
 	-- for selecting next build / launch ship
 	IGPrevButton = {
 		type = "Button",
-		size = { 13, 72},
-		
+		size = { 13, 72 },
+
 		DefaultGraphic = {
 			texture = "DATA:UI\\NewUI\\InGameIcons\\info_buttons.mres",
-			textureUV = { 0, 31, 13, 103},
+			textureUV = { 0, 31, 13, 103 },
 			color = "FEColorScrollButtonDefault",
 		},
 		OverGraphic = {
 			texture = "DATA:UI\\NewUI\\InGameIcons\\info_buttons.mres",
-			textureUV = { 0, 31, 13, 103},
-			color = {255,255,255,255},
+			textureUV = { 0, 31, 13, 103 },
+			color = { 255, 255, 255, 255 },
 		},
 		PressedGraphic = {
 			texture = "DATA:UI\\NewUI\\InGameIcons\\info_buttons.mres",
-			textureUV = { 0, 31, 13, 103},
+			textureUV = { 0, 31, 13, 103 },
 			color = "FEColorScrollButtonPressed",
 		},
 		DisabledGraphic = {
 			texture = "DATA:UI\\NewUI\\InGameIcons\\info_buttons.mres",
-			textureUV = { 0, 31, 13, 103},
+			textureUV = { 0, 31, 13, 103 },
 			color = "FEColorScrollButtonDisabled",
 		},
-		
+
 		soundOnEnter = "SFX_ButtonEnter",
 		soundOnClicked = "SFX_ButtonClick",
 	},
-	
+
 	-- for selecting previous build / launch ship
 	IGNextButton = {
 		type = "Button",
-		size = { 13, 72},
-		
+		size = { 13, 72 },
+
 		DefaultGraphic = {
 			texture = "DATA:UI\\NewUI\\InGameIcons\\info_buttons.mres",
-			textureUV = { 13, 31, 0, 103},
+			textureUV = { 13, 31, 0, 103 },
 			color = "FEColorScrollButtonDefault",
 		},
 		OverGraphic = {
 			texture = "DATA:UI\\NewUI\\InGameIcons\\info_buttons.mres",
-			textureUV = { 13, 31, 0, 103},
-			color = {255,255,255,255},
+			textureUV = { 13, 31, 0, 103 },
+			color = { 255, 255, 255, 255 },
 		},
 		PressedGraphic = {
 			texture = "DATA:UI\\NewUI\\InGameIcons\\info_buttons.mres",
-			textureUV = { 13, 31, 0, 103},
+			textureUV = { 13, 31, 0, 103 },
 			color = "FEColorScrollButtonPressed",
 		},
 		DisabledGraphic = {
 			texture = "DATA:UI\\NewUI\\InGameIcons\\info_buttons.mres",
-			textureUV = { 13, 31, 0, 103},
+			textureUV = { 13, 31, 0, 103 },
 			color = "FEColorScrollButtonDisabled",
 		},
 		soundOnEnter = "SFX_ButtonEnter",
 		soundOnClicked = "SFX_ButtonClick",
 	},
-		
+
 	IGCloseButton = {
 		type = "Button",
-		size = {15,15},
-		
+		size = { 15, 15 },
+
 		borderWidth = 1,
-		borderColor = {0,0,0,255},
-		overBorderColor = {255,255,255,255},
-		
-		BackgroundGraphic = {	
-			size = { 15, 15},
+		borderColor = { 0, 0, 0, 255 },
+		overBorderColor = { 255, 255, 255, 255 },
+
+		BackgroundGraphic = {
+			size = { 15, 15 },
 			texture = "DATA:UI\\NewUI\\InGameIcons\\close.mres",
-			textureUV = { 0, 0, 15, 15},
-			color = { 0,0,0,255},
+			textureUV = { 0, 0, 15, 15 },
+			color = { 0, 0, 0, 255 },
 		},
-		OverGraphic = {	
-			size = { 15, 15},
+		OverGraphic = {
+			size = { 15, 15 },
 			texture = "DATA:UI\\NewUI\\InGameIcons\\close.mres",
-			textureUV = { 0, 0, 15, 15},
-			color = { 255,255,255,255},
+			textureUV = { 0, 0, 15, 15 },
+			color = { 255, 255, 255, 255 },
 		},
-		
+
 		soundOnEnter = "SFX_ButtonEnter",
 		soundOnClicked = "SFX_ButtonClick",
 	},
-	
-	
+
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- TASKBAR STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
-	Taskbar_PanelButtonTextStyle =
-	{
-		type = "Text",
-		font = "ButtonFont",
-		color = { 0, 0, 0, 255},
-		size  = 8,
+	Taskbar_PanelButtonTextStyle = {
+		type   = "Text",
+		font   = "ButtonFont",
+		color  = { 0, 0, 0, 255 },
+		size   = 8,
 		style  = 1,
 		hAlign = "Center",
 	},
-	
-	Taskbar_PanelButtonStyle =
-	{
+
+	Taskbar_PanelButtonStyle = {
 		type = "Button",
-		size = {68, 13},
+		size = { 68, 13 },
 		toggleButton = 1,
 		flashSpeed = 250,
 		DefaultGraphic = {
@@ -2039,43 +2017,41 @@ HW2StyleSheet = {
 		FlashGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\panelbutton.tga",
 			textureUV = { 0, 0, 64, 13 },
-			color = {220,220,255,255},
+			color = { 220, 220, 255, 255 },
 		},
-		
-		
-		flashTextColor = {0,0,0,255},
-		flashColor = {255,255,255,255},
-		
-		textColor = { 0, 0, 0, 255},
-		pressedTextColor = { 0, 0, 0, 255},
-		clickedTextColor = { 255, 255, 255, 255},
-		overTextColor = { 0, 0, 0, 255},
-		outerBorderWidth = 1,
-		borderColor = { 0, 0, 0, 0},
-		overBorderColor = { 0, 0, 0, 0},
-		clickedBorderColor = { 0, 0, 0, 0},
-		--pressedBorderColor = { 249, 211, 0, 255},
-		pressedBorderColor = { 255, 255, 255, 255},
-		disabledColor = {110,110,110,135},
-		disabledTextColor = {225,225,225,255},
 
-		soundOnClicked 		= "SFX_ButtonClick",
+
+		flashTextColor = { 0, 0, 0, 255 },
+		flashColor = { 255, 255, 255, 255 },
+
+		textColor = { 0, 0, 0, 255 },
+		pressedTextColor = { 0, 0, 0, 255 },
+		clickedTextColor = { 255, 255, 255, 255 },
+		overTextColor = { 0, 0, 0, 255 },
+		outerBorderWidth = 1,
+		borderColor = { 0, 0, 0, 0 },
+		overBorderColor = { 0, 0, 0, 0 },
+		clickedBorderColor = { 0, 0, 0, 0 },
+		--pressedBorderColor = { 249, 211, 0, 255},
+		pressedBorderColor = { 255, 255, 255, 255 },
+		disabledColor = { 110, 110, 110, 135 },
+		disabledTextColor = { 225, 225, 225, 255 },
+
+		soundOnClicked = "SFX_ButtonClick",
 	},
 
-	Taskbar_MenuButtonTextStyle =
-	{
-		type = "Text",
-		font = "ButtonFont",
-		color = "IGColorButtonText",
-		size  = 8,
+	Taskbar_MenuButtonTextStyle = {
+		type   = "Text",
+		font   = "ButtonFont",
+		color  = "IGColorButtonText",
+		size   = 8,
 		style  = 1,
 		hAlign = "Center",
 	},
-	
-	Taskbar_MenuButtonStyle =
-	{
+
+	Taskbar_MenuButtonStyle = {
 		type = "Button",
-		size = {132, 13},
+		size = { 132, 13 },
 		toggleButton = 1,
 		DefaultGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\hollowbutton.tga",
@@ -2095,24 +2071,23 @@ HW2StyleSheet = {
 		},
 		flashSpeed = 250,
 
-		textColor = { 0, 175, 255, 255},
-		overTextColor = { 128, 215, 255, 255},
-		clickedTextColor = { 255, 255, 255, 255},
-		pressedTextColor = { 128, 215, 255, 255},
+		textColor = { 0, 175, 255, 255 },
+		overTextColor = { 128, 215, 255, 255 },
+		clickedTextColor = { 255, 255, 255, 255 },
+		pressedTextColor = { 128, 215, 255, 255 },
 		outerBorderWidth = 1,
-		borderColor = { 0, 0, 0, 0},
-		overBorderColor = { 0, 0, 0, 0},
-		clickedBorderColor = { 0, 0, 0, 0},
-		pressedBorderColor = { 255, 255, 255, 255},
-		
-		soundOnClicked 		= "SFX_ButtonClick",
+		borderColor = { 0, 0, 0, 0 },
+		overBorderColor = { 0, 0, 0, 0 },
+		clickedBorderColor = { 0, 0, 0, 0 },
+		pressedBorderColor = { 255, 255, 255, 255 },
+
+		soundOnClicked = "SFX_ButtonClick",
 	},
-	
-	Taskbar_MenuButtonStyle_Wide = 
-	{
+
+	Taskbar_MenuButtonStyle_Wide = {
 		type = "Button",
 		buttonStyle = "Taskbar_MenuButtonStyle",
-		size = {132,13},
+		size = { 132, 13 },
 		DefaultGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\hollowbutton_wide.tga",
 			textureUV = { 0, 0, 128, 13 },
@@ -2129,148 +2104,142 @@ HW2StyleSheet = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\hollowbutton_wide_pressed.tga",
 			textureUV = { 0, 0, 128, 13 },
 		},
-		
+
 	},
 
-	Taskbar_SensorsButtonStyle =
-	{
+	Taskbar_SensorsButtonStyle = {
 		type = "Button",
-		size = {96, 13},
-		backgroundColor = { 238, 188, 5, 255},
-		overColor = { 187, 146, 4, 255},
-		flashColor = { 255, 255, 255, 255},
+		size = { 96, 13 },
+		backgroundColor = { 238, 188, 5, 255 },
+		overColor = { 187, 146, 4, 255 },
+		flashColor = { 255, 255, 255, 255 },
 		flashSpeed = 250,
-		
-		soundOnClicked 		= "SFX_ButtonClick",
+
+		soundOnClicked = "SFX_ButtonClick",
 	},
 
-	Taskbar_ControlGroups1ButtonStyle =
-	{
+	Taskbar_ControlGroups1ButtonStyle = {
 		type = "Button",
-		size = {33, 11},
-		
+		size = { 33, 11 },
+
 		OverGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\controlgroups.mres",
 			textureUV = { 0, 0, 33, 11 },
-			color = { 0, 160, 255, 128},
+			color = { 0, 160, 255, 128 },
 		},
 		PressedGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\controlgroups.mres",
 			textureUV = { 0, 0, 33, 11 },
-			color = { 255, 255, 255, 255},
+			color = { 255, 255, 255, 255 },
 		},
 		FlashGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\controlgroups.mres",
 			textureUV = { 0, 0, 33, 11 },
-			color = { 255, 255, 255, 255},
+			color = { 255, 255, 255, 255 },
 		},
 		flashSpeed = 150,
-		
+
 		Text = {
-			type = "Text",
-			font = "ButtonFont",
-			color = { 255, 255, 255, 255},
-			size  = 8,
-			style  = 1,
-			hAlign = "Center",
-			vAlign = "Center",
+			type       = "Text",
+			font       = "ButtonFont",
+			color      = { 255, 255, 255, 255 },
+			size       = 8,
+			style      = 1,
+			hAlign     = "Center",
+			vAlign     = "Center",
 			dropShadow = 1,
 		},
-		
-		soundOnEnter 		= "SFX_TaskbarControlGroupsEnter",
-		soundOnClicked 		= "SFX_ButtonClick",
+
+		soundOnEnter   = "SFX_TaskbarControlGroupsEnter",
+		soundOnClicked = "SFX_ButtonClick",
 	},
 
-	Taskbar_ControlGroups2ButtonStyle =
-	{
+	Taskbar_ControlGroups2ButtonStyle = {
 		type = "Button",
-		size = {33, 11},
-		
+		size = { 33, 11 },
+
 		OverGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\controlgroups.mres",
 			textureUV = { 33, 0, 0, 11 },
-			color = { 0, 160, 255, 128},
+			color = { 0, 160, 255, 128 },
 		},
 		PressedGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\controlgroups.mres",
 			textureUV = { 33, 0, 0, 11 },
-			color = { 255, 255, 255, 255},
+			color = { 255, 255, 255, 255 },
 		},
 		FlashGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\controlgroups.mres",
 			textureUV = { 33, 0, 0, 11 },
-			color = { 255, 255, 255, 255},
+			color = { 255, 255, 255, 255 },
 		},
 		flashSpeed = 150,
-		
+
 		Text = {
-			type = "Text",
-			font = "ButtonFont",
-			color = { 255, 255, 255, 255},
-			size  = 8,
-			style  = 1,
-			hAlign = "Center",
-			vAlign = "Center",
+			type       = "Text",
+			font       = "ButtonFont",
+			color      = { 255, 255, 255, 255 },
+			size       = 8,
+			style      = 1,
+			hAlign     = "Center",
+			vAlign     = "Center",
 			dropShadow = 1,
 		},
-		
-		soundOnEnter 		= "SFX_TaskbarControlGroupsEnter",
-		soundOnClicked 		= "SFX_ButtonClick",
+
+		soundOnEnter   = "SFX_TaskbarControlGroupsEnter",
+		soundOnClicked = "SFX_ButtonClick",
 	},
 
-	Taskbar_ShipButtonStyle =
-	{
+	Taskbar_ShipButtonStyle = {
 		type = "Button",
 		toggleButton = 1,
-		size = {83, 30},
-		
+		size = { 83, 30 },
+
 		DefaultGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\ship_button.mres",
-			textureUV = { 1,1,84,31},
+			textureUV = { 1, 1, 84, 31 },
 		},
 		OverGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\ship_button.mres",
-			textureUV = { 1,33,84,63},
+			textureUV = { 1, 33, 84, 63 },
 		},
 		PressedGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\ship_button.mres",
-			textureUV = { 1,65,84,95},
+			textureUV = { 1, 65, 84, 95 },
 		},
 		DisabledGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\ship_button.mres",
-			textureUV = { 1,97,84,127},
+			textureUV = { 1, 97, 84, 127 },
 		},
 		helpTipTextLabel = "commandsHelpTip",
-		
-		soundOnClicked 		= "SFX_ButtonClick",
-		;
-		
+
+		soundOnClicked = "SFX_ButtonClick";
+
 		{
 			type = "Frame",
 			name = "shipIcon",
-			size = { 81, 30},
+			size = { 81, 30 },
 			giveParentMouseInput = 1,
 			backgroundGraphicHAlign = "Center",
-			backgroundGraphicVAlign = "Center",
-			;
+			backgroundGraphicVAlign = "Center";
 			{
 				type = "ProgressBar",
-				backgroundColor = { 99, 101, 99, 255},
-				progressColor = { 51, 255, 0, 255},
-				position = { 10, 27},
-				size = { 65, 2},
+				backgroundColor = { 99, 101, 99, 255 },
+				progressColor = { 51, 255, 0, 255 },
+				position = { 10, 27 },
+				size = { 65, 2 },
 				name = "shipHealth",
 				giveParentMouseInput = 1,
 			},
 			{
 				type = "TextLabel",
 				hAlign = "Right",
-				position = { -4, 14},
-				size = { 30, 13},
+				position = { -4, 14 },
+				size = { 30, 13 },
 				name = "shipCount",
 				Text = {
 					textStyle = "FEHeading4",
-					color = { 255, 255, 255, 255},
+					color = { 255, 255, 255, 255 },
 					hAlign = "Right",
 					vAlign = "Bottom",
 				},
@@ -2278,11 +2247,10 @@ HW2StyleSheet = {
 			},
 		},
 	},
-	
-	Taskbar_CommandButtonStyle =
-	{
+
+	Taskbar_CommandButtonStyle = {
 		type = "Button",
-		size = {30, 30},
+		size = { 30, 30 },
 		DefaultGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\command_icons.mres",
 			textureUV = { 225, 1, 255, 31 },
@@ -2298,15 +2266,14 @@ HW2StyleSheet = {
 		DisabledGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\command_icons.mres",
 			textureUV = { 225, 1, 255, 31 },
-			color = { 255, 255, 255, 128},
+			color = { 255, 255, 255, 128 },
 		},
-		
-		soundOnClicked 		= "SFX_ButtonClick",
+
+		soundOnClicked = "SFX_ButtonClick",
 	},
-	Taskbar_CommandButtonStyleSmall =
-	{
+	Taskbar_CommandButtonStyleSmall = {
 		type = "Button",
-		size = {21, 20},
+		size = { 21, 20 },
 		DefaultGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\command_icons.mres",
 			textureUV = { 225, 1, 255, 31 },
@@ -2322,25 +2289,23 @@ HW2StyleSheet = {
 		DisabledGraphic = {
 			texture = "DATA:UI\\NewUI\\Taskbar\\command_icons.mres",
 			textureUV = { 225, 1, 255, 31 },
-			color = { 255, 255, 255, 128},
+			color = { 255, 255, 255, 128 },
 		},
-		
-		soundOnClicked 		= "SFX_ButtonClick",
+
+		soundOnClicked = "SFX_ButtonClick",
 	},
-	
-	Taskbar_SubsystemButtonStyle =
-	{
+
+	Taskbar_SubsystemButtonStyle = {
 		type = "Button",
 		name = "subsystem1",
-		size = { 32, 24},
+		size = { 32, 24 },
 		helpTipTextLabel = "commandsHelpTip",
-		
-		soundOnClicked 		= "SFX_ButtonClick",
-		;
+
+		soundOnClicked = "SFX_ButtonClick";
 		{
 			type = "Frame",
 			name = "icon",
-			size = { 32, 24},
+			size = { 32, 24 },
 			giveParentMouseInput = 1,
 		},
 	},
@@ -2348,108 +2313,100 @@ HW2StyleSheet = {
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- RIGHT CLICK MENU STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
-	RightClickMenu_ButtonTextStyle =
-	{
-		type = "Text",
-		font = "ButtonFont",
-		color = { 0, 175, 255, 255},
-		size  = 8,
+	RightClickMenu_ButtonTextStyle = {
+		type   = "Text",
+		font   = "ButtonFont",
+		color  = { 0, 175, 255, 255 },
+		size   = 8,
 		style  = 1,
 		hAlign = "Center",
 	},
-	
-	RightClickMenu_ButtonStyle =
-	{
+
+	RightClickMenu_ButtonStyle = {
 		type = "Button",
 		toggleButton = 1,
 		borderWidth = 1,
-		borderColor = { 0, 175, 255, 255},
-		overColor = { 48, 108, 136, 255},
-		overBorderColor = { 255, 255, 255, 255},
-		pressedColor = { 48, 108, 136, 255},
-		disabledBorderColor = { 0, 175, 255, 255},
-		disabledTextColor = { 0, 175, 255, 128},
-		
-		soundOnClicked 		= "SFX_RightClickMenuClick",
+		borderColor = { 0, 175, 255, 255 },
+		overColor = { 48, 108, 136, 255 },
+		overBorderColor = { 255, 255, 255, 255 },
+		pressedColor = { 48, 108, 136, 255 },
+		disabledBorderColor = { 0, 175, 255, 255 },
+		disabledTextColor = { 0, 175, 255, 128 },
+
+		soundOnClicked = "SFX_RightClickMenuClick",
 	},
 
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- DIPLOMACY SCREEN STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
-	DiplomacyScreen_ButtonTextStyle =
-	{
-		type = "Text",
-		font = "ButtonFont",
-		color = { 0, 175, 255, 255},
-		size  = 8,
+	DiplomacyScreen_ButtonTextStyle = {
+		type   = "Text",
+		font   = "ButtonFont",
+		color  = { 0, 175, 255, 255 },
+		size   = 8,
 		style  = 1,
 		hAlign = "Center",
 	},
-	
-	DiplomacyScreen_ButtonStyle =
-	{
+
+	DiplomacyScreen_ButtonStyle = {
 		type = "Button",
 		buttonStyle = "FEButtonStyle1",
 	},
 
-	DiplomacyScreen_PlayerButtonTextStyle =
-	{
-		type = "Text",
-		font = "ButtonFont",
-		color = { 255, 255, 255, 255},
-		size  = 8,
+	DiplomacyScreen_PlayerButtonTextStyle = {
+		type   = "Text",
+		font   = "ButtonFont",
+		color  = { 255, 255, 255, 255 },
+		size   = 8,
 		style  = 1,
 		hAlign = "Left",
-		
-		soundOnClicked 		= "SFX_ButtonClick",
+
+		soundOnClicked = "SFX_ButtonClick",
 	},
-	
-	DiplomacyScreen_PlayerButtonStyle =
-	{
+
+	DiplomacyScreen_PlayerButtonStyle = {
 		type = "Button",
-		size = {219, 27},
+		size = { 219, 27 },
 		toggleButton = 1,
 		borderWidth = 1,
 		borderColor = "IGColorOutline",
 		disabledBorderColor = "IGColorOutline",
 		pressedColor = "IGColorButtonPressed",
-		overBorderColor = {255, 255, 255, 255},
+		overBorderColor = { 255, 255, 255, 255 },
 		flashColor = "IGColorButtonPressed",
-		flashBorderColor = {255, 255, 255, 255},
+		flashBorderColor = { 255, 255, 255, 255 },
 		flashSpeed = 250,
-		
-		soundOnClicked = "SFX_ButtonClick",
-		;
-		
+
+		soundOnClicked = "SFX_ButtonClick";
+
 		{
 			type = "TextLabel",
 			name = "name",
-			position = { 20, 0},
-			size = { 135, 27},
+			position = { 20, 0 },
+			size = { 135, 27 },
 			Text = {
 				textStyle = "DiplomacyScreen_PlayerButtonTextStyle",
 			},
 			giveParentMouseInput = 1,
 		},
-		
+
 		{
 			type = "Frame",
-			position = { 155, 5},
-			size = { 60, 16},
-			backgroundColor = { 94, 151, 48, 255},
+			position = { 155, 5 },
+			size = { 60, 16 },
+			backgroundColor = { 94, 151, 48, 255 },
 			outerBorderWidth = 1,
-			borderColor = { 0, 0, 0, 255},
+			borderColor = { 0, 0, 0, 255 },
 			name = "teamcolor",
 			visible = 0,
-			giveParentMouseInput = 1,
-			;
+			giveParentMouseInput = 1;
 			{
 				type = "Frame",
-				position = { 20, 0},
-				size = { 40, 16},
+				position = { 20, 0 },
+				size = { 40, 16 },
 				name = "teamstripe",
 				BackgroundGraphic = {
-					size = { 40, 16},
+					size = { 40, 16 },
 					texture = "DATA:UI\\NewUI\\PlayerSetup\\stripes_small.tga",
 					textureUV = { 0, 0, 40, 16 },
 				},
@@ -2457,80 +2414,79 @@ HW2StyleSheet = {
 			},
 			{
 				type = "Frame",
-				position = { 3, 0},
-				size = { 16, 16},
+				position = { 3, 0 },
+				size = { 16, 16 },
 				name = "emblem",
 				BackgroundGraphic = {
-					size = { 16, 16},
+					size = { 16, 16 },
 					texture = "DATA:Badges/Hiigaran.tga",
 					textureUV = { 0, 0, 64, 64 },
 				},
 				giveParentMouseInput = 1,
 			},
 		},
-		
+
 		{
 			type = "Frame",
-			position = { 4, 7},
-			size = { 11, 11},
+			position = { 4, 7 },
+			size = { 11, 11 },
 			name = "iconrequest",
 			visible = 0,
 			BackgroundGraphic = {
-				size = { 11, 11},
+				size = { 11, 11 },
 				texture = "DATA:UI\\NewUI\\InGameIcons\\allyrequest.tga",
 				textureUV = { 0, 0, 11, 11 },
 			},
 			giveParentMouseInput = 1,
 		},
-		
+
 		{
 			type = "Frame",
-			position = { 4, 7},
-			size = { 11, 11},
+			position = { 4, 7 },
+			size = { 11, 11 },
 			name = "iconallies",
 			visible = 0,
 			BackgroundGraphic = {
-				size = { 11, 11},
+				size = { 11, 11 },
 				texture = "DATA:UI\\NewUI\\InGameIcons\\allies.tga",
 				textureUV = { 0, 0, 11, 11 },
 			},
 			giveParentMouseInput = 1,
 		},
 	},
-	
+
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- RESEARCH MANAGER POPUP STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
 	ResearchInfoTextStyle = {
 		type = "Text",
 		font = "ChatFont",
-		color = { 255, 255, 255, 255},		
+		color = { 255, 255, 255, 255 },
 		hAlign = "Left",
 	},
 
 	---------------------------------------------------------------------------------------------------------------------------------
 	-- IN GAME CHAT SCREEN STYLES
 	---------------------------------------------------------------------------------------------------------------------------------
-	Chat_PlayerButtonStyle =
-	{
+	Chat_PlayerButtonStyle = {
 		type = "Button",
-		size = { 86, 13},
+		size = { 86, 13 },
 		borderWidth = 1,
 		borderColor = "IGColorOutline",
-		overColor = { 48, 108, 136, 128},
-		pressedColor = { 48, 108, 136, 255},
-		disabledColor = { 0, 0, 0, 0},
+		overColor = { 48, 108, 136, 128 },
+		pressedColor = { 48, 108, 136, 255 },
+		disabledColor = { 0, 0, 0, 0 },
 		disabledBorderColor = "IGColorOutline",
-		textColor = { 255, 255, 255, 255},
-		overTextColor = { 255, 255, 255, 255},
-		pressedTextColor = { 255, 255, 255, 255},
-		disabledTextColor = { 255, 255, 255, 128},
+		textColor = { 255, 255, 255, 255 },
+		overTextColor = { 255, 255, 255, 255 },
+		pressedTextColor = { 255, 255, 255, 255 },
+		disabledTextColor = { 255, 255, 255, 128 },
 		marginWidth = 6,
 		Text = {
 			textStyle = "Taskbar_MenuButtonTextStyle",
 			hAlign = "Left",
 		},
-		
-		soundOnClicked 		= "SFX_ButtonClick",
+
+		soundOnClicked = "SFX_ButtonClick",
 	},
 }

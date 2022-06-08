@@ -31,8 +31,7 @@ local Button = {
 	enabled = 0,
 	giveParentMouseInput = 0,
 	
-	soundOnClicked = "SFX_ResearchItemClick",
-	;
+	soundOnClicked = "SFX_ResearchItemClick";
 	
 	{
 		type = "Button",
@@ -57,8 +56,7 @@ local Button = {
 		
 		helpTip = "$5230", -- SHOW RESEARCH INFO
 		helpTipTextLabel = "commandsHelpTip",
-		helpTipScreen = "NewTaskbar",
-		;
+		helpTipScreen = "NewTaskbar";
 	},
 	
 	{
@@ -85,8 +83,7 @@ local Button = {
 		
 		helpTip = "$5226", -- CLICK ITEM TO RESEARCH
 		helpTipTextLabel = "commandsHelpTip",
-		helpTipScreen = "NewTaskbar",
-		;
+		helpTipScreen = "NewTaskbar";
 	
 		-- Icon
 		{
@@ -203,8 +200,7 @@ NewResearchMenu = {
 		{"Hiigaran", "Utility","Hgn_ResourceCollector"},			
 --		{"Hiigaran", "Research","Icon_Subsystem_Research"},
 --		{"Hiigaran", "AllShips","Icon_Subsystem_Research"},
-	},
-	;
+	};
 		
 	-- Title 
 	{
@@ -218,8 +214,7 @@ NewResearchMenu = {
 			text = "$2850",  -- RESEARCH MENU
 			offset = {4,0},
 			color = {0,0,0,255},
-		},
-		;
+		};
 		
 		-- Close button
 		{
@@ -258,17 +253,15 @@ NewResearchMenu = {
 		
 		helpTip = "$5228", -- SELECT RESEARCH FACILITY
 		helpTipTextLabel = "commandsHelpTip",
-		helpTipScreen = "NewTaskbar",
-		;
+		helpTipScreen = "NewTaskbar";
 		
 		{
 			type = "RadioButton",
 			buttonStyle = "IGButtonSubsystemSensors",
 			name = "Weapon",
 			helpTip = "SPECIAL WEAPON", 
-			helpTipTextLabel = "lblCurrentFacility",
+			helpTipTextLabel = "lblCurrentFacility";
 			--hotKeyID = 100,
-			; 
 				{ 
 				  type = "Frame", 
 				  size = { 13, 13, }, 
@@ -424,8 +417,7 @@ NewResearchMenu = {
 		minSize = {188, 0},
 		visible = 0,
 		
-		name = "shipUpgradeItemToClone",			
-		;
+		name = "shipUpgradeItemToClone";
 		
 		-- 
 		{
@@ -433,8 +425,7 @@ NewResearchMenu = {
 			position = {3,1},
 			autoarrange = 1,
 			autoarrangeWidth = 186,
-			autosize = 1,
-			;
+			autosize = 1;
 			-- header frame
 			{
 				type = "Frame",
@@ -443,8 +434,7 @@ NewResearchMenu = {
 					texture = "data:ui\\newui\\InGameIcons\\show_all_borders.mres",
 					textureUV = {0,0,185,13},
 					color = RESEARCHGROUPCOLOR,
-				},
-				;
+				};
 				-- Ship name label
 				{
 					type = "TextLabel",
@@ -470,15 +460,13 @@ NewResearchMenu = {
 					texture = "data:ui\\newui\\InGameIcons\\show_all_borders.mres",
 					textureUV = {0,14,185,25},
 					color = RESEARCHGROUPCOLOR,
-				},
-				;
+				};
 				
 				-- ship icon & info
 				{
 					type  = "Frame",
 					position = {2,2},
-					autosize = 1,
-					;
+					autosize = 1;
 					
 					-- Ship icon
 					{
@@ -525,8 +513,7 @@ NewResearchMenu = {
 		minSize = {188, 0},
 		visible = 0,
 		
-		name = "emptyShipUpgradeItemToClone",			
-		;
+		name = "emptyShipUpgradeItemToClone";
 		
 		-- 
 		{
@@ -534,8 +521,7 @@ NewResearchMenu = {
 			position = {3,1},
 			autoarrange = 1,
 			autoarrangeWidth = 186,
-			autosize = 1,
-			;
+			autosize = 1;
 			-- header frame
 			{
 				type = "Frame",
@@ -557,8 +543,7 @@ NewResearchMenu = {
 					texture = "data:ui\\newui\\InGameIcons\\show_all_borders.mres",
 					textureUV = {0,14,185,25},
 					color = {0,0,0,255},
-				},
-				;
+				};
 				
 				-- Empty upgrade item graphics
 				{
@@ -569,8 +554,7 @@ NewResearchMenu = {
 						texture = "data:ui\\newui\\ingameicons\\research_borders.mres",
 						textureUV = {0,0,13,13},
 						color = {0,0,0,255},
-					},
-					;
+					};
 				},
 		
 				{

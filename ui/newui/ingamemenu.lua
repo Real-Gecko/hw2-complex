@@ -1,6 +1,6 @@
 FRM_SPACER = {
 	type = "Frame",
-	size = {240,13},
+	size = { 240, 13 },
 }
 BTN_SAVEGAME = {
 	type = "TextButton",
@@ -11,10 +11,10 @@ BTN_SAVEGAME = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5564", -- "SAVE GAME",
 	},
-	
+
 	helpTip = "$5550", -- "SAVE THE PROGRESS OF YOUR GAME",
 	helpTipTextLabel = "m_lblHelpText",
-	
+
 	onMouseClicked = "FE_SaveGameScreen()",
 }
 BTN_LOADGAME = {
@@ -26,10 +26,10 @@ BTN_LOADGAME = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5565", -- "LOAD GAME",
 	},
-	
+
 	helpTip = "$5551", -- "LOAD A SAVED GAME",
 	helpTipTextLabel = "m_lblHelpText",
-	
+
 	onMouseClicked = "FE_LoadGameScreen()",
 }
 BTN_SAVEGAME_CAMPAIGN = {
@@ -41,7 +41,7 @@ BTN_SAVEGAME_CAMPAIGN = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5566", -- "SAVE CAMPAIGN",
 	},
-	
+
 	helpTip = "$5552", -- "SAVE THE PROGRESS OF YOUR CAMPAIGN",
 	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "FE_SaveGameScreen_Campaign()",
@@ -55,10 +55,10 @@ BTN_LOADGAME_CAMPAIGN = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5567", -- "LOAD CAMPAIGN",
 	},
-	
+
 	helpTip = "$5553", -- "LOAD A SAVED CAMPAIGN GAME",
 	helpTipTextLabel = "m_lblHelpText",
-	
+
 	onMouseClicked = "FE_LoadGameScreen_Campaign()",
 }
 BTN_LOADGAME_RECORDED = {
@@ -70,10 +70,10 @@ BTN_LOADGAME_RECORDED = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5568", -- "LOAD RECORDED GAME",
 	},
-	
+
 	helpTip = "$5554", -- "LOAD A SAVED RECORDED GAME",
 	helpTipTextLabel = "m_lblHelpText",
-	
+
 	onMouseClicked = "FE_LoadGameScreen_Recorded()",
 }
 BTN_OPTIONS = {
@@ -83,9 +83,9 @@ BTN_OPTIONS = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5569", -- "OPTIONS",
-	},	
+	},
 	helpTip = "$5555", -- "CHANGE GAME OPTIONS",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "UI_SetScreenEnabled(\"InGameOptions\", 1); UI_ShowScreen(\"InGameOptions\", ePopup);",
 }
 BTN_EXITTOWINDOWS = {
@@ -95,9 +95,9 @@ BTN_EXITTOWINDOWS = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5570", -- "EXIT TO WINDOWS",
-	},	
+	},
 	helpTip = "$5556", -- "END GAME AND EXIT TO WINDOWS",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "MainUI_UserEvent( eExit )",
 }
 BTN_EXITTOMAINMENU = {
@@ -107,9 +107,9 @@ BTN_EXITTOMAINMENU = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5571", -- "EXIT TO MAIN MENU",
-	},	
+	},
 	helpTip = "$5557", -- "RETURN TO MAIN MENU",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "FE_ExitToMainMenu();",
 }
 BTN_SKIRMISH_STATS = {
@@ -119,9 +119,9 @@ BTN_SKIRMISH_STATS = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5572", --"RETIRE",
-	},	
+	},
 	helpTip = "$5558", --"RETIRE YOUR FLEET",
-	helpTipTextLabel = "m_lblHelpText",			
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "UI_SetScreenEnabled(\"go\", 1); UI_ShowScreen(\"go\", ePopup); UI_HideScreen('InGameMenu'); MainUI_UserEvent( ePause)",
 }
 BTN_RETIRE = {
@@ -131,10 +131,10 @@ BTN_RETIRE = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5572", -- "RETIRE",
-	},	
+	},
 	helpTip = "$5558", -- "RETIRE YOUR FLEET",
-	helpTipTextLabel = "m_lblHelpText",		
-	onMouseClicked = "FE_Retire(\"MainUI_UserEvent(eMenu)\")", 	
+	helpTipTextLabel = "m_lblHelpText",
+	onMouseClicked = "FE_Retire(\"MainUI_UserEvent(eMenu)\")",
 	--onMouseClicked = "UI_SetScreenEnabled(\"go\", 1); UI_ShowScreen(\"go\", ePopup); UI_HideScreen('InGameMenu'); MainUI_UserEvent( ePause)",
 }
 BTN_ENDCURRENTGAME = {
@@ -144,14 +144,14 @@ BTN_ENDCURRENTGAME = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5572", -- "RETIRE",
-	},	
+	},
 	helpTip = "$5558", -- "RETIRE YOUR FLEET",
 	--Text = {
-		--textStyle = "FEButtonTextStyle",
-		--text = "$5579", -- "END CURRENT GAME",
-	--},	
+	--textStyle = "FEButtonTextStyle",
+	--text = "$5579", -- "END CURRENT GAME",
+	--},
 	--helpTip = "$5559", -- "END CURRENT GAME",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "FE_ExitToMainMenu();",
 }
 BTN_RETURNTOGAME = {
@@ -161,9 +161,9 @@ BTN_RETURNTOGAME = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5573", -- "RETURN TO GAME",
-	},	
+	},
 	helpTip = "$5559", -- "CLOSE THIS MENU AND RETURN TO GAME",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "MainUI_UserEvent(eMenu);",
 }
 BTN_NEXTTUTORIAL = {
@@ -176,9 +176,9 @@ BTN_NEXTTUTORIAL = {
 		text = "$5574", -- "NEXT TUTORIAL",
 	},
 	helpTip = "$5560", -- "PLAY THE NEXT TUTORIAL MISSION",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "FE_NextTutorial()",
-} 
+}
 BTN_RESTARTTUTORIAL = {
 	type = "TextButton",
 	name = "m_btnRestartTutorial",
@@ -187,11 +187,11 @@ BTN_RESTARTTUTORIAL = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5575", -- "RESTART TUTORIAL",
-	},	
+	},
 	helpTip = "$5561", -- "RESTART THE CURRENT TUTORIAL MISSION",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "FE_RestartGame(1)",
-} 
+}
 BTN_RESTARTMISSION = {
 	type = "TextButton",
 	name = "m_btnRestartMission",
@@ -200,12 +200,12 @@ BTN_RESTARTMISSION = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5576", -- "RESTART",
-	},	
+	},
 	helpTip = "$5562", -- "RESTART THE CURRENT MISSION",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "FE_RestartGame(1)", -- show are you sure message
 }
-BTN_RESTARTMISSION2 = {-- this button is for the mission failed menu
+BTN_RESTARTMISSION2 = { -- this button is for the mission failed menu
 	type = "TextButton",
 	name = "m_btnRestartMission2",
 	buttonStyle = "FEButtonStyle2",
@@ -213,9 +213,9 @@ BTN_RESTARTMISSION2 = {-- this button is for the mission failed menu
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5576",
-	},	
+	},
 	helpTip = "$5562",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "FE_RestartGame(0)", -- do not show are you sure message
 }
 BTN_RESTART = {
@@ -226,243 +226,232 @@ BTN_RESTART = {
 	Text = {
 		textStyle = "FEButtonTextStyle",
 		text = "$5576", -- "RESTART",
-	},	
+	},
 	helpTip = "$5563", -- "RESTART THE CURRENT LEVEL",
-	helpTipTextLabel = "m_lblHelpText",	
+	helpTipTextLabel = "m_lblHelpText",
 	onMouseClicked = "FE_RestartGame(1)",
 }
 
 InGameMenu = {
-	size = { 0, 0, 800, 600},		-- make screen full size so other menus don't get input
+	size = { 0, 0, 800, 600 }, -- make screen full size so other menus don't get input
 	stylesheet = "HW2StyleSheet",
 	RootElementSettings = {
 		backgroundColor = "FEColorBackground2",
-	},	
+	},
 	-- Flags
-	pixelUVCoords = 1, -- Enter pixel coords for texture coords	
+	pixelUVCoords = 1, -- Enter pixel coords for texture coords
 	--
 	soundOnShow = "SFX_GameMenuONOFF",
-	soundOnHide = "SFX_GameMenuONOFF",	
-	;	
+	soundOnHide = "SFX_GameMenuONOFF";
 	{
 		type = "Frame",
-		position = { 274, 179},
+		position = { 274, 179 },
 		backgroundColor = "FEColorDialog",
-		autosize = 1,
-		;		
+		autosize = 1;
 		-- gradient header frame w/border
 		{
 			type = "Frame",
 			outerBorderWidth = 2,
-			position = {4, 4},
-			size = {244, 28},
+			position = { 4, 4 },
+			size = { 244, 28 },
 			borderColor = "FEColorPopupOutline",
 			style = "FEPopupBackgroundStyle",
-		},		
+		},
 		-- Panel Title
 		{
 			type = "TextLabel",
-			position = {0,2},
-			size = {200, 18},
-			
+			position = { 0, 2 },
+			size = { 200, 18 },
+
 			Text = {
 				textStyle = "FEHeading3",
 				text = "$5577", -- "GAME MENU",
-				offset = {8,0},
+				offset = { 8, 0 },
 				vAlign = "Top",
 			},
-		},		
+		},
 		-- Panel Subtitle
 		{
-			position = {0, 17},
+			position = { 0, 17 },
 			type = "TextLabel",
-			name = "m_lblSubTitle",			
-			size = {200, 10},
+			name = "m_lblSubTitle",
+			size = { 200, 10 },
 			Text = {
 				textStyle = "FEHeading4",
 				text = "$5578", -- "SELECT//",
-				offset = {8,0},
+				offset = { 8, 0 },
 			},
-		},		
+		},
 		{
 			type = "Frame",
 			name = "frmButtonGroup",
-			position = {0, 30},
+			position = { 0, 30 },
 			autosize = 1,
 			autoarrange = 1,
-			autoarrangeSpace = 4,
-			;			
+			autoarrangeSpace = 4;
 		},
-	},	
----------------------------------------------------------------------------------------------
--- PLAYER VS CPU MENU BUTTONS
----------------------------------------------------------------------------------------------
+	},
+	---------------------------------------------------------------------------------------------
+	-- PLAYER VS CPU MENU BUTTONS
+	---------------------------------------------------------------------------------------------
 	{
-		type = "Frame",
+		type             = "Frame",
 		outerBorderWidth = 2,
-		name = "frmButtons_PlayerVsCpu",
-		borderColor = "FEColorPopupOutline",
-		autosize  = 1,
-		autoarrange = 1,
+		name             = "frmButtons_PlayerVsCpu",
+		borderColor      = "FEColorPopupOutline",
+		autosize         = 1,
+		autoarrange      = 1,
 		autoarrangeSpace = 2,
-		visible = 0,
-		;		
-		BTN_SAVEGAME ,
+		visible          = 0;
+		BTN_SAVEGAME,
 		BTN_LOADGAME,
-		BTN_OPTIONS,		
+		BTN_OPTIONS,
 		BTN_EXITTOWINDOWS,
 		BTN_EXITTOMAINMENU,
 		BTN_RETIRE,
 		BTN_RESTART,
 		FRM_SPACER,
 		BTN_RETURNTOGAME,
-	},	
----------------------------------------------------------------------------------------------
--- PLAYER VS CPU MENU BUTTONS (FAILED) used when a player dies and chooses to keep watching
----------------------------------------------------------------------------------------------
+	},
+	---------------------------------------------------------------------------------------------
+	-- PLAYER VS CPU MENU BUTTONS (FAILED) used when a player dies and chooses to keep watching
+	---------------------------------------------------------------------------------------------
 	{
-		type = "Frame",
+		type             = "Frame",
 		outerBorderWidth = 2,
-		name = "frmButtons_PlayerVsCpuFailed",
-		borderColor = "FEColorPopupOutline",
-		autosize  = 1,
-		autoarrange = 1,
+		name             = "frmButtons_PlayerVsCpuFailed",
+		borderColor      = "FEColorPopupOutline",
+		autosize         = 1,
+		autoarrange      = 1,
 		autoarrangeSpace = 2,
-		visible = 0,
-		;				
+		visible          = 0;
 		BTN_LOADGAME,
-		BTN_OPTIONS,			
+		BTN_OPTIONS,
 		BTN_EXITTOWINDOWS,
 		BTN_EXITTOMAINMENU,
 		BTN_RETIRE,
 		BTN_RESTART,
 		FRM_SPACER,
 		BTN_RETURNTOGAME,
-	},	
----------------------------------------------------------------------------------------------
--- MULTIPLAYER MENU BUTTONS
----------------------------------------------------------------------------------------------
+	},
+	---------------------------------------------------------------------------------------------
+	-- MULTIPLAYER MENU BUTTONS
+	---------------------------------------------------------------------------------------------
 	{
-		type = "Frame",
+		type             = "Frame",
 		outerBorderWidth = 2,
-		name = "frmButtons_Multiplayer",
-		borderColor = "FEColorPopupOutline",
-		autosize  = 1,
-		autoarrange = 1,
+		name             = "frmButtons_Multiplayer",
+		borderColor      = "FEColorPopupOutline",
+		autosize         = 1,
+		autoarrange      = 1,
 		autoarrangeSpace = 2,
-		visible = 0,
-		;		
-		BTN_OPTIONS,		
-		BTN_EXITTOWINDOWS,	
+		visible          = 0;
+		BTN_OPTIONS,
+		BTN_EXITTOWINDOWS,
 		BTN_EXITTOMAINMENU,
-		BTN_ENDCURRENTGAME,			
-		FRM_SPACER,		
+		BTN_ENDCURRENTGAME,
+		FRM_SPACER,
 		BTN_RETURNTOGAME,
-	},	
----------------------------------------------------------------------------------------------
--- MULTIPLAYER MENU BUTTONS (FAILED) used when a player dies and chooses to keep watching
----------------------------------------------------------------------------------------------
+	},
+	---------------------------------------------------------------------------------------------
+	-- MULTIPLAYER MENU BUTTONS (FAILED) used when a player dies and chooses to keep watching
+	---------------------------------------------------------------------------------------------
 	{
-		type = "Frame",
+		type             = "Frame",
 		outerBorderWidth = 2,
-		name = "frmButtons_MultiplayerFailed",
-		borderColor = "FEColorPopupOutline",
-		autosize  = 1,
-		autoarrange = 1,
+		name             = "frmButtons_MultiplayerFailed",
+		borderColor      = "FEColorPopupOutline",
+		autosize         = 1,
+		autoarrange      = 1,
 		autoarrangeSpace = 2,
-		visible = 0,
-		;		
-		BTN_OPTIONS,				
-		BTN_EXITTOWINDOWS,		
+		visible          = 0;
+		BTN_OPTIONS,
+		BTN_EXITTOWINDOWS,
 		BTN_EXITTOMAINMENU,
-	  BTN_ENDCURRENTGAME,
-		FRM_SPACER,		
+		BTN_ENDCURRENTGAME,
+		FRM_SPACER,
 		BTN_RETURNTOGAME,
-	},		
----------------------------------------------------------------------------------------------
--- CAMPAIGN MENU BUTTONS
----------------------------------------------------------------------------------------------
+	},
+	---------------------------------------------------------------------------------------------
+	-- CAMPAIGN MENU BUTTONS
+	---------------------------------------------------------------------------------------------
 	{
-		type = "Frame",
+		type             = "Frame",
 		outerBorderWidth = 2,
-		name = "frmButtons_Campaign",
-		borderColor = "FEColorPopupOutline",
-		autosize  = 1,
-		autoarrange = 1,
+		name             = "frmButtons_Campaign",
+		borderColor      = "FEColorPopupOutline",
+		autosize         = 1,
+		autoarrange      = 1,
 		autoarrangeSpace = 2,
-		visible = 0,
-		;		
+		visible          = 0;
 		BTN_RESTARTMISSION,
-		BTN_SAVEGAME_CAMPAIGN ,
+		BTN_SAVEGAME_CAMPAIGN,
 		BTN_LOADGAME_CAMPAIGN,
 		BTN_OPTIONS,
 		BTN_EXITTOMAINMENU,
 		BTN_EXITTOWINDOWS,
-		--BTN_RETIRE, -- retire button is pointless for campaign game, you can just use exit		
-		FRM_SPACER,		
+		--BTN_RETIRE, -- retire button is pointless for campaign game, you can just use exit
+		FRM_SPACER,
 		BTN_RETURNTOGAME,
-	},	
----------------------------------------------------------------------------------------------
--- CAMPAIGN MISSION FAILED BUTTONS (SHOWN AT END OF CAMPAIGN MISSION IF THE MISSION IS LOST)
----------------------------------------------------------------------------------------------
+	},
+	---------------------------------------------------------------------------------------------
+	-- CAMPAIGN MISSION FAILED BUTTONS (SHOWN AT END OF CAMPAIGN MISSION IF THE MISSION IS LOST)
+	---------------------------------------------------------------------------------------------
 	{
-		type = "Frame",
+		type             = "Frame",
 		outerBorderWidth = 2,
-		name = "frmButtons_CampaignFailed",
-		borderColor = "FEColorPopupOutline",
-		autosize  = 1,
-		autoarrange = 1,
+		name             = "frmButtons_CampaignFailed",
+		borderColor      = "FEColorPopupOutline",
+		autosize         = 1,
+		autoarrange      = 1,
 		autoarrangeSpace = 2,
-		visible = 0,
-		;				
+		visible          = 0;
 		--BTN_SAVEGAME_CAMPAIGN ,
 		BTN_LOADGAME_CAMPAIGN,
 		--BTN_OPTIONS,
 		BTN_EXITTOMAINMENU,
-		BTN_EXITTOWINDOWS,		
-		FRM_SPACER,		
+		BTN_EXITTOWINDOWS,
+		FRM_SPACER,
 		BTN_RESTARTMISSION2,
-	},		
----------------------------------------------------------------------------------------------
--- TUTORIAL MENU BUTTONS
----------------------------------------------------------------------------------------------
+	},
+	---------------------------------------------------------------------------------------------
+	-- TUTORIAL MENU BUTTONS
+	---------------------------------------------------------------------------------------------
 	{
-		type = "Frame",
+		type             = "Frame",
 		outerBorderWidth = 2,
-		name = "frmButtons_Tutorial",
-		borderColor = "FEColorPopupOutline",
-		autosize  = 1,
-		autoarrange = 1,
+		name             = "frmButtons_Tutorial",
+		borderColor      = "FEColorPopupOutline",
+		autosize         = 1,
+		autoarrange      = 1,
 		autoarrangeSpace = 2,
-		visible = 0,
-		;		
+		visible          = 0;
 		BTN_NEXTTUTORIAL,
 		BTN_RESTARTTUTORIAL,
 		BTN_OPTIONS,
 		BTN_EXITTOMAINMENU,
-		BTN_EXITTOWINDOWS,		
-		FRM_SPACER,		
+		BTN_EXITTOWINDOWS,
+		FRM_SPACER,
 		BTN_RETURNTOGAME,
-	},	
----------------------------------------------------------------------------------------------
--- RECORDED GAME MENU BUTTONS
----------------------------------------------------------------------------------------------
+	},
+	---------------------------------------------------------------------------------------------
+	-- RECORDED GAME MENU BUTTONS
+	---------------------------------------------------------------------------------------------
 	{
-		type = "Frame",
+		type             = "Frame",
 		outerBorderWidth = 2,
-		name = "frmButtons_RecordedGame",
-		borderColor = "FEColorPopupOutline",
-		autosize  = 1,
-		autoarrange = 1,
+		name             = "frmButtons_RecordedGame",
+		borderColor      = "FEColorPopupOutline",
+		autosize         = 1,
+		autoarrange      = 1,
 		autoarrangeSpace = 2,
-		visible = 0,
-		;		
+		visible          = 0;
 		--BTN_LOADGAME_RECORDED,
 		BTN_OPTIONS,
 		--BTN_GALLERY,
 		BTN_EXITTOWINDOWS,
-		BTN_EXITTOMAINMENU,		
-		FRM_SPACER,		
+		BTN_EXITTOMAINMENU,
+		FRM_SPACER,
 		BTN_RETURNTOGAME,
-	},		
+	},
 }
