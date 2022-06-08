@@ -1,6 +1,6 @@
 #### Initial code fix
 
--   [ ] Remove unused files
+-   [x] Remove unused files
 -   [ ] Remove `ship/hgn_hyperspaceplatform` as it seems broken
 -   [ ] Decompile remaining files
 -   [ ] Remove LuaDC header from decompiled files
