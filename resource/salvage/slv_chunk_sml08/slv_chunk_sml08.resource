@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:16:36 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewResourceType = StartSalvageConfig()
 NewResourceType.displayedName = "2520"
 NewResourceType.sobDescription = "2521"
@@ -33,10 +28,8 @@ NewResourceType.selectionPriority = 50
 NewResourceType.relativeMoveFactor = 4
 NewResourceType.useEngagementRanges = 0
 NewResourceType.pixelSize = 2
-NewResourceType.pixelColour = 
-    { 1, 0.349, 0.199, 1, }
-NewResourceType.pixelColourDepleted = 
-    { 0.5, 0.4, 0.3, 1, }
+NewResourceType.pixelColour = { 1, 0.349, 0.199, 1, }
+NewResourceType.pixelColourDepleted = { 0.5, 0.4, 0.3, 1, }
 NewResourceType.resourceValue = 700
 NewResourceType.blobRadius = 0
 NewResourceType.maxVelocity = 0

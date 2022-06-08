@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:24:07 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 -- Hod scaling: 1.6 * 0.6
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Weapon Station"
@@ -145,7 +140,7 @@ addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType, "HyperSpaceCommand", 0, 2, 1000, 100000, 4, 8)
 addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1, "Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Corvette, Fighter, ResourceLarge, Resource, Munition, Utility", "justshoot")
 --addAbility(NewShipType, "GuardCommand", 1, 3000, 1000)
-addAbility(NewShipType,"CanBuildShips",1,"OrdersEvac_Hgn,Orders_Hgn,SubSystem_Hgn,TangoMinem_ws,TangoMines,TangoMines1","SubSystemSensorsup, SubSystemSensorsdown, Orders, Weapon")
+addAbility(NewShipType, "CanBuildShips", 1, "OrdersEvac_Hgn,Orders_Hgn,SubSystem_Hgn,TangoMinem_ws,TangoMines,TangoMines1", "SubSystemSensorsup, SubSystemSensorsdown, Orders, Weapon")
 --addAbility(NewShipType, "CanBeCaptured", 320, 0.5)
 addAbility(NewShipType, "CanBeRepaired")
 --addAbility(NewShipType, "CloakAbility", 0, 1, 2000, 4000, 3, 100, 1, 1000)
@@ -155,8 +150,8 @@ addAbility(NewShipType, "RetireAbility", 0, 1)
 LoadModel(NewShipType, 1)
 
 -- gunturrets
-StartShipHardPointConfig(NewShipType,"up",  "Weapon_IonCannon_Top",   "Weapon","Sensors","Destroyable","","hgn_DDI_kineticturret1","hgn_pulsers1","HGN_SCC_6xAC_Turret_s1","HGN_SCC_6xAC_Turret_s1lr","hgn_torpedo_sentinel1","hgn_ion_sentinel1","hgn_nuclear_sentinel1","hgn_nuclear_sentinel1lr","hgn_artillery_2x_sentinel_1","","","");
-StartShipHardPointConfig(NewShipType,"down","Weapon_IonCannon_Bottom","Weapon","Sensors","Destroyable","","hgn_DDI_kineticturret2","hgn_pulsers2","HGN_SCC_6xAC_Turret_s2","HGN_SCC_6xAC_Turret_s2lr","hgn_torpedo_sentinel2","hgn_ion_sentinel2","hgn_nuclear_sentinel2","hgn_nuclear_sentinel2lr","hgn_artillery_2x_sentinel_2","","","");
+StartShipHardPointConfig(NewShipType, "up", "Weapon_IonCannon_Top", "Weapon", "Sensors", "Destroyable", "", "hgn_DDI_kineticturret1", "hgn_pulsers1", "HGN_SCC_6xAC_Turret_s1", "HGN_SCC_6xAC_Turret_s1lr", "hgn_torpedo_sentinel1", "hgn_ion_sentinel1", "hgn_nuclear_sentinel1", "hgn_nuclear_sentinel1lr", "hgn_artillery_2x_sentinel_1", "", "", "");
+StartShipHardPointConfig(NewShipType, "down", "Weapon_IonCannon_Bottom", "Weapon", "Sensors", "Destroyable", "", "hgn_DDI_kineticturret2", "hgn_pulsers2", "HGN_SCC_6xAC_Turret_s2", "HGN_SCC_6xAC_Turret_s2lr", "hgn_torpedo_sentinel2", "hgn_ion_sentinel2", "hgn_nuclear_sentinel2", "hgn_nuclear_sentinel2lr", "hgn_artillery_2x_sentinel_2", "", "", "");
 
 StartShipHardPointConfig(NewShipType, "Engine", "Hardpoint_Engine", "System", "Innate", "Damageable", "Hgn_WS_Innate_Engine", "", "", "", "", "", "", "", "")
 
@@ -164,22 +159,22 @@ StartShipHardPointConfig(NewShipType, "Weapon Front 1", "Weapon_Gunturret_1", "W
 StartShipHardPointConfig(NewShipType, "Weapon Front 2", "Weapon_Gunturret_2", "Weapon", "Innate", "Damageable", "hgn_DDI_kineticturret_bs", "", "", "", "", "", "", "", "")
 StartShipHardPointConfig(NewShipType, "Weapon Front 3", "Weapon_Gunturret_3", "Weapon", "Innate", "Damageable", "hgn_artillery_2x_ws", "", "", "", "", "", "", "", "")
 StartShipHardPointConfig(NewShipType, "Weapon Front 4", "Weapon_Gunturret_4", "Weapon", "Innate", "Damageable", "hgn_artillery_2x_ws", "", "", "", "", "", "", "", "")
-StartShipHardPointConfig(NewShipType, "Weapon Back 1",  "Weapon_Gunturret_5", "Weapon", "Innate", "Damageable", "hgn_DDI_kineticturret_bs", "", "", "", "", "", "", "", "")
-StartShipHardPointConfig(NewShipType, "Weapon Back 2",  "Weapon_Gunturret_6", "Weapon", "Innate", "Damageable", "hgn_DDI_kineticturret_bs", "", "", "", "", "", "", "", "")
-StartShipHardPointConfig(NewShipType, "Weapon Back 3",  "Weapon_Gunturret_7", "Weapon", "Innate", "Damageable", "hgn_artillery_2x_ws", "", "", "", "", "", "", "", "")
-StartShipHardPointConfig(NewShipType, "Weapon Back 4",  "Weapon_Gunturret_8", "Weapon", "Innate", "Damageable", "hgn_artillery_2x_ws", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "Weapon Back 1", "Weapon_Gunturret_5", "Weapon", "Innate", "Damageable", "hgn_DDI_kineticturret_bs", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "Weapon Back 2", "Weapon_Gunturret_6", "Weapon", "Innate", "Damageable", "hgn_DDI_kineticturret_bs", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "Weapon Back 3", "Weapon_Gunturret_7", "Weapon", "Innate", "Damageable", "hgn_artillery_2x_ws", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "Weapon Back 4", "Weapon_Gunturret_8", "Weapon", "Innate", "Damageable", "hgn_artillery_2x_ws", "", "", "", "", "", "", "", "")
 
 --StartShipHardPointConfig(NewShipType,"Weight","Hardpoint_Engine","System","Innate","Damageable","weight","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"experience","Hardpoint_Engine","System","Innate","Damageable","experience","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"efficency","Hardpoint_Engine","System","Innate","Damageable","efficency","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"en","Hardpoint_Engine","System","Innate","Damageable","en","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"FireControlTowerFake","Hardpoint_Engine","System","Innate","Indestructible","FireControlTowerFake","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "experience", "Hardpoint_Engine", "System", "Innate", "Damageable", "experience", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "efficency", "Hardpoint_Engine", "System", "Innate", "Damageable", "efficency", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "en", "Hardpoint_Engine", "System", "Innate", "Damageable", "en", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "FireControlTowerFake", "Hardpoint_Engine", "System", "Innate", "Indestructible", "FireControlTowerFake", "", "", "", "", "", "", "", "")
 
-StartShipHardPointConfig(NewShipType,"wsshield","Hardpoint_wsshield","System","Innate","Destroyable","","wsshield","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "wsshield", "Hardpoint_wsshield", "System", "Innate", "Destroyable", "", "wsshield", "", "", "", "", "", "", "", "")
 
 StartShipHardPointConfig(NewShipType, "hgn_orders_guard", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_guard")
 StartShipHardPointConfig(NewShipType, "hgn_orders_destroyallguns", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_destroyallguns")
-StartShipHardPointConfig(NewShipType, "hgn_orders_evacuation","Hardpoint_Engine","System","Innate","Destroyable","","hgn_orders_evacuation","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "hgn_orders_evacuation", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_evacuation", "", "", "", "", "", "", "", "")
 
 addShield(NewShipType, "EMP", 10000, 60)
 SpawnSalvageOnDeath(NewShipType, "Slv_Chunk_Lrg03", 1, 0.45, 0, 0, 0, 50, 0, 0, 0, 200, 0, 0, 0, 75, 0, 0, 0, 50)
@@ -199,6 +194,6 @@ NewShipType.chanceOfSpecialDeath = 0
 NewShipType.deadSobFadeTime = 0
 NewShipType.trailLinger = 6
 setEngineBurn(NewShipType, 9, 0.2, 0.5, 300, 1.02, 0.1, 0.25, 380)
-setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, 
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5,
     { 0.27, 0.47, 0.69, 0.25, })
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/", 0, "Hiigaran/Carrier/Engines/HDestroyerEng", "", 1, "Hiigaran/Carrier/Ambience/HAssaultCarrierAmb", "", 3, "Megaliths/RandomEmit/HANGAR_EMITTERS", "NavLight_BigBay")

@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:31:59 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 SCREENWIDTH = 200
 SCREENHEIGHT = 100
 BOTTOMYPOS = 497

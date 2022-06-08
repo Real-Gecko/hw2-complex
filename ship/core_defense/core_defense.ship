@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 17/06/2004 18.08.54
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Defense Core"
 NewShipType.sobDescription = "Defense Technology"
@@ -134,7 +129,7 @@ addAbility(NewShipType, "CanBeCaptured", 45, 0.5)
 AddShipMultiplier(NewShipType, "NebulaSensitivity", "ThisShipOnly", "Linear", 0, 0, 0)
 AddShipMultiplier(NewShipType, "DustCloudSensitivity", "ThisShipOnly", "Linear", 0, 0, 0)
 LoadModel(NewShipType, 1)
-StartShipHardPointConfig(NewShipType,"core_defense_sub","Hardpoint_sub","System","Innate","Indestructible","core_defense_sub","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "core_defense_sub", "Hardpoint_sub", "System", "Innate", "Indestructible", "core_defense_sub", "", "", "", "", "", "", "", "")
 addShield(NewShipType, "EMP", 20000, 80)
 NewShipType.battleScarMaxTriBase = 5
 NewShipType.battleScarMaxTriInc = 10
@@ -145,6 +140,6 @@ NewShipType.chanceOfSpecialDeath = 0
 NewShipType.deadSobFadeTime = 1
 NewShipType.trailLinger = 0.25
 setEngineBurn(NewShipType, 6, 2, 3, 8, 1.1, 0.1, 0.25, 16)
-setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, 
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5,
     { 0.27, 0.47, 0.69, 0.25, })
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/Hiigaran/Frigate/", 0, "Engines/HFrigateEng", "", 1, "Ambience/HFrigateAmb", "")

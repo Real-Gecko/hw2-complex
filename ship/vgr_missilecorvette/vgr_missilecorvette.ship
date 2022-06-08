@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 15/05/2005 17.22.59
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1612"
 NewShipType.sobDescription = "Anti-Corvette/Frigate"
@@ -137,27 +132,27 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "dockline"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
-addAbility(NewShipType, "CanAttack", 1, 2, 1, 0, 0.35, 1, "Corvette, Fighter, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Resource, Utility", "FlyBy_Corvette_vs_Corvette", 
-{ 
-    Fighter = "FlyRound_Corvette_vs_Fighter", 
-}, 
-{ 
-    Mothership = "flyround_Corvette_vs_Mothership", 
-}, 
-{ 
-    SmallCapitalShip = "FlyRound_Corvette_vs_CapShip", 
-}, 
-{ 
-    BigCapitalShip = "FlyRound_Corvette_vs_CapShip", 
-}, 
-{ 
-    SubSystem = "FrontalVsSubSystem_Corvette", 
-}, 
-{ 
-    Corvette = "FlyBy_Corvette_vs_Corvette", 
-}, 
-{ 
-    Frigate = "FlyRound_Corvette_vs_Frigate", })
+addAbility(NewShipType, "CanAttack", 1, 2, 1, 0, 0.35, 1, "Corvette, Fighter, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Resource, Utility", "FlyBy_Corvette_vs_Corvette",
+    {
+        Fighter = "FlyRound_Corvette_vs_Fighter",
+    },
+    {
+        Mothership = "flyround_Corvette_vs_Mothership",
+    },
+    {
+        SmallCapitalShip = "FlyRound_Corvette_vs_CapShip",
+    },
+    {
+        BigCapitalShip = "FlyRound_Corvette_vs_CapShip",
+    },
+    {
+        SubSystem = "FrontalVsSubSystem_Corvette",
+    },
+    {
+        Corvette = "FlyBy_Corvette_vs_Corvette",
+    },
+    {
+        Frigate = "FlyRound_Corvette_vs_Frigate", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 500)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
 addAbility(NewShipType, "RetireAbility", 0, 0)

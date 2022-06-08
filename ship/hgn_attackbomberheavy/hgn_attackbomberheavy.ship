@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 30/03/2005 19.38.36
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Heavy Bomber (x5)"
 NewShipType.sobDescription = "Anti-Frigate/Capital"
@@ -136,27 +131,27 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "dockline"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
-addAbility(NewShipType, "CanAttack", 1, 5, 1, 0, 0.35, 1, "Capturer, Frigate, SmallCapitalShip, BigCapitalShip, ResourceLarge, Mothership, Resource, Corvette, Fighter, Utility", "FlyBy_Bomber_vs_Frigate", 
-{ 
-    Fighter = "Flyby_Bomber_vs_Fighter", 
-}, 
-{ 
-    SubSystem = "TopAttack_Bomber_vs_Subsystem", 
-}, 
-{ 
-    SmallCapitalShip = "Strafe_Bomber_vs_Capship", 
-}, 
-{ 
-    BigCapitalShip = "Strafe_Bomber_vs_Capship", 
-}, 
-{ 
-    Mothership = "Flyby_Bomber_vs_Mothership", 
-}, 
-{ 
-    ResourceLarge = "Flyby_Bomber_vs_ResourceLarge", 
-}, 
-{ 
-    Corvette = "Flyby_Bomber_vs_Fighter", })
+addAbility(NewShipType, "CanAttack", 1, 5, 1, 0, 0.35, 1, "Capturer, Frigate, SmallCapitalShip, BigCapitalShip, ResourceLarge, Mothership, Resource, Corvette, Fighter, Utility", "FlyBy_Bomber_vs_Frigate",
+    {
+        Fighter = "Flyby_Bomber_vs_Fighter",
+    },
+    {
+        SubSystem = "TopAttack_Bomber_vs_Subsystem",
+    },
+    {
+        SmallCapitalShip = "Strafe_Bomber_vs_Capship",
+    },
+    {
+        BigCapitalShip = "Strafe_Bomber_vs_Capship",
+    },
+    {
+        Mothership = "Flyby_Bomber_vs_Mothership",
+    },
+    {
+        ResourceLarge = "Flyby_Bomber_vs_ResourceLarge",
+    },
+    {
+        Corvette = "Flyby_Bomber_vs_Fighter", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 500)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
 addAbility(NewShipType, "RetireAbility", 0, 0)
@@ -164,10 +159,10 @@ LoadModel(NewShipType, 1)
 
 StartShipWeaponConfig(NewShipType, "Hgn_AntiSubSystemBombLauncherHeavy", "Weapon_L", "Weapon_L")
 StartShipWeaponConfig(NewShipType, "Hgn_AntiSubSystemBombLauncherHeavy", "Weapon_R", "Weapon_R")
-StartShipWeaponConfig(NewShipType,"Hgn_AntiShipBombLauncherHeavy","Weapon_MEPUL","MEPUL");
-StartShipWeaponConfig(NewShipType,"Hgn_AntiShipBombLauncherHeavy","Weapon_MEPUR","MEPUR");
-StartShipWeaponConfig(NewShipType,"Hgn_AntiShipBombLauncherHeavy","Weapon_MEPLL","MEPLL");
-StartShipWeaponConfig(NewShipType,"Hgn_AntiShipBombLauncherHeavy","Weapon_MEPLR","MEPLR");
+StartShipWeaponConfig(NewShipType, "Hgn_AntiShipBombLauncherHeavy", "Weapon_MEPUL", "MEPUL");
+StartShipWeaponConfig(NewShipType, "Hgn_AntiShipBombLauncherHeavy", "Weapon_MEPUR", "MEPUR");
+StartShipWeaponConfig(NewShipType, "Hgn_AntiShipBombLauncherHeavy", "Weapon_MEPLL", "MEPLL");
+StartShipWeaponConfig(NewShipType, "Hgn_AntiShipBombLauncherHeavy", "Weapon_MEPLR", "MEPLR");
 
 addShield(NewShipType, "EMP", 75, 20)
 NewShipType.sobDieTime = 0.1

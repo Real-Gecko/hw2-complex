@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 25/06/2004 19.08.38
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Trade Convoy"
 NewShipType.sobDescription = "RUs Trader"
@@ -23,7 +18,7 @@ NewShipType.aggressiveFormation = "dockline"
 NewShipType.mass = 150
 NewShipType.collisionMultiplier = 1
 NewShipType.thrusterMaxSpeed = 130
-NewShipType.mainEngineMaxSpeed = 130 
+NewShipType.mainEngineMaxSpeed = 130
 NewShipType.rotationMaxSpeed = 30
 NewShipType.thrusterAccelTime = 7
 NewShipType.thrusterBrakeTime = 1.5
@@ -134,8 +129,8 @@ NewShipType.launchFormation = "dockline"
 addAbility(NewShipType, "RetireAbility", 0, 0)
 addAbility(NewShipType, "CanDock", 1, 1)
 addAbility(NewShipType, "ParadeCommand", 1)
-addAbility(NewShipType,"MoveCommand",1,0)
-addAbility(NewShipType,"WaypointMove")
+addAbility(NewShipType, "MoveCommand", 1, 0)
+addAbility(NewShipType, "WaypointMove")
 --addAbility(NewShipType, "CanBeSalvaged")
 addAbility(NewShipType, "ShipHold", 1, 0, 0, "rallypoint", "TransportCell", 0)
 addAbility(NewShipType, "CanBuildShips", 1, "OrdersEvac_Hgn,Orders_Hgn", "Orders")
@@ -147,19 +142,19 @@ AddShipMultiplier(NewShipType, "DustCloudSensitivity", "ThisShipOnly", "Linear",
 StartShipHardPointConfig(NewShipType, "hgn_orders_clear", "Hardpoint_support", "System", "Innate", "Destroyable", "", "hgn_orders_clear")
 StartShipHardPointConfig(NewShipType, "hgn_orders_trade", "Hardpoint_support", "System", "Innate", "Destroyable", "", "hgn_orders_trade")
 
-StartShipHardPointConfig(NewShipType,"ru","Hardpoint_ru","System","Innate","Damageable","runospeed","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"bay","Hardpoint_bay","System","Innate","Indestructible","bay","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"bay1","Hardpoint_bay1","System","Innate","Indestructible","bay","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"en","Hardpoint_support","System","Innate","Damageable","en","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "ru", "Hardpoint_ru", "System", "Innate", "Damageable", "runospeed", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "bay", "Hardpoint_bay", "System", "Innate", "Indestructible", "bay", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "bay1", "Hardpoint_bay1", "System", "Innate", "Indestructible", "bay", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "en", "Hardpoint_support", "System", "Innate", "Damageable", "en", "", "", "", "", "", "", "", "")
 
-StartShipHardPointConfig(NewShipType,"fake","Hardpoint_support","System","Innate","Indestructible","fake","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"fake","Hardpoint_support","System","Innate","Indestructible","fake","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"fake","Hardpoint_support","System","Innate","Indestructible","fake","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"fake","Hardpoint_support","System","Innate","Indestructible","fake","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"fake","Hardpoint_support","System","Innate","Indestructible","fake","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"fake","Hardpoint_support","System","Innate","Indestructible","fake","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "fake", "Hardpoint_support", "System", "Innate", "Indestructible", "fake", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "fake", "Hardpoint_support", "System", "Innate", "Indestructible", "fake", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "fake", "Hardpoint_support", "System", "Innate", "Indestructible", "fake", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "fake", "Hardpoint_support", "System", "Innate", "Indestructible", "fake", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "fake", "Hardpoint_support", "System", "Innate", "Indestructible", "fake", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "fake", "Hardpoint_support", "System", "Innate", "Indestructible", "fake", "", "", "", "", "", "", "", "")
 
-StartShipHardPointConfig(NewShipType, "engine_boost_container","Hardpoint_support","System","Innate","Destroyable", "", "engine_boost_container")
+StartShipHardPointConfig(NewShipType, "engine_boost_container", "Hardpoint_support", "System", "Innate", "Destroyable", "", "engine_boost_container")
 
 NewShipType.battleScarMaxTriBase = 75
 NewShipType.battleScarMaxTriInc = 100

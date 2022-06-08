@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 30/04/2005 4.12.39
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 keyFocusModifier = ALTKEY
 keyGuardModifier = GKEY
 keyHarvestModifier = HKEY

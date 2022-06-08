@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 14/06/2004 22.07.45
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 STATUS_FRIGATEDIES_1 = "$5600"
 STATUS_MOBILEREFINERYDIES_1 = "$5601"
 STATUS_DESTROYERDIES_1 = "$5602"

@@ -1,37 +1,32 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:33:10 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 StartWeaponConfig(NewWeaponType, "Fixed", "SphereBurst", "vgr_nukemissile", "Normal", 0, 0, 750, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 1, 0, 0)
 AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 6500, 8900, "")
 AddWeaponResult(NewWeaponType, "Miss", "DamageHealth", "Target", 5500, 7900, "")
-setPenetration(NewWeaponType, 30, 1, 
-{ 
-    Unarmoured = 0.05, 
-}, 
-{ 
-    LightArmour = 0.1, 
-}, 
-{ 
-    MediumArmour = 1.55, 
-}, 
-{ 
-    HeavyArmour = 2.75, 
-}, 
-{ 
-    TurretArmour = 0.8, 
-}, 
-{ 
-    resarmour = 0.1, 
-},
-{ 
-    MineArmour = 0.1, 
-},
-{ 
-    PlanetKillerArmour = 0, 
-},
-{ 
-    SubSystemArmour = 0, 
-})
+setPenetration(NewWeaponType, 30, 1,
+    {
+        Unarmoured = 0.05,
+    },
+    {
+        LightArmour = 0.1,
+    },
+    {
+        MediumArmour = 1.55,
+    },
+    {
+        HeavyArmour = 2.75,
+    },
+    {
+        TurretArmour = 0.8,
+    },
+    {
+        resarmour = 0.1,
+    },
+    {
+        MineArmour = 0.1,
+    },
+    {
+        PlanetKillerArmour = 0,
+    },
+    {
+        SubSystemArmour = 0,
+    })
 setAngles(NewWeaponType, 180, 0, 0, 0, 0)

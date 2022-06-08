@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:16:34 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewResourceType = StartAsteroidConfig()
 NewResourceType.displayedName = "2510"
 NewResourceType.sobDescription = "2511"
@@ -38,10 +33,8 @@ NewResourceType.selectionPriority = 50
 NewResourceType.relativeMoveFactor = 4
 NewResourceType.useEngagementRanges = 0
 NewResourceType.pixelSize = 8
-NewResourceType.pixelColour = 
-    { 1, 0.349, 0.199, 1, }
-NewResourceType.pixelColourDepleted = 
-    { 0.5, 0.4, 0.3, 1, }
+NewResourceType.pixelColour = { 1, 0.349, 0.199, 1, }
+NewResourceType.pixelColourDepleted = { 0.5, 0.4, 0.3, 1, }
 NewResourceType.resourceValue = 80000
 NewResourceType.blobRadius = 1000
 NewResourceType.maxVelocity = 0

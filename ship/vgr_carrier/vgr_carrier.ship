@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 20/10/2004 14.01.37
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1630"
 NewShipType.sobDescription = "$1631"
@@ -142,18 +137,18 @@ NewShipType.launchTimeBetweenTwoFormations = 1
 NewShipType.launchTimeBeforeStart = 2
 NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "delta"
-addAbility(NewShipType, "ShipHold", 1, 23, 12, "rallypoint", "Fighter,Corvette,Utility,minermissile", 35, 
-{ 
-    Fighter = "30", 
-}, 
-{ 
-    Utility = "500", 
-}, 
-{ 
-    Container = "600", 
-},  
-{ 
-    Corvette = "80", })
+addAbility(NewShipType, "ShipHold", 1, 23, 12, "rallypoint", "Fighter,Corvette,Utility,minermissile", 35,
+    {
+        Fighter = "30",
+    },
+    {
+        Utility = "500",
+    },
+    {
+        Container = "600",
+    },
+    {
+        Corvette = "80", })
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType, "HyperSpaceCommand", 0, 2, 500, 100000, 2, 4)
@@ -175,15 +170,15 @@ StartShipHardPointConfig(NewShipType, "Production 1", "HardPoint_Production1", "
 StartShipHardPointConfig(NewShipType, "Generic 1", "HardPoint_System1", "System", "Generic", "Destroyable", "", "Vgr_C_Module_Research", "Vgr_C_Module_CloakGenerator", "Vgr_C_Module_PlatformControl", "Vgr_C_Module_FireControl", "Vgr_C_Module_HyperspaceInhibitor", "Vgr_C_Module_Hyperspace", "Vgr_C_Module_Mine", "Vgr_C_Module_drive", "Vgr_C_Module_Defensefield", "Vgr_C_Module_build", "Vgr_C_Module_repair", "Vgr_C_Module_Defensefieldshield")
 StartShipHardPointConfig(NewShipType, "Generic 2", "HardPoint_System2", "System", "Generic", "Destroyable", "", "Vgr_C_Module_Research", "Vgr_C_Module_CloakGenerator", "Vgr_C_Module_PlatformControl", "Vgr_C_Module_FireControl", "Vgr_C_Module_HyperspaceInhibitor", "Vgr_C_Module_Hyperspace", "Vgr_C_Module_Mine", "Vgr_C_Module_drive", "Vgr_C_Module_Defensefield", "Vgr_C_Module_build", "Vgr_C_Module_repair", "Vgr_C_Module_Defensefieldshield")
 StartShipHardPointConfig(NewShipType, "Sensors1", "HardPoint_Sensors", "System", "Sensors", "Destroyable", "", "Vgr_C_Sensors_AdvancedArray", "Vgr_C_Sensors_DetectHyperspace", "Vgr_C_Sensors_DetectCloaked", "", "", "", "", "")
-StartShipHardPointConfig(NewShipType,"BPD1","Weapon_l1","Weapon","Sensors","Destroyable","","vgr_qje_lithiumion_port_s","","","")
-StartShipHardPointConfig(NewShipType,"BPD2","Weapon_l2","Weapon","Sensors","Destroyable","","vgr_qje_lithiumion_port_s1","","","")
+StartShipHardPointConfig(NewShipType, "BPD1", "Weapon_l1", "Weapon", "Sensors", "Destroyable", "", "vgr_qje_lithiumion_port_s", "", "", "")
+StartShipHardPointConfig(NewShipType, "BPD2", "Weapon_l2", "Weapon", "Sensors", "Destroyable", "", "vgr_qje_lithiumion_port_s1", "", "", "")
 StartShipHardPointConfig(NewShipType, "Engine", "Hardpoint_Engine", "System", "Innate", "Damageable", "Vgr_C_Engine", "", "", "", "", "", "", "", "")
 StartShipHardPointConfig(NewShipType, "Resource", "Hardpoint_Resource", "System", "Innate", "Damageable", "Vgr_C_Innate_Resource", "", "", "", "", "", "", "", "")
 
 --StartShipHardPointConfig(NewShipType,"Weight","Hardpoint_Engine","System","Innate","Damageable","weight","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"experience","Hardpoint_Engine","System","Innate","Damageable","experience","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"efficency","Hardpoint_Engine","System","Innate","Damageable","efficency","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"en","Hardpoint_Engine","System","Innate","Damageable","en","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "experience", "Hardpoint_Engine", "System", "Innate", "Damageable", "experience", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "efficency", "Hardpoint_Engine", "System", "Innate", "Damageable", "efficency", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "en", "Hardpoint_Engine", "System", "Innate", "Damageable", "en", "", "", "", "", "", "", "", "")
 
 StartShipHardPointConfig(NewShipType, "hgn_orders_clear", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_clear")
 StartShipHardPointConfig(NewShipType, "hgn_orders_parade", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_parade")
@@ -206,6 +201,6 @@ NewShipType.chanceOfSpecialDeath = 0
 NewShipType.deadSobFadeTime = 0
 NewShipType.trailLinger = 2
 setEngineBurn(NewShipType, 12, 0.2, 0.5, 420, 1.02, 0.1, 0.25, 480)
-setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, 
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5,
     { 0.92, 0.21, 0.09, 0.25, })
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/", 0, "Vaygr/Carrier/Engines/VDestroyerEng", "", 1, "Vaygr/Carrier/Ambience/VDestroyerAmb", "", 3, "Megaliths/RandomEmit/HANGAR_EMITTERS", "HardPoint_Production1_Position")

@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 02/05/2005 18.41.25
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 BUILDCOLOR = 
     { 200, 200, 200, 255, }
 RESEARCHCOLOR = 

@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 10/06/2004 20.59.52
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Carrier"
 NewShipType.sobDescription = "$1543"
@@ -141,18 +136,18 @@ NewShipType.launchTimeBetweenTwoFormations = 1
 NewShipType.launchTimeBeforeStart = 2
 NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "delta"
-addAbility(NewShipType, "ShipHold", 1, 18, 12, "rallypoint", "Fighter,Corvette,Utility", 35, 
-{ 
-    Fighter = "40", 
-}, 
-{ 
-    Utility = "500", 
-}, 
-{ 
-    Container = "600", 
-}, 
-{ 
-    Corvette = "90", })
+addAbility(NewShipType, "ShipHold", 1, 18, 12, "rallypoint", "Fighter,Corvette,Utility", 35,
+    {
+        Fighter = "40",
+    },
+    {
+        Utility = "500",
+    },
+    {
+        Container = "600",
+    },
+    {
+        Corvette = "90", })
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType, "HyperSpaceCommand", 0, 1, 500, 100000, 2, 4)
@@ -197,9 +192,9 @@ StartShipHardPointConfig(NewShipType, "supply", "Hardpoint_supply", "System", "S
 StartShipHardPointConfig(NewShipType, "pg", "Hardpoint_pg", "System", "Sensors", "Destroyable", "", "hgn_power_ms", "", "", "")
 
 --StartShipHardPointConfig(NewShipType,"Weight","Hardpoint_Engine","System","Innate","Damageable","weight","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"experience","Hardpoint_Engine","System","Innate","Damageable","experience","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"efficency","Hardpoint_Engine","System","Innate","Damageable","efficency","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"en","Hardpoint_Engine","System","Innate","Damageable","en","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "experience", "Hardpoint_Engine", "System", "Innate", "Damageable", "experience", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "efficency", "Hardpoint_Engine", "System", "Innate", "Damageable", "efficency", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "en", "Hardpoint_Engine", "System", "Innate", "Damageable", "en", "", "", "", "", "", "", "", "")
 --StartShipHardPointConfig(NewShipType,"canbuildmothership","Hardpoint_Engine","System","Innate","Destroyable","canbuildmothership","","","","","","","","")
 
 StartShipHardPointConfig(NewShipType, "hgn_orders_clear", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_clear")
@@ -213,7 +208,7 @@ StartShipHardPointConfig(NewShipType, "hgn_orders_aggressive", "Hardpoint_Engine
 StartShipHardPointConfig(NewShipType, "hgn_orders_strikegroup_fs", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_strikegroup_fs", "hgn_orders_strikegroup_cp", "hgn_orders_strikegroup_fl")
 StartShipHardPointConfig(NewShipType, "hgn_orders_dock", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_dock")
 --StartShipHardPointConfig(NewShipType, "hgn_orders_dock_permanent", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_dock_permanent")
-StartShipHardPointConfig(NewShipType, "hgn_orders_evacuation","Hardpoint_Engine","System","Innate","Destroyable","","hgn_orders_evacuation","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "hgn_orders_evacuation", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_evacuation", "", "", "", "", "", "", "", "")
 
 SpawnSalvageOnDeath(NewShipType, "Slv_Chunk_Lrg01", 1, 0.45, 0, 0, 0, 50, 0, 0, 0, 200, 0, 0, 0, 60, 0, 0, 0, 50)
 SpawnSalvageOnDeath(NewShipType, "Slv_Chunk_Lrg04", 1, 0.12, 30, -20, 200, 25, 300, 150, 85, 50, 0, 0, 0, 105, 0, 0, 0, 50)
@@ -229,6 +224,6 @@ NewShipType.chanceOfSpecialDeath = 0
 NewShipType.deadSobFadeTime = 0
 NewShipType.trailLinger = 6
 setEngineBurn(NewShipType, 9, 0.2, 0.5, 300, 1.02, 0.1, 0.25, 380)
-setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, 
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5,
     { 0.27, 0.47, 0.69, 0.25, })
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/", 0, "Hiigaran/Carrier/Engines/HDestroyerEng", "", 1, "Hiigaran/Carrier/Ambience/HAssaultCarrierAmb", "", 3, "Megaliths/RandomEmit/HANGAR_EMITTERS", "NavLight_BigBay")

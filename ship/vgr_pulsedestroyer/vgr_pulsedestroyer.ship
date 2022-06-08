@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 23/10/2004 16.59.23
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Heavy Destroyer"
 NewShipType.sobDescription = "Anti-Frigate/Capital"
@@ -142,24 +137,24 @@ NewShipType.launchFormation = "delta"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType, "HyperSpaceCommand", 0, 2, 500, 100000, 2, 4)
-addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.5, "SmallCapitalShip, Capturer, Frigate, BigCapitalShip, Mothership, Resource, Corvette, Fighter, Munition, Utility", "BroadSide", 
-{ 
-    Fighter = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Corvette = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Munition = "MoveToTargetAndShoot", 
-}, 
-{ 
-    BigCapitalShip = "Frontal", 
-},
-{ 
-    Mothership = "Frontal", 
-},
-{ 
-    SubSystem = "BroadSideVsSubSystem", })
+addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.5, "SmallCapitalShip, Capturer, Frigate, BigCapitalShip, Mothership, Resource, Corvette, Fighter, Munition, Utility", "BroadSide",
+    {
+        Fighter = "MoveToTargetAndShoot",
+    },
+    {
+        Corvette = "MoveToTargetAndShoot",
+    },
+    {
+        Munition = "MoveToTargetAndShoot",
+    },
+    {
+        BigCapitalShip = "Frontal",
+    },
+    {
+        Mothership = "Frontal",
+    },
+    {
+        SubSystem = "BroadSideVsSubSystem", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 800)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 0, 3, 1, 0.3)
 addAbility(NewShipType, "CanBeCaptured", 90, 0.1)
@@ -172,8 +167,8 @@ StartShipHardPointConfig(NewShipType, "Engine", "Hardpoint_Engine", "System", "I
 StartShipHardPointConfig(NewShipType, "Weapon", "Hardpoint_turretL", "Weapon", "Generic", "Damageable", "vgr_qje_dualflechette_stbd_pd_l")
 StartShipHardPointConfig(NewShipType, "Weapon", "Hardpoint_turretR", "Weapon", "Generic", "Damageable", "vgr_qje_dualflechette_stbd_pd")
 StartShipHardPointConfig(NewShipType, "Weapon", "Hardpoint_turretB", "Weapon", "Generic", "Damageable", "vgr_qje_quadflechette_stbd_ws")
-StartShipHardPointConfig(NewShipType,"experience","Hardpoint_Engine","System","Innate","Damageable","experience","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"efficency","Hardpoint_Engine","System","Innate","Damageable","efficency","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "experience", "Hardpoint_Engine", "System", "Innate", "Damageable", "experience", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "efficency", "Hardpoint_Engine", "System", "Innate", "Damageable", "efficency", "", "", "", "", "", "", "", "")
 --StartShipHardPointConfig(NewShipType,"Distance","Hardpoint_Engine","System","Innate","Damageable","Distance","","","","","","","","")
 --StartShipHardPointConfig(NewShipType,"Position","Hardpoint_Engine","System","Innate","Damageable","Position","","","","","","","","")
 addShield(NewShipType, "EMP", 1000, 40)
@@ -187,6 +182,6 @@ NewShipType.specialDeathSpeed = 40
 NewShipType.chanceOfSpecialDeath = 0
 NewShipType.deadSobFadeTime = 0
 NewShipType.trailLinger = 2
-setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, 
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5,
     { 0.92, 0.21, 0.09, 0.25, })
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/Vaygr/Carrier/", 0, "Engines/VDestroyerEng", "", 1, "Ambience/VDestroyerAmb", "")

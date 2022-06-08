@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:31:21 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 nearClip = 3
 farClip = 4250000
 verticalFOV = 65
@@ -22,8 +17,7 @@ CAM_CUBIC_EVAL_ANGLE_TWEAK = 2
 cameraFloatEnableTime = 3
 cameraFloatShape = 2
 cameraFloatFrequency = 0.2
-cameraFloatAmplitude = 
-    { 0.15, 0.15, }
+cameraFloatAmplitude = { 0.15, 0.15, }
 cameraFloatDistanceFactor = 0.01
 cameraZoomFactor = 2.15
 cameraZoomDecel = 0.4

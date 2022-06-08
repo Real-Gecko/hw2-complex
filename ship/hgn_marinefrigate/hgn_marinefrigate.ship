@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 18/06/2004 14.23.14
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Marine Frigate"
 NewShipType.sobDescription = "Enemy Ship Capturer"
@@ -142,28 +137,28 @@ addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType, "CaptureCommand", 1, -50)
 addAbility(NewShipType, "HyperSpaceCommand", 0, 1, 200, 100000, 1, 3)
-addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.5, "Fighter, Corvette, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Resource, ResourceLarge, Utility", "Frontal", 
-{ 
-    Fighter = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Corvette = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Munition = "MoveToTargetAndShoot", 
-}, 
-{ 
-    SubSystem = "FrontalVsSubSystem", })
+addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.5, "Fighter, Corvette, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Resource, ResourceLarge, Utility", "Frontal",
+    {
+        Fighter = "MoveToTargetAndShoot",
+    },
+    {
+        Corvette = "MoveToTargetAndShoot",
+    },
+    {
+        Munition = "MoveToTargetAndShoot",
+    },
+    {
+        SubSystem = "FrontalVsSubSystem", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 600)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
 addAbility(NewShipType, "CanBeCaptured", 45, 0.5)
 addAbility(NewShipType, "CanBeRepaired")
 addAbility(NewShipType, "RetireAbility", 0, 1)
---addAbility(NewShipType, "RepairCommand", 0, 650, 11, 
---{ 
---    SuperCap = "18", 
---}, 
---{ 
+--addAbility(NewShipType, "RepairCommand", 0, 650, 11,
+--{
+--    SuperCap = "18",
+--},
+--{
 --    Flagship = "18", })
 LoadModel(NewShipType, 1)
 StartShipWeaponConfig(NewShipType, "Hgn_VulcanKineticTurretHeavy", "Weapon_TurretTop", "Weapon_TurretTop")
@@ -181,6 +176,6 @@ NewShipType.chanceOfSpecialDeath = 0
 NewShipType.deadSobFadeTime = 0
 NewShipType.trailLinger = 4
 setEngineBurn(NewShipType, 6, 1, 1.5, 60, 1.01, 0.1, 0.25, 120)
-setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, 
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5,
     { 0.27, 0.47, 0.69, 0.25, })
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/Hiigaran/Frigate/", 0, "Engines/HFrigateEng", "", 1, "Ambience/HFrigateAmb", "")

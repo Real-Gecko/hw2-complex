@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 05/07/2004 20.58.54
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Artillery Destroyer"
 NewShipType.sobDescription = "Long-Range Anti-Capital"
@@ -142,18 +137,18 @@ NewShipType.launchFormation = "dockline"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType, "HyperSpaceCommand", 0, 2, 500, 100000, 2, 4)
-addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.5, "SmallCapitalShip, BigCapitalShip, Mothership, Capturer, Frigate, Corvette, Fighter, ResourceLarge, Resource, Utility", "BroadSide", 
-{ 
-    Fighter = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Corvette = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Munition = "MoveToTargetAndShoot", 
-}, 
-{ 
-    SubSystem = "BroadSideVsSubSystem", })
+addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.5, "SmallCapitalShip, BigCapitalShip, Mothership, Capturer, Frigate, Corvette, Fighter, ResourceLarge, Resource, Utility", "BroadSide",
+    {
+        Fighter = "MoveToTargetAndShoot",
+    },
+    {
+        Corvette = "MoveToTargetAndShoot",
+    },
+    {
+        Munition = "MoveToTargetAndShoot",
+    },
+    {
+        SubSystem = "BroadSideVsSubSystem", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 800)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 5, 0.4)
 addAbility(NewShipType, "CanBeCaptured", 90, 0.5)
@@ -162,13 +157,13 @@ addAbility(NewShipType, "RetireAbility", 0, 1)
 LoadModel(NewShipType, 1)
 StartShipWeaponConfig(NewShipType, "Hgn_DestroyerTorpedoLauncher", "Weapon_Torpedo", "Weapon_Torpedo")
 StartShipHardPointConfig(NewShipType, "Engine", "Hardpoint_Engine", "System", "Innate", "Damageable", "Hgn_IonDes_Engine", "", "", "", "", "", "", "", "")
-StartShipHardPointConfig(NewShipType,"t1","Weapon_TurretTop","Weapon","Sensors","Indestructible","hgn_artillery_2x_destroyer","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"t2","Weapon_TurretFront","Weapon","Sensors","Indestructible","hgn_artillery_2x_destroyer","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"t3","Weapon_TurretBottom","Weapon","Sensors","Indestructible","hgn_artillery_2x_destroyer","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"t4","Weapon_TurretBack","Weapon","Sensors","Indestructible","hgn_artillery_2x_destroyer","","","","","","","","");
+StartShipHardPointConfig(NewShipType, "t1", "Weapon_TurretTop", "Weapon", "Sensors", "Indestructible", "hgn_artillery_2x_destroyer", "", "", "", "", "", "", "", "");
+StartShipHardPointConfig(NewShipType, "t2", "Weapon_TurretFront", "Weapon", "Sensors", "Indestructible", "hgn_artillery_2x_destroyer", "", "", "", "", "", "", "", "");
+StartShipHardPointConfig(NewShipType, "t3", "Weapon_TurretBottom", "Weapon", "Sensors", "Indestructible", "hgn_artillery_2x_destroyer", "", "", "", "", "", "", "", "");
+StartShipHardPointConfig(NewShipType, "t4", "Weapon_TurretBack", "Weapon", "Sensors", "Indestructible", "hgn_artillery_2x_destroyer", "", "", "", "", "", "", "", "");
 addShield(NewShipType, "EMP", 1000, 40)
-StartShipHardPointConfig(NewShipType,"experience","Hardpoint_Engine","System","Innate","Damageable","experience","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"efficency","Hardpoint_Engine","System","Innate","Damageable","efficency","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "experience", "Hardpoint_Engine", "System", "Innate", "Damageable", "experience", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "efficency", "Hardpoint_Engine", "System", "Innate", "Damageable", "efficency", "", "", "", "", "", "", "", "")
 --StartShipHardPointConfig(NewShipType,"Distance","Hardpoint_Engine","System","Innate","Damageable","Distance","","","","","","","","")
 --StartShipHardPointConfig(NewShipType,"Position","Hardpoint_Engine","System","Innate","Damageable","Position","","","","","","","","")
 SpawnSalvageOnDeath(NewShipType, "Slv_Chunk_Lrg01", 1, 1, 0, 0, 0, 50, 0, 0, 0, 200, 0, 0, 0, 65, 0, 0, 0, 50)
@@ -182,6 +177,6 @@ NewShipType.chanceOfSpecialDeath = 0
 NewShipType.deadSobFadeTime = 0.1
 NewShipType.trailLinger = 3
 setEngineBurn(NewShipType, 9, 0.2, 0.5, 300, 1.02, 0.1, 0.25, 380)
-setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, 
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5,
     { 0.27, 0.47, 0.69, 0.25, })
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/Hiigaran/Carrier/", 0, "Engines/HDestroyerEng", "", 1, "Ambience/HDestroyerAmb", "")

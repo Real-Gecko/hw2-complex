@@ -3,7 +3,7 @@
 -   [x] Remove unused files
 -   [x] Remove `ship/hgn_hyperspaceplatform` as it seems broken
 -   [x] Decompile remaining files
--   [ ] Remove LuaDC header from decompiled files
+-   [x] Remove LuaDC header from decompiled files
 -   [ ] Fix syntax errors
 -   [ ] Format code with `lua-format`
 -   [ ] Remove files that're identical to those in Homeworld2.big

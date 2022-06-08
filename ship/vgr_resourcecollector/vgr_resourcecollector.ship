@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 23/10/2004 18.53.43
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1638"
 NewShipType.sobDescription = "Harvester/Miner"
@@ -137,12 +132,12 @@ addAbility(NewShipType, "SalvageCommand", 1)
 addAbility(NewShipType, "GuardCommand", 1, 3000, 500)
 addAbility(NewShipType, "Harvest", 1, 250, 3.9, 8.7)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
-addAbility(NewShipType, "RepairCommand", 0, 500, 9, 
-{ 
-    SuperCap = "18", 
-}, 
-{ 
-    Flagship = "18", })
+addAbility(NewShipType, "RepairCommand", 0, 500, 9,
+    {
+        SuperCap = "18",
+    },
+    {
+        Flagship = "18", })
 addAbility(NewShipType, "RetireAbility", 0, 0)
 LoadModel(NewShipType, 1)
 --StartShipHardPointConfig(NewShipType,"efficency","Hardpoint_support","System","Innate","Damageable","efficency","","","","","","","","")

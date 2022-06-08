@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 24/05/2005 10.15.54
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewSubSystemType = StartSubSystemConfig()
 NewSubSystemType.displayedName = "$2012"
 NewSubSystemType.sobDescription = "$2013"
@@ -41,4 +36,4 @@ NewSubSystemType.AttackFamily = "SubSystem"
 NewSubSystemType.DockFamily = "CantDock"
 NewSubSystemType.DisplayFamily = "SubSystemModule"
 NewSubSystemType.ArmourFamily = "SubSystemArmour"
-AddSubSystemAbility(NewSubSystemType, "Cloak", 1, "ThisShipOnly", 0)	--range 2000
+AddSubSystemAbility(NewSubSystemType, "Cloak", 1, "ThisShipOnly", 0) --range 2000

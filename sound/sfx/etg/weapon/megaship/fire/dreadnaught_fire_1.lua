@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:30:44 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 version = 4
 priority = 99
 compression = 2
@@ -21,68 +16,60 @@ type3D = 0
 doppler = 0
 coneMin = 0
 coneMax = 0
-envelope = 
-    { 
-    { 
-        distance = 0, 
-        volume = 0.815, 
-        reverb = 0, 
-        duration = 0, 
-        equalizer = 
-            { 1, 1, 1, 1, 1, 1, 1, 1, }, }, 
-    { 
-        distance = 1133.333374, 
-        volume = 0.81, 
-        reverb = 0, 
-        duration = 0, 
-        equalizer = 
-            { 1, 1, 1, 1, 1, 1, 1, 1, }, }, 
-    { 
-        distance = 1666.666626, 
-        volume = 0.575, 
-        reverb = 0, 
-        duration = 0, 
-        equalizer = 
-            { 1, 1, 1, 1, 1, 1, 1, 1, }, }, 
-    { 
-        distance = 6800, 
-        volume = 0.565, 
-        reverb = 0, 
-        duration = 0, 
-        equalizer = 
-            { 1, 1, 1, 1, 1, 0.96, 1, 1, }, }, 
-    { 
-        distance = 12000, 
-        volume = 0, 
-        reverb = 0, 
-        duration = 0, 
-        equalizer = 
-            { 1, 1, 1, 1, 1, 1, 1, 1, }, }, 
-    }
-effects = 
-{ 
-    filterMinFreq = -1, 
-    filterMaxFreq = -1, 
-    toneMinFreq = -1, 
-    toneMaxFreq = -1, 
-    toneDuration = 0, 
-    toneMute = 0, 
-    toneCount = 0, 
-    breakMaxRate = 0, 
-    breakMaxDur = 0, 
-    noiseMaxRate = 0, 
-    noiseMaxDur = 0, 
-    scaleLevel = 1, 
-    noiseLevel = 0, 
-    toneLevel = 0, 
-    limiterLevel = 1, 
-    pitchShift = 1, 
-    distance = 0, 
-    volume = 1, 
-    reverb = 0, 
-    duration = 0, 
-    equalizer = 
-        { 1, 1, 1, 1, 1, 1, 1, 1, }, }
+envelope = {
+    {
+        distance = 0,
+        volume = 0.815,
+        reverb = 0,
+        duration = 0,
+        equalizer = { 1, 1, 1, 1, 1, 1, 1, 1, }, },
+    {
+        distance = 1133.333374,
+        volume = 0.81,
+        reverb = 0,
+        duration = 0,
+        equalizer = { 1, 1, 1, 1, 1, 1, 1, 1, }, },
+    {
+        distance = 1666.666626,
+        volume = 0.575,
+        reverb = 0,
+        duration = 0,
+        equalizer = { 1, 1, 1, 1, 1, 1, 1, 1, }, },
+    {
+        distance = 6800,
+        volume = 0.565,
+        reverb = 0,
+        duration = 0,
+        equalizer = { 1, 1, 1, 1, 1, 0.96, 1, 1, }, },
+    {
+        distance = 12000,
+        volume = 0,
+        reverb = 0,
+        duration = 0,
+        equalizer = { 1, 1, 1, 1, 1, 1, 1, 1, }, },
+}
+effects = {
+    filterMinFreq = -1,
+    filterMaxFreq = -1,
+    toneMinFreq = -1,
+    toneMaxFreq = -1,
+    toneDuration = 0,
+    toneMute = 0,
+    toneCount = 0,
+    breakMaxRate = 0,
+    breakMaxDur = 0,
+    noiseMaxRate = 0,
+    noiseMaxDur = 0,
+    scaleLevel = 1,
+    noiseLevel = 0,
+    toneLevel = 0,
+    limiterLevel = 1,
+    pitchShift = 1,
+    distance = 0,
+    volume = 1,
+    reverb = 0,
+    duration = 0,
+    equalizer = { 1, 1, 1, 1, 1, 1, 1, 1, }, }
 cardiodScale = 0
 cardiodLowFreq = 0
 cardiodHighFreq = 0

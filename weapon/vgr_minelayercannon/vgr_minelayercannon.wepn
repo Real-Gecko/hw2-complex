@@ -1,44 +1,39 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:33:09 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
-StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "Kinetic_Small", "Normal", 1500, 1260*1.4, 0, 0, 0, 0, 1, 1, 0, 3, 0, 0, 1, 0, 60, 60, 0.1, "Normal", 1, 0, 0)
+StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "Kinetic_Small", "Normal", 1500, 1260 * 1.4, 0, 0, 0, 0, 1, 1, 0, 3, 0, 0, 1, 0, 60, 60, 0.1, "Normal", 1, 0, 0)
 AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 42, 42, "")
-setPenetration(NewWeaponType, 5, 1, 
-{ 
-    PlanetKillerArmour = 0, 
-}, 
-{ 
-    ResArmour = 0.8, 
-}, 
-{ 
-    MineArmour = 1, })
-setAccuracy(NewWeaponType, 1, 
-{ 
-    Fighter = 0.1, 
-}, 
-{ 
-    Corvette = 0.13, 
-}, 
-{ 
-    munition = 0, 
-}, 
-{ 
-    Frigate = 0.8, 
-    damage = 1, 
-}, 
-{ 
-    SmallCapitalShip = 0.6, 
-    damage = 1, 
-}, 
-{ 
-    BigCapitalShip = 0.6, 
-    damage = 1, 
-}, 
-{ 
-    ResourceLarge = 0.6, 
-    damage = 1, })
+setPenetration(NewWeaponType, 5, 1,
+    {
+        PlanetKillerArmour = 0,
+    },
+    {
+        ResArmour = 0.8,
+    },
+    {
+        MineArmour = 1, })
+setAccuracy(NewWeaponType, 1,
+    {
+        Fighter = 0.1,
+    },
+    {
+        Corvette = 0.13,
+    },
+    {
+        munition = 0,
+    },
+    {
+        Frigate = 0.8,
+        damage = 1,
+    },
+    {
+        SmallCapitalShip = 0.6,
+        damage = 1,
+    },
+    {
+        BigCapitalShip = 0.6,
+        damage = 1,
+    },
+    {
+        ResourceLarge = 0.6,
+        damage = 1, })
 setAngles(NewWeaponType, 5, 0, 0, 0, 0)
 setMiscValues(NewWeaponType, 0, 0.5)
 addAnimTurretSound(NewWeaponType, "Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON")

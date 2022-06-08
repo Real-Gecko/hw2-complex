@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 15/05/2005 17.23.50
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Scout"
 NewShipType.sobDescription = "Recon Fighter"
@@ -139,24 +134,24 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "n_delta"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
-addAbility(NewShipType, "CanAttack", 1, 3, 1, 0, 0.35, 1, "Fighter, Corvette, Frigate, SmallCapitalShip, BigCapitalShip, Utility", "FlyBy_VInterceptor_vs_Frigate", 
-{ 
-    Fighter = "Flyby_VInterceptor_vs_Fighter", 
-}, 
-{ 
-    SubSystem = "TopAttack_VInterceptor_vs_Subsystem", 
-}, 
-{ 
-    SmallCapitalShip = "Flyby_VInterceptor_vs_CapShip", 
-}, 
-{ 
-    BigCapitalShip = "Flyby_VInterceptor_vs_CapShip", 
-}, 
-{ 
-    Mothership = "Flyby_VInterceptor_vs_Mothership", 
-}, 
-{ 
-    ResourceLarge = "Flyby_VInterceptor_vs_ResourceLarge", })
+addAbility(NewShipType, "CanAttack", 1, 3, 1, 0, 0.35, 1, "Fighter, Corvette, Frigate, SmallCapitalShip, BigCapitalShip, Utility", "FlyBy_VInterceptor_vs_Frigate",
+    {
+        Fighter = "Flyby_VInterceptor_vs_Fighter",
+    },
+    {
+        SubSystem = "TopAttack_VInterceptor_vs_Subsystem",
+    },
+    {
+        SmallCapitalShip = "Flyby_VInterceptor_vs_CapShip",
+    },
+    {
+        BigCapitalShip = "Flyby_VInterceptor_vs_CapShip",
+    },
+    {
+        Mothership = "Flyby_VInterceptor_vs_Mothership",
+    },
+    {
+        ResourceLarge = "Flyby_VInterceptor_vs_ResourceLarge", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 500)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
 addAbility(NewShipType, "SensorPing", 0, 1, 10, 3.2)

@@ -1,9 +1,4 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:33:02 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
-StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Bullet", "Kinetic_Large", "Normal", 400, 840*1.4, 0, 0, 0, 1, 0.2, 0.7, 0.5, 80, 40, "Normal")
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Bullet", "Kinetic_Large", "Normal", 400, 840 * 1.4, 0, 0, 0, 1, 0.2, 0.7, 0.5, 80, 40, "Normal")
 AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 18, 18, "")
 setPenetration(NewWeaponType, 1)
 setAccuracy(NewWeaponType, 1)

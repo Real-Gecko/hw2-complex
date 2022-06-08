@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 20/10/2004 13.20.15
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1632"
 NewShipType.sobDescription = "Adv. Anti-Capital"
@@ -140,28 +135,28 @@ NewShipType.launchTimeBetweenTwoFormations = 1
 NewShipType.launchTimeBeforeStart = 2
 NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "delta"
-addAbility(NewShipType, "ShipHold", 1, 0, 6, "rallypoint", "Fighter, Corvette", 30, 
-{ 
-    Fighter = "25", 
-}, 
-{ 
-    Corvette = "75", })
+addAbility(NewShipType, "ShipHold", 1, 0, 6, "rallypoint", "Fighter, Corvette", 30,
+    {
+        Fighter = "25",
+    },
+    {
+        Corvette = "75", })
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType, "HyperSpaceCommand", 0, 2, 500, 100000, 2, 4)
 --addAbility(NewShipType,"HyperSpaceCommand",1,0,0,0,0,0)
-addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.2, "SmallCapitalShip, Capturer, Frigate, BigCapitalShip, Mothership, Corvette, Fighter, Munition, Utility", "Frontal", 
-{ 
-    Fighter = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Corvette = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Munition = "MoveToTargetAndShoot", 
-}, 
-{ 
-    SubSystem = "FrontalVsSubSystem", })
+addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.2, "SmallCapitalShip, Capturer, Frigate, BigCapitalShip, Mothership, Corvette, Fighter, Munition, Utility", "Frontal",
+    {
+        Fighter = "MoveToTargetAndShoot",
+    },
+    {
+        Corvette = "MoveToTargetAndShoot",
+    },
+    {
+        Munition = "MoveToTargetAndShoot",
+    },
+    {
+        SubSystem = "FrontalVsSubSystem", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 1000)
 addAbility(NewShipType, "CanBuildShips", 1, "Orders_Hgn,SubSystem_Vgr,TangoMines", "Orders,SubSystemModule, Weapon")
 addAbility(NewShipType, "CanBeCaptured", 160, 0.1)
@@ -185,20 +180,20 @@ addShield(NewShipType, "EMP", 10000, 60)
 StartShipHardPointConfig(NewShipType, "Generic 1", "HardpointGeneric1", "System", "Generic", "Destroyable", "", "Vgr_C_Module_Hyperspace", "Vgr_C_Module_CloakGenerator", "Vgr_C_Module_HyperspaceInhibitor", "Vgr_C_Module_FireControl", "Vgr_C_Module_drive", "Vgr_C_Module_Defensefield", "Vgr_C_Module_Defensefieldshield", "", "")
 StartShipHardPointConfig(NewShipType, "Generic 2", "HardpointGeneric2", "System", "Generic", "Destroyable", "", "Vgr_C_Module_Hyperspace", "Vgr_C_Module_CloakGenerator", "Vgr_C_Module_HyperspaceInhibitor", "Vgr_C_Module_FireControl", "Vgr_C_Module_drive", "Vgr_C_Module_Defensefield", "Vgr_C_Module_Defensefieldshield", "", "")
 
-StartShipHardPointConfig(NewShipType,"Front Heavy Cannons","Hardpoint_SC","Weapon","Sensors","Destroyable","","Vgr_HeavyCannonTurrets","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"Weapon 1","Weapon_pod1","Weapon","Sensors","Destroyable","","missile_boxbc")
-StartShipHardPointConfig(NewShipType,"Weapon 2","Weapon_pod2","Weapon","Sensors","Destroyable","","missile_box1bc")
-StartShipHardPointConfig(NewShipType,"freaker","Weapon_DT","Weapon","Sensors","Destroyable","","Vgr_dt3_turret_light", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "Front Heavy Cannons", "Hardpoint_SC", "Weapon", "Sensors", "Destroyable", "", "Vgr_HeavyCannonTurrets", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "Weapon 1", "Weapon_pod1", "Weapon", "Sensors", "Destroyable", "", "missile_boxbc")
+StartShipHardPointConfig(NewShipType, "Weapon 2", "Weapon_pod2", "Weapon", "Sensors", "Destroyable", "", "missile_box1bc")
+StartShipHardPointConfig(NewShipType, "freaker", "Weapon_DT", "Weapon", "Sensors", "Destroyable", "", "Vgr_dt3_turret_light", "", "", "", "", "", "", "", "")
 StartShipHardPointConfig(NewShipType, "Heavy Fusion Missile Launcher", "Weapon_MissileBattery", "Weapon", "Innate", "Damageable", "Vgr_HeavyFusionMissileLauncherBC", "", "", "", "", "", "", "", "")
 
 StartShipHardPointConfig(NewShipType, "Engine", "Hardpoint_Engine", "System", "Innate", "Damageable", "Vgr_BattleCruiserEngine", "", "", "", "", "", "", "", "")
 
 --StartShipHardPointConfig(NewShipType,"Weight","Hardpoint_Engine","System","Innate","Damageable","weight","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"experience","Hardpoint_Engine","System","Innate","Damageable","experience","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"efficency","Hardpoint_Engine","System","Innate","Damageable","efficency","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "experience", "Hardpoint_Engine", "System", "Innate", "Damageable", "experience", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "efficency", "Hardpoint_Engine", "System", "Innate", "Damageable", "efficency", "", "", "", "", "", "", "", "")
 --StartShipHardPointConfig(NewShipType,"Distance","Hardpoint_Engine","System","Innate","Damageable","Distance","","","","","","","","")
 --StartShipHardPointConfig(NewShipType,"Position","Hardpoint_Engine","System","Innate","Damageable","Position","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"en","Hardpoint_Engine","System","Innate","Damageable","en","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "en", "Hardpoint_Engine", "System", "Innate", "Damageable", "en", "", "", "", "", "", "", "", "")
 
 --StartShipHardPointConfig(NewShipType, "hgn_orders_parade", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_parade")
 StartShipHardPointConfig(NewShipType, "hgn_orders_clear", "Hardpoint_Engine", "System", "Innate", "Destroyable", "", "hgn_orders_clear")
@@ -218,6 +213,6 @@ NewShipType.specialDeathSpeed = 40
 NewShipType.chanceOfSpecialDeath = 0
 NewShipType.deadSobFadeTime = 0
 NewShipType.trailLinger = 2
-setEngineGlow(NewShipType, 1, 1, 1.02, 20, 500, 200, 1, 
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 500, 200, 1,
     { 0.92, 0.21, 0.09, 0.25, })
 loadShipPatchList(NewShipType, "data:sound/sfx/ship/Vaygr/Carrier/", 0, "Engines/VDestroyerEng", "", 1, "Ambience/VBattleCrusierAmb", "")

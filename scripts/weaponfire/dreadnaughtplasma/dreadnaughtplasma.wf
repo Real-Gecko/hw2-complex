@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:23:53 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 -- temporary flak effect placeholder till I get something better. 
 bulletfx = "emp_pulse_ring"
 deathtype = "deathPlasma"

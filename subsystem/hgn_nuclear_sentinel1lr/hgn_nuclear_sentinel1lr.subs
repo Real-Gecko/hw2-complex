@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 08/07/2004 12.28.08
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewSubSystemType = StartSubSystemConfig()
 NewSubSystemType.displayedName = "Nuclear Bomb Launcher"
 NewSubSystemType.sobDescription = "Long Range Anti-Capital"
@@ -29,9 +24,9 @@ NewSubSystemType.typeString = "CFNuclearBombLaunchers1lr"
 NewSubSystemType.collateralDamage = 100
 NewSubSystemType.inactiveTimeAfterDamage = 90
 NewSubSystemType.activateHealthPercentage = 0.1
-NewSubSystemType.costToBuild=1500
-NewSubSystemType.timeToBuild=65
-NewSubSystemType.isResearch = 0 
+NewSubSystemType.costToBuild = 1500
+NewSubSystemType.timeToBuild = 65
+NewSubSystemType.isResearch = 0
 NewSubSystemType.visible = 1
 LoadSharedModel(NewSubSystemType, "hgn_nuclear_sentinel")
 NewSubSystemType.BuildFamily = "SubSystem_Hgn"
@@ -42,5 +37,3 @@ NewSubSystemType.ArmourFamily = "SubSystemArmour"
 
 --AddSubSystemAbility(NewSubSystemType,"SpecialAttack",1,"ThisShipOnly",0)
 StartSubSystemWeaponConfig(NewSubSystemType, "Hgn_NuclearBombslr", "Weapon_Torpedo", "Weapon_miner")
-
-

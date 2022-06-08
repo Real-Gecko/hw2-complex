@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 14/06/2004 22.07.38
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 DEF_on = 0
 DEF_off = 1
 DEF_out = 2
@@ -131,7 +126,7 @@ sscMap.crewstation.OFFICERMODULE1 = "STATUS_UnitcapIncreased_1"
 sscMap.crewstation.OFFICERMODULE2 = "STATUS_UnitcapIncreased_1"
 sscMap.crewstation.OFFICERMODULE3 = "STATUS_UnitcapIncreased_1"
 sscMap.crewstation.OFFICERMODULE4 = "STATUS_UnitcapIncreased_1"
-sscMap.crewstation.ISLIEUTENANTCORE = "STATUS_Rank_1" 
+sscMap.crewstation.ISLIEUTENANTCORE = "STATUS_Rank_1"
 sscMap.crewstation.ISCOMMANDERCORE = "STATUS_Rank_1"
 sscMap.crewstation.ISCAPTAINCORE = "STATUS_Rank_1"
 sscMap.crewstation.ISCOMMODORECORE = "STATUS_Rank_1"
@@ -209,15 +204,15 @@ stdCMap.hgn_tanker = "STATUS_CapitalConstructed_1" --OK
 stdCMap.Hgn_Shipyard = "STATUS_ShipyardConstructed_1" --OK
 stdCMap.Hgn_Shipyard_g = "STATUS_ShipyardConstructed_1"
 stdCMap.Hgn_BattleShipyard = "STATUS_ShipyardConstructed_1"
-stdCMap.Hgn_CommandFortress = "STATUS_SuperCapitalConstructed_1"  --OK
+stdCMap.Hgn_CommandFortress = "STATUS_SuperCapitalConstructed_1" --OK
 stdCMap.Hgn_Ark = "STATUS_SuperCapitalConstructed_1" --OK
-stdCMap.Hgn_HyperspaceStation = "STATUS_CapitalConstructed_1"  --OK
+stdCMap.Hgn_HyperspaceStation = "STATUS_CapitalConstructed_1" --OK
 stdCMap.hgn_battleship = "STATUS_CapitalConstructed_1" --OK
 stdCMap.Hgn_CombatBase = "STATUS_CapitalConstructed_1"
 stdCMap.Hgn_BattleStation = "STATUS_SuperCapitalConstructed_1"
 
 stdCMap.Hgn_GunTurret = "STATUS_GunTurretConstructed_1" --OK
-stdCMap.Hgn_RapidFireGunTurret = "STATUS_PlatformConstructed_1" 
+stdCMap.Hgn_RapidFireGunTurret = "STATUS_PlatformConstructed_1"
 stdCMap.Hgn_PulsarTurret = "STATUS_PlatformConstructed_1" --OK
 stdCMap.Hgn_IonTurret = "STATUS_IonCannonTurretConstructed_1" --OK
 stdCMap.Hgn_MissileTurret = "STATUS_PlatformConstructed_1" --OK
@@ -281,109 +276,109 @@ stdCMap.Vgr_HyperSpace_Platform = "STATUS_VHyperspacePlatformConstructed_1"
 BUILD_Std = 1
 BUILD_Subsystem = 2
 function raceHelper()
-    if  currentRace==Vaygr then
+    if currentRace == Vaygr then
         return NameMakaan
     else
         return NameFleetCommand
-    end 
+    end
 
 end
 
 function getType(shipnm)
-    if  shipnm=="Hgn_MotherShip" or shipnm=="Vgr_MotherShip" then
+    if shipnm == "Hgn_MotherShip" or shipnm == "Vgr_MotherShip" then
         return Flagship
-    end 
+    end
 
     shipnmU = strupper(shipnm)
-    if  strfind(shipnmU, "PLATFORM") or strfind(shipnmU, "TURRET") then
+    if strfind(shipnmU, "PLATFORM") or strfind(shipnmU, "TURRET") then
         return Platform
-    end 
+    end
 
-    if  strfind(shipnmU, "DEBRIS") then
+    if strfind(shipnmU, "DEBRIS") then
         return MISC
-    end 
+    end
 
-    if  strfind(shipnmU, "KPR_") then
+    if strfind(shipnmU, "KPR_") then
         return MISC
-    end 
-    
-    if  strfind(shipnmU, "1") then
+    end
+
+    if strfind(shipnmU, "1") then
         return MISC
-    end 
-    
-    if  strfind(shipnmU, "Crew") then
+    end
+
+    if strfind(shipnmU, "Crew") then
         return Crew
-    end 
+    end
 
-    familyName = ""..getFamily(shipnm)
-    if  familyName=="CAPITAL" or familyName=="SUPERCAP" or familyName=="SMALLCAPITALSHIP" or familyName=="BIGCAPITALSHIP" then
+    familyName = "" .. getFamily(shipnm)
+    if familyName == "CAPITAL" or familyName == "SUPERCAP" or familyName == "SMALLCAPITALSHIP" or familyName == "BIGCAPITALSHIP" then
         return Capital
-    end 
+    end
 
-    if  familyName=="FRIGATE" or familyName=="CAPTURER" then
+    if familyName == "FRIGATE" or familyName == "CAPTURER" then
         return Frigate
-    end 
+    end
 
-    if  familyName=="UTILITY" or familyName=="RESOURCE" or familyName=="RESOURCELARGE" then
+    if familyName == "UTILITY" or familyName == "RESOURCE" or familyName == "RESOURCELARGE" then
         return Resource
-    end 
+    end
 
-    if  familyName=="CORVETTE" then
+    if familyName == "CORVETTE" then
         return Corvette
-    end 
+    end
 
-    if  familyName=="FIGHTER" then
+    if familyName == "FIGHTER" then
         return Fighter
-    end 
+    end
 
-    if  familyName=="MEGALITH" then
+    if familyName == "MEGALITH" then
         return Megalith
-    end 
+    end
 
-    if  familyName=="FLAGSHIP" or familyName=="MOTHERSHIP" then
+    if familyName == "FLAGSHIP" or familyName == "MOTHERSHIP" then
         return Flagship
-    end 
+    end
 
-    if  familyName=="SUBSYSTEM" or familyName=="SUBSYSTEMMODULE" or strfind(shipnmU, "MODULE") then
+    if familyName == "SUBSYSTEM" or familyName == "SUBSYSTEMMODULE" or strfind(shipnmU, "MODULE") then
         return SubSystem
-    end 
-    
-    if  strfind(shipnmU, "ORDERS") then
+    end
+
+    if strfind(shipnmU, "ORDERS") then
         return Orders
     end
-    
-    if  strfind(shipnmU, "POWERUP") then
+
+    if strfind(shipnmU, "POWERUP") then
         return Pwerup
-    end  
-		
-		if  strfind(shipnmU, "PLANET") then
+    end
+
+    if strfind(shipnmU, "PLANET") then
         return Planet
     end
-		
-		if  strfind(shipnmU, "ENGINE_BOOST_") then
+
+    if strfind(shipnmU, "ENGINE_BOOST_") then
         return engine_boost_
     end
 
-    if  familyName=="PLATFORM" then
+    if familyName == "PLATFORM" then
         return Platform
-    end 
+    end
 
     return 0
 end
 
 function CommandMoveToSobGiven(shipname, targetname)
-    if  strfind(strupper(targetname), "NEBULA") then
+    if strfind(strupper(targetname), "NEBULA") then
         playSpeechActor("COMMAND_OrderedToEnterNebula", NameAllPilot, NumAllPilots, Frequency_Command)
         return
-    end 
+    end
 
     CommandMoveGiven(shipname, targetname)
 end
 
 function isCapital(shipnm)
-    if  getType(shipnm)==Capital then
+    if getType(shipnm) == Capital then
         return 1
-    end 
+    end
 
     return 0
 end
@@ -391,20 +386,20 @@ end
 function CommandWayPointMoveGiven(shipname, targetname)
     shiptype = getType(shipname)
     genericShipName = strsub(shipname, 5)
-    if  shipname=="Hgn_ProximitySensor" then
+    if shipname == "Hgn_ProximitySensor" then
         playSpeechActor("Command_Probe_Selected", NameAllPilot, 1, Frequency_Command)
         return
-    end 
+    end
 
-    if  shiptype==Flagship and genericShipName~="Dreadnaught" then
+    if shiptype == Flagship and genericShipName ~= "Dreadnaught" then
         playSpeechActor("COMMAND_Waypoint_1", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
-    if  strsub(shipname, 0, 4)=="Kpr_" then
+    if strsub(shipname, 0, 4) == "Kpr_" then
         playSpeechActor("Command_MoverSelected", NameAllPilot, 1, Frequency_Command)
         return
-    end 
+    end
 
     playSpeechActor("COMMAND_WAYPOINT", NameAllPilot, NumAllPilots, Frequency_Command)
 end
@@ -412,523 +407,522 @@ end
 function CommandCancelOrder(shipname, prevOrders)
     local MoveOrder = 0
     local AttackOrder = 1
-    if  strsub(shipname, 0, 4)=="Kpr_" then
+    if strsub(shipname, 0, 4) == "Kpr_" then
         playSpeechActor("Command_MoverSelected", NameAllPilot, 1, Frequency_Command)
         return
-    end 
+    end
 
     shiptype = getType(shipname)
     genericShipName = strsub(shipname, 5)
-    if  prevOrders==AttackOrder then
-        if  shiptype==Flagship and genericShipName~="Dreadnaught" then
+    if prevOrders == AttackOrder then
+        if shiptype == Flagship and genericShipName ~= "Dreadnaught" then
             playSpeechActor("COMMAND_Attack_Cancelled_1", raceHelper(), 0, Frequency_Command)
             return
-        end 
+        end
 
-        if  shiptype==Capital then
+        if shiptype == Capital then
             playSpeechActor("COMMAND_CAP_ATTACK_CANCELLED", NameCapPilot, NumCapPilots, Frequency_Command)
         else
             playSpeechActor("COMMAND_ATTACK_CANCELLED", NameFighterPilot, NumFighterPilots, Frequency_Command)
-        end 
+        end
 
-    elseif  shiptype==Flagship and genericShipName~="Dreadnaught" then
+    elseif shiptype == Flagship and genericShipName ~= "Dreadnaught" then
         playSpeechActor("COMMAND_MoveCancelled_1", raceHelper(), 0, Frequency_Command)
-        return
-        playSpeechActor("COMMAND_MoveCancelled", NameAllPilot, NumAllPilots, Frequency_Command)
-    end 
+        return playSpeechActor("COMMAND_MoveCancelled", NameAllPilot, NumAllPilots, Frequency_Command)
+    end
 
 end
 
 function CommandDefenseFieldChanged(shipname, defenseType)
-    if  defenseType==DEF_on then
+    if defenseType == DEF_on then
         playSpeechActor("COMMAND_DEFENSEFIELDON", NameCapPilot, NumCapPilots, Frequency_Command)
-    elseif  defenseType==DEF_off then
+    elseif defenseType == DEF_off then
         playSpeechActor("COMMAND_DEFENSEFIELDOFF", NameCapPilot, NumCapPilots, Frequency_Command)
-    elseif  defenseType==DEF_out then
+    elseif defenseType == DEF_out then
         playSpeechActor("STATUS_DEFENCEFIELDOUTOFPOWER", NameCapPilot, NumCapPilots, Frequency_Command)
-    elseif  defenseType==DEF_low then
-    end 
+    elseif defenseType == DEF_low then
+    end
 
 end
 
 function CommandResourceGiven(shipname, targetname)
-    if  targetname=="StaticContainer" then
+    if targetname == "StaticContainer" then
         playSpeechActor("COMMAND_ResourceSalvage", NameSupportPilot, NumSupportPilots, Frequency_Command)
     else
         playSpeechActor("COMMAND_ResourceCollectorHarvest", NameSupportPilot, NumSupportPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandMultiplay(shipname, event)
-    if  event==MP_AllianceRequested then
+    if event == MP_AllianceRequested then
         playSpeechActor("COMMAND_AllianceRequested_1", raceHelper(), 0, Frequency_Command)
-    elseif  event==MP_AllianceFormed then
+    elseif event == MP_AllianceFormed then
         playSpeechActor("COMMAND_AllianceFormed_1", raceHelper(), 0, Frequency_Command)
-    elseif  event==MP_AllianceBroken then
+    elseif event == MP_AllianceBroken then
         playSpeechActor("COMMAND_AllianceBroken_1", raceHelper(), 0, Frequency_Command)
-    elseif  event==MP_RUsTransferred then
+    elseif event == MP_RUsTransferred then
         playSpeechActor("COMMAND_RUs_Transferred", raceHelper(), 0, Frequency_Command)
-    elseif  event==MP_ShipsTransferred then
+    elseif event == MP_ShipsTransferred then
         playSpeechActor("COMMAND_Ships_Transferred", raceHelper(), 0, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandCaptureGiven(shipname, targetname)
-    if  shipname=="Hgn_MarineFrigate" then
+    if shipname == "Hgn_MarineFrigate" then
         playSpeechActor("COMMAND_MarineFrigate_Capture", NameMarinePilot, NumMarinePilots, Frequency_Command)
     else
         playSpeechActor("COMMAND_INFILTRATORFRIGATE_CAPTURE", NameInfiltratorPilot, NumInfiltratorPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandAttackGiven(shipname, targetname, attackType)
-    print("******** COMMAND ATTACK: shipname, targetname, attackType = "..shipname..","..targetname..","..attackType)
-    if  attackType==3 then
-        if  shipname=="Hgn_Dreadnaught" then
+    print("******** COMMAND ATTACK: shipname, targetname, attackType = " .. shipname .. "," .. targetname .. "," .. attackType)
+    if attackType == 3 then
+        if shipname == "Hgn_Dreadnaught" then
             playSpeechActor("COMMAND_Dreadnaught_BigGun", NameCapPilot, NumCapPilots, Frequency_Command)
             return
-        elseif  shipname=="Hgn_Scout" then
+        elseif shipname == "Hgn_Scout" then
             playSpeechActor("COMMAND_ScoutEmp", NameSupportPilot, NumSupportPilots, Frequency_Command)
             return
-        end 
+        end
 
-    end 
+    end
 
-    if  strsub(shipname, 0, 4)=="Kpr_" then
+    if strsub(shipname, 0, 4) == "Kpr_" then
         playSpeechActor("Command_MoverSelected", NameAllPilot, 1, Frequency_Command)
         return
-    end 
+    end
 
     local targetShipType = getType(targetname)
     local shipType = getType(shipname)
     genericShipName = strsub(shipname, 5)
-    print("******2- COMMAND ATTACK: shipType, targetShipType, genericShipName = "..shipType..","..targetShipType..","..genericShipName)
-    if  attackType==0 or attackType==3 then
-        if  shipType==Flagship and genericShipName~="Dreadnaught" then
+    print("******2- COMMAND ATTACK: shipType, targetShipType, genericShipName = " .. shipType .. "," .. targetShipType .. "," .. genericShipName)
+    if attackType == 0 or attackType == 3 then
+        if shipType == Flagship and genericShipName ~= "Dreadnaught" then
             playSpeechActor("COMMAND_Attack", raceHelper(), 0, Frequency_Command)
             return
-        end 
+        end
 
-        if  targetShipType==Capital then
+        if targetShipType == Capital then
             playSpeechActor("COMMAND_Attack_CapShip", NameCapPilot, NumCapPilots, Frequency_Command)
-        elseif  targetShipType==SubSystem and targetname~="VGR_HYPERSPACEINHIBITOR" then
+        elseif targetShipType == SubSystem and targetname ~= "VGR_HYPERSPACEINHIBITOR" then
             playSpeechActor("COMMAND_BOMBERSUBSYSTEMATTACK", NameFighterPilot, NumFighterPilots, Frequency_Command)
-        elseif  shipType==Capital then
+        elseif shipType == Capital then
             playSpeechActor("COMMAND_CAPSHIP_TO_ATTACK", NameCapPilot, NumCapPilots, Frequency_Command)
-        elseif  shipname=="STRIKE" then
+        elseif shipname == "STRIKE" then
             playSpeechActor("COMMAND_StrikeGroup_Attack", NameAllPilot, NumAllPilots, Frequency_Command)
         else
             playSpeechActor("COMMAND_Attack", NameFighterPilot, NumFighterPilots, Frequency_Command)
-        end 
+        end
 
-    elseif  attackType==1 then
-        if  shipType==Flagship and genericShipName~="Dreadnaught" then
+    elseif attackType == 1 then
+        if shipType == Flagship and genericShipName ~= "Dreadnaught" then
             playSpeechActor("COMMAND_ForceAttackFriendly_1", raceHelper(), 0, Frequency_Command)
             return
-        end 
+        end
 
         playSpeechActor("COMMAND_ForceAttackFriendly", NameCapPilot, NumCapPilots, Frequency_Command)
-    elseif  attackType==2 then
-        if  shipType==Flagship and genericShipName~="Dreadnaught" then
+    elseif attackType == 2 then
+        if shipType == Flagship and genericShipName ~= "Dreadnaught" then
             playSpeechActor("COMMAND_ForceAttack_1", raceHelper(), 0, Frequency_Command)
             return
-        end 
+        end
 
         playSpeechActor("COMMAND_ForceAttack", NameCapPilot, NumCapPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandHyperspaceGiven(shipname, code)
-    print("** CommandHyperspaceGiven: shipname = "..shipname.." code = "..code)
+    print("** CommandHyperspaceGiven: shipname = " .. shipname .. " code = " .. code)
     genericShipName = strsub(shipname, 5)
-    if  code==HYP_Interrupted then
-        if  genericShipName=="MotherShip" then
+    if code == HYP_Interrupted then
+        if genericShipName == "MotherShip" then
             playSpeechActor("STATUS_HyperspaceInterupted_1", raceHelper(), 0, Frequency_Command)
         else
             playSpeechActor("STATUS_OutofHS", NameCapPilot, NumCapPilots, Frequency_Command)
-        end 
+        end
 
         return
-    end 
+    end
 
-    if  code==HYP_EnteredInhibitorVolume then
+    if code == HYP_EnteredInhibitorVolume then
         playSpeechActor("STATUS_HyperSpaceInhib_Detected", NameSupportPilot, NumSupportPilots, Frequency_Command)
         return
-    end 
+    end
 
-    if  code==HYP_NotEnoughCash then
+    if code == HYP_NotEnoughCash then
         playSpeechActor("STATUS_HYPERSPACEINSUFFICENT_1", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
-    if  code==HYP_EnteringGate then
+    if code == HYP_EnteringGate then
         playSpeechActor("STATUS_HyperspaceGateJump_1", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
     shipType = getType(shipname)
-    if  shipType==Flagship then
+    if shipType == Flagship then
         playSpeechActor("COMMAND_HS", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
-    if  shipType==Capital then
+    if shipType == Capital then
         playSpeechActor("COMMAND_CAPHS", NameCapPilot, NumCapPilots, Frequency_Command)
     else
         playSpeechActor("COMMAND_HS", NameCapPilot, NumCapPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandCombatMan(shipname, targetname)
     shipType = getType(shipname)
     genericShipName = strsub(shipname, 5)
-    if  shipType==Flagship and genericShipName~="Dreadnaught" then
+    if shipType == Flagship and genericShipName ~= "Dreadnaught" then
         playSpeechActor("COMMAND_CombatMan_1", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
-    if  shipType==Capital then
+    if shipType == Capital then
         playSpeechActor("COMMAND_CAP_COMBATMAN", NameCapPilot, NumCapPilots, Frequency_Command)
     else
         playSpeechActor("COMMAND_COMBATMAN", NameFighterPilot, NumFighterPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandMoveAttackGiven(shipname, targetname)
     shiptype = getType(shipname)
     genericShipName = strsub(shipname, 5)
-    if  shiptype==Flagship and genericShipName~="Dreadnaught" then
+    if shiptype == Flagship and genericShipName ~= "Dreadnaught" then
         playSpeechActor("COMMAND_MoveAttack_1", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
-    if  shiptype==Capital then
+    if shiptype == Capital then
         playSpeechActor("COMMAND_CAP_MOVEATTACK", NameCapPilot, NumCapPilots, Frequency_Command)
     else
         playSpeechActor("COMMAND_MOVEATTACK", NameFighterPilot, NumFighterPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandLaunchGiven(shipname, targetname)
-    if  shipname=="Hgn_Probe" then
+    if shipname == "Hgn_Probe" then
         return
-    end 
+    end
 
     shipFamily = getFamily(shipname)
-    if  shipFamily=="FIGHTER" or shipFamily=="CORVETTE" then
+    if shipFamily == "FIGHTER" or shipFamily == "CORVETTE" then
         playSpeechActor("COMMAND_StrikeCraftLaunch", NameSupportPilot, NumSupportPilots, Frequency_Command)
-    elseif  shipFamily=="CAPITAL" or shipFamily=="SUPERCAP" then
+    elseif shipFamily == "CAPITAL" or shipFamily == "SUPERCAP" then
         playSpeechActorLinked("STATUS_CARRIERORMSHIPCAPITALSHIPLAUNCHED", NameSupportPilot, NumSupportPilots, Frequency_Command, CE_STS_CAPWELCOME)
-    end 
+    end
 
 end
 
 function CommandGuardGiven(shipname, targetname)
     shiptype = getType(shipname)
     genericShipName = strsub(shipname, 5)
-    if  shiptype==Flagship and genericShipName~="Dreadnaught" then
+    if shiptype == Flagship and genericShipName ~= "Dreadnaught" then
         playSpeechActor("COMMAND_Guard_1", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
-    if  strsub(shipname, 0, 4)=="Kpr_" then
+    if strsub(shipname, 0, 4) == "Kpr_" then
         playSpeechActor("Command_MoverSelected", NameAllPilot, 1, Frequency_Command)
         return
-    end 
+    end
 
-    if  shiptype==Capital then
+    if shiptype == Capital then
         playSpeechActor("COMMAND_CAP_GUARD", NameCapPilot, NumCapPilots, Frequency_Command)
-    elseif  shiptype==Fighter then
+    elseif shiptype == Fighter then
         playSpeechActor("COMMAND_Guard", NameFighterPilot, NumFighterPilots, Frequency_Command)
     else
         playSpeechActor("COMMAND_Guard", NameAllPilot, NumAllPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandMoveGiven(shipnm, targetnm)
     shiptype = getType(shipnm)
     genericShipName = strsub(shipnm, 5)
-    if  shiptype==Flagship and genericShipName~="Dreadnaught" then
+    if shiptype == Flagship and genericShipName ~= "Dreadnaught" then
         playSpeechActor("COMMAND_MOVE_1", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
-    if  shipname=="Hgn_ProximitySensor" then
+    if shipname == "Hgn_ProximitySensor" then
         playSpeechActor("Command_Probe_Selected", NameAllPilot, NumAllPilots, Frequency_Command)
         return
-    end 
+    end
 
     genericShipName = strsub(shipnm, 5)
-    if  strfind(strupper(shipnm), "PROBE") then
+    if strfind(strupper(shipnm), "PROBE") then
         playSpeechActor("COMMAND_ProbeLaunched", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
-    if  strsub(shipnm, 0, 4)=="Kpr_" then
+    if strsub(shipnm, 0, 4) == "Kpr_" then
         playSpeechActor("Command_MoverSelected", NameAllPilot, 1, Frequency_Command)
         return
-    end 
+    end
 
-    if  genericShipName=="GunTurret" or genericShipName=="GunPlatform" or genericShipName=="IonTurret" or genericShipName=="WeaponPlatform_gun" or genericShipName=="WeaponPlatform_missile" then
+    if genericShipName == "GunTurret" or genericShipName == "GunPlatform" or genericShipName == "IonTurret" or genericShipName == "WeaponPlatform_gun" or genericShipName == "WeaponPlatform_missile" then
         playSpeechActor("COMMAND_Turret_Fold", NameSupportPilot, NumSupportPilots, Frequency_Command)
-    elseif  shipnm=="STRIKE" then
+    elseif shipnm == "STRIKE" then
         playSpeechActor("COMMAND_StrikeGroup_Move", NameAllPilot, NumAllPilots, Frequency_Command)
     else
         playSpeechActor("COMMAND_Move", NameAllPilot, NumAllPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandStrikeGroupFormed(shipnm, code)
-    if  shipnm then
-        if  strfind(shipnm, "Kpr_") then
+    if shipnm then
+        if strfind(shipnm, "Kpr_") then
             playSpeechActor("Command_MoverSelected", NameAllPilot, 1, Frequency_Command)
             return
-        end 
+        end
 
-    end 
+    end
 
-    if  code==1 then
+    if code == 1 then
         playSpeechActor("COMMAND_STRIKEGROUP_FORM_RESPONSE", NameAllPilot, NumAllPilots, Frequency_Command)
-    elseif  code==2 then
+    elseif code == 2 then
         playSpeechActor("COMMAND_STRIKEGROUP_FORMATIONSET", NameAllPilot, NumAllPilots, Frequency_Command)
-    elseif  code==3 then
+    elseif code == 3 then
         playSpeechActor("COMMAND_STRIKEGROUP_DISBAND", NameAllPilot, NumAllPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandDockGiven(shipname, targetname)
     shipType = getType(shipname)
     genericShipName = strsub(targetname, 5)
-    if  strsub(shipname, 0, 4)=="Kpr_" then
+    if strsub(shipname, 0, 4) == "Kpr_" then
         playSpeechActor("Command_MoverSelected", NameAllPilot, 1, Frequency_Command)
         return
-    end 
+    end
 
-    if  shipType==Fighter or shipType==Corvette then
+    if shipType == Fighter or shipType == Corvette then
         playSpeechActor("COMMAND_StrikeCraftDock", NameFighterPilot, NumFighterPilots, Frequency_Command)
         return
-    end 
+    end
 
-    if  genericShipName=="Carrier" then
+    if genericShipName == "Carrier" then
         playSpeechActorLinked("COMMAND_AnyShipGenericDockCarrier_1", NameAllPilot, NumAllPilots, Frequency_Command, CE_CHT_DOCK)
-    elseif  genericShipName=="MotherShip" then
+    elseif genericShipName == "MotherShip" then
         playSpeechActorLinked("COMMAND_AnyShipGenericDockMothership_1", NameAllPilot, NumAllPilots, Frequency_Command, CE_CHT_DOCK)
-    elseif  genericShipName=="Shipyard" then
+    elseif genericShipName == "Shipyard" then
         playSpeechActorLinked("COMMAND_AnyShipGenericDockShipyard_1", NameAllPilot, NumAllPilots, Frequency_Command, CE_CHT_DOCK)
-		elseif  genericShipName=="Shipyard_g" then
-        playSpeechActorLinked("COMMAND_AnyShipGenericDockShipyard_1", NameAllPilot, NumAllPilots, Frequency_Command, CE_CHT_DOCK)		
-    elseif  genericShipName=="SupportFrigate" then
+    elseif genericShipName == "Shipyard_g" then
+        playSpeechActorLinked("COMMAND_AnyShipGenericDockShipyard_1", NameAllPilot, NumAllPilots, Frequency_Command, CE_CHT_DOCK)
+    elseif genericShipName == "SupportFrigate" then
         playSpeechActorLinked("COMMAND_AnyShipGenericDockSupportFrigate_1", NameAllPilot, NumAllPilots, Frequency_Command, CE_CHT_DOCK)
-    elseif  genericShipName=="Battlecruiser" then
+    elseif genericShipName == "Battlecruiser" then
         playSpeechActorLinked("COMMAND_AnyShipGenericDockBattlecruiser_1", NameAllPilot, NumAllPilots, Frequency_Command, CE_CHT_DOCK)
-    elseif  genericShipName=="ResourceController" then
+    elseif genericShipName == "ResourceController" then
         playSpeechActor("COMMAND_AnyShipGenericDockResourceController_1", NameAllPilot, NumAllPilots, Frequency_Command)
     else
         playSpeechActorLinked("COMMAND_StrikeCraftDock", NameFighterPilot, NumFighterPilots, Frequency_Command, CE_CHT_DOCK)
-    end 
+    end
 
 end
 
 function CommandParadeGiven(shipname, targetname)
-    if  shipname=="STRIKE" then
+    if shipname == "STRIKE" then
         playSpeech("STATUS_StrikeCraftNowFollowing")
         return
-    end 
+    end
 
     familyName = getFamily(shipname)
-    if  familyName=="FIGHTER" or familyName=="CORVETTE" then
+    if familyName == "FIGHTER" or familyName == "CORVETTE" then
         playSpeechFreq("STATUS_StrikeCraftNowFollowing", 15)
-    end 
+    end
 
 end
 
 function CommandRetireGiven(shipname, targetname)
     local shipType = getType(shipname)
-    if  shipType==Capital then
+    if shipType == Capital then
         playSpeechActor("COMMAND_CapitalShipRetire", NameCapPilot, NumCapPilots, Frequency_Command)
-    elseif  shipType==Frigate then
+    elseif shipType == Frigate then
         playSpeechActor("COMMAND_FrigateRetire", NameCapPilot, NumCapPilots, Frequency_Command)
-    elseif  shipType==Fighter then
+    elseif shipType == Fighter then
         playSpeechActor("COMMAND_FighterRetire", NameFighterPilot, NumFighterPilots, Frequency_Command)
-    elseif  shipType==Support then
+    elseif shipType == Support then
         playSpeechActor("COMMAND_SupportShipRetire", NameSupportPilot, NumSupportPilots, Frequency_Command)
     else
         playSpeechActor("COMMAND_FighterRetire", NameFighterPilot, NumFighterPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandTacticsChanged(shipname, newSetting)
-    if  newSetting==AggressiveTactics then
+    if newSetting == AggressiveTactics then
         playSpeechActor("COMMAND_SetTacticsAggressive", NameAllPilot, NumAllPilots, Frequency_Command)
-    elseif  newSetting==DefensiveTactics then
+    elseif newSetting == DefensiveTactics then
         playSpeechActor("COMMAND_SetTacticsDefensive", NameAllPilot, NumAllPilots, Frequency_Command)
-    elseif  newSetting==PassiveTactics then
+    elseif newSetting == PassiveTactics then
         playSpeechActor("COMMAND_SetTacticsPassive", NameAllPilot, NumAllPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandEngagementRangeChanged(shipname, newSetting)
-    if  newSetting==CloseRange then
+    if newSetting == CloseRange then
         playSpeechActor("COMMAND_SetRangeShort", NameAllPilot, NumAllPilots, Frequency_Command)
-    elseif  newSetting==MediumRange then
+    elseif newSetting == MediumRange then
         playSpeechActor("COMMAND_SetRangeMedium", NameAllPilot, NumAllPilots, Frequency_Command)
-    elseif  newSetting==LongRange then
+    elseif newSetting == LongRange then
         playSpeechActor("COMMAND_SetRangeLong", NameAllPilot, NumAllPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandEngagementRangeForceChanged(shipname, force)
-    if  force==1 then
+    if force == 1 then
         playSpeechActor("COMMAND_SetRangeForce", NameAllPilot, NumAllPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandHotKeyGroupSelected(shipname, groupNumber, keyAction)
-    if  strfind(shipname, "Kpr_") then
+    if strfind(shipname, "Kpr_") then
         return
-    end 
+    end
 
-    if  keyAction==ACT_Created then
-        if  groupNumber==10 then
+    if keyAction == ACT_Created then
+        if groupNumber == 10 then
             playSpeechActor("COMMAND_GROUP_Assigned_10", raceHelper(), 0, Frequency_Command)
         else
-            playSpeechActor("COMMAND_GROUP_Assigned_0"..groupNumber, raceHelper(), 0, Frequency_Command)
-        end 
+            playSpeechActor("COMMAND_GROUP_Assigned_0" .. groupNumber, raceHelper(), 0, Frequency_Command)
+        end
 
         return
-    end 
+    end
 
-    if  keyAction==ACT_Reinforced then
-        if  groupNumber==10 then
+    if keyAction == ACT_Reinforced then
+        if groupNumber == 10 then
             playSpeechActor("STATUS_HotkeyGroup_Added_20_2", raceHelper(), 0, Frequency_Command)
         else
-            playSpeechActor("STATUS_HotkeyGroup_Added_0"..groupNumber.."_2", raceHelper(), 0, Frequency_Command)
-        end 
+            playSpeechActor("STATUS_HotkeyGroup_Added_0" .. groupNumber .. "_2", raceHelper(), 0, Frequency_Command)
+        end
 
         return
-    end 
+    end
 
-    if  groupNumber==10 then
+    if groupNumber == 10 then
         playSpeechActor("COMMAND_SelectGroup10", NameCapPilot, NumCapPilots, Frequency_Command)
     else
-        playSpeechActor("COMMAND_SelectGroup0"..groupNumber, NameCapPilot, NumCapPilots, Frequency_Command)
-    end 
+        playSpeechActor("COMMAND_SelectGroup0" .. groupNumber, NameCapPilot, NumCapPilots, Frequency_Command)
+    end
 
 end
 
 function CommandShipsSelected(shipname)
-    if  strfind(strupper(shipname), "PROBE") or shipname=="Hgn_ProximitySensor" then
+    if strfind(strupper(shipname), "PROBE") or shipname == "Hgn_ProximitySensor" then
         playSpeechActor("Command_Probe_Selected", NameAllPilot, 1, Frequency_Command)
         return
-    end 
+    end
 
-    if  strfind(shipname, "Kpr_") then
+    if strfind(shipname, "Kpr_") then
         playSpeechActor("Command_MoverSelected", NameAllPilot, 1, Frequency_Command)
         return
-    end 
+    end
 
     shiptype = getType(shipname)
-    if  shiptype==Flagship and shipname~="Hgn_Dreadnaught" and shipname~="Vgr_Dreadnaught" then
+    if shiptype == Flagship and shipname ~= "Hgn_Dreadnaught" and shipname ~= "Vgr_Dreadnaught" then
         playSpeechActor("COMMAND_SELECTED_1", raceHelper(), 0, Frequency_Command)
         return
-    end 
+    end
 
     familyName = getFamily(shipname)
-    if  familyName=="FRIGATE" or familyName=="CAPITAL" or familyName=="SUPERCAP" then
+    if familyName == "FRIGATE" or familyName == "CAPITAL" or familyName == "SUPERCAP" then
         playSpeechActor("COMMAND_CAPITALSELECTED", NameCapPilot, NumCapPilots, Frequency_Command)
     else
         playSpeechActor("COMMAND_Selected", NameFighterPilot, NumFighterPilots, Frequency_Command)
-    end 
+    end
 
 end
 
 function CommandConstructionComplete(buildingShip, builtItem, buildType)
-    print("*****---- CommandConstructionComplete : buildingShip="..buildingShip..", builtItem="..builtItem..", buildType="..buildType)
-    if  not buildingShip or not builtItem then
+    print("*****---- CommandConstructionComplete : buildingShip=" .. buildingShip .. ", builtItem=" .. builtItem .. ", buildType=" .. buildType)
+    if not buildingShip or not builtItem then
         return
-    end 
+    end
 
     genericbuildingShipName = strsub(buildingShip, 5)
     genericbuiltItemName = strsub(builtItem, 5)
-    if  getType(builtItem) == Orders then
-    elseif  getType(builtItem) == Powerup then
-		elseif  getType(builtItem) == Planet then
-		elseif  getType(builtItem) == engine_boost_ then		
-    elseif  buildType==BUILD_Subsystem then
-        if  sscMap[""..genericbuildingShipName] and sscMap[""..genericbuildingShipName][""..genericbuiltItemName] then
-            if  strfind(strupper(builtItem), "INHIBITOR") then
-                if  genericbuildingShipName=="Carrier" then
+    if getType(builtItem) == Orders then
+    elseif getType(builtItem) == Powerup then
+    elseif getType(builtItem) == Planet then
+    elseif getType(builtItem) == engine_boost_ then
+    elseif buildType == BUILD_Subsystem then
+        if sscMap["" .. genericbuildingShipName] and sscMap["" .. genericbuildingShipName]["" .. genericbuiltItemName] then
+            if strfind(strupper(builtItem), "INHIBITOR") then
+                if genericbuildingShipName == "Carrier" then
                     playSpeechActorLinked("STATUS_HyperspaceInhibConstructedFromCarrier_1", NameCapPilot, NumCapPilots, Frequency_Command, CE_STS_INHIBITORONLINE)
-                elseif  genericbuildingShipName=="Shipyard" then
+                elseif genericbuildingShipName == "Shipyard" then
                     playSpeechActorLinked("STATUS_HyperspaceInhibConstructedFromShipyard_1", NameSupportPilot, NumSupportPilots, Frequency_Command, CE_STS_INHIBITORONLINE)
-								elseif  genericbuildingShipName=="Shipyard_g" then
-                    playSpeechActorLinked("STATUS_HyperspaceInhibConstructedFromShipyard_1", NameSupportPilot, NumSupportPilots, Frequency_Command, CE_STS_INHIBITORONLINE)		
-                elseif  genericbuildingShipName=="Battlecruiser" then
+                elseif genericbuildingShipName == "Shipyard_g" then
+                    playSpeechActorLinked("STATUS_HyperspaceInhibConstructedFromShipyard_1", NameSupportPilot, NumSupportPilots, Frequency_Command, CE_STS_INHIBITORONLINE)
+                elseif genericbuildingShipName == "Battlecruiser" then
                     playSpeechActorLinked("STATUS_HyperspaceInhibConstructedFromBattle_1", NameCapPilot, NumCapPilots, Frequency_Command, CE_STS_INHIBITORONLINE)
                 else
                     playSpeechActor("STATUS_HYPERSPACEINHIB_ON", NameSupportPilot, NumSupportPilots, Frequency_Command)
-                end 
+                end
 
-            end 
+            end
 
             if strfind(strupper(builtItem), "POWER_MS") then
-              playSpeechActor(sscMap[""..genericbuildingShipName][""..genericbuiltItemName], raceHelper(), 0, Frequency_Command)
+                playSpeechActor(sscMap["" .. genericbuildingShipName]["" .. genericbuiltItemName], raceHelper(), 0, Frequency_Command)
             else
-	            if  genericbuildingShipName=="Shipyard" then
-	                playSpeechActor(sscMap[""..genericbuildingShipName][""..genericbuiltItemName], NameSupportPilot, NumSupportPilots, Frequency_Command)
-							elseif  genericbuildingShipName=="Shipyard_g" then
-	                playSpeechActor(sscMap[""..genericbuildingShipName][""..genericbuiltItemName], NameSupportPilot, NumSupportPilots, Frequency_Command)		
-	            elseif  genericbuildingShipName=="MotherShip" then
-	                playSpeechActor(sscMap[""..genericbuildingShipName][""..genericbuiltItemName], raceHelper(), 0, Frequency_Command)
-	            elseif  genericbuildingShipName=="crewstation" then
-	                playSpeechActor(sscMap[""..genericbuildingShipName][""..genericbuiltItemName], raceHelper(), 0, Frequency_Command)    
-	            elseif  genericbuildingShipName=="Researchstation" then
-	                playSpeechActor(sscMap[""..genericbuildingShipName][""..genericbuiltItemName], raceHelper(), 0, Frequency_Command) 
-	            elseif  genericbuildingShipName=="Power" then
-	                playSpeechActor(sscMap[""..genericbuildingShipName][""..genericbuiltItemName], raceHelper(), 0, Frequency_Command)           
-	            else
-	                playSpeechActor(sscMap[""..genericbuildingShipName][""..genericbuiltItemName], NameCapPilot, NumCapPilots, Frequency_Command)
-	            end 
-	          end  
+                if genericbuildingShipName == "Shipyard" then
+                    playSpeechActor(sscMap["" .. genericbuildingShipName]["" .. genericbuiltItemName], NameSupportPilot, NumSupportPilots, Frequency_Command)
+                elseif genericbuildingShipName == "Shipyard_g" then
+                    playSpeechActor(sscMap["" .. genericbuildingShipName]["" .. genericbuiltItemName], NameSupportPilot, NumSupportPilots, Frequency_Command)
+                elseif genericbuildingShipName == "MotherShip" then
+                    playSpeechActor(sscMap["" .. genericbuildingShipName]["" .. genericbuiltItemName], raceHelper(), 0, Frequency_Command)
+                elseif genericbuildingShipName == "crewstation" then
+                    playSpeechActor(sscMap["" .. genericbuildingShipName]["" .. genericbuiltItemName], raceHelper(), 0, Frequency_Command)
+                elseif genericbuildingShipName == "Researchstation" then
+                    playSpeechActor(sscMap["" .. genericbuildingShipName]["" .. genericbuiltItemName], raceHelper(), 0, Frequency_Command)
+                elseif genericbuildingShipName == "Power" then
+                    playSpeechActor(sscMap["" .. genericbuildingShipName]["" .. genericbuiltItemName], raceHelper(), 0, Frequency_Command)
+                else
+                    playSpeechActor(sscMap["" .. genericbuildingShipName]["" .. genericbuiltItemName], NameCapPilot, NumCapPilots, Frequency_Command)
+                end
+            end
 
         else
             playSpeechActor("COMMAND_SubsystemConstructed", NameCapPilot, NumCapPilots, Frequency_Command)
-        end 
+        end
 
-    elseif  buildType==BUILD_Std then
-        if  stdCMap[""..builtItem] then
-            playSpeechActor(stdCMap[""..builtItem], raceHelper(), 0, Frequency_Command)
-        end 
+    elseif buildType == BUILD_Std then
+        if stdCMap["" .. builtItem] then
+            playSpeechActor(stdCMap["" .. builtItem], raceHelper(), 0, Frequency_Command)
+        end
 
-    end 
+    end
 
 end
 
 function CommandConstructionStarted(buildingShip, builtItem)
     builtItemFamily = getFamily(builtItem)
-    if  builtItemFamily=="FRIGATE" or builtItemFamily=="CAPITAL" or builtItemFamily=="SUPERCAP" then
+    if builtItemFamily == "FRIGATE" or builtItemFamily == "CAPITAL" or builtItemFamily == "SUPERCAP" then
         playSpeechActor("COMMAND_CarrierOrMShipBuildCapitalShip", NameSupportPilot, NumSupportPilots, Frequency_Command)
         return
-    end 
+    end
 
     genericbuildingShipName = strsub(buildingShip, 5)
-    if  genericbuildingShipName=="MotherShip" then
+    if genericbuildingShipName == "MotherShip" then
         playSpeechActor("STATUS_ConstructionBegun_1", raceHelper(), 0, Frequency_Command)
-    end 
+    end
 
 end
 

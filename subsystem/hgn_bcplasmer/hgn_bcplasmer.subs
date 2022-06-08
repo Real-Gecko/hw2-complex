@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 08/07/2004 12.28.08
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewSubSystemType = StartSubSystemConfig()
 NewSubSystemType.displayedName = "Heavy Missile Launcher"
 NewSubSystemType.sobDescription = "Anti-Frigate/Capital Ships"
@@ -31,7 +26,7 @@ NewSubSystemType.inactiveTimeAfterDamage = 30
 NewSubSystemType.activateHealthPercentage = 0.30
 NewSubSystemType.costToBuild = 7000
 NewSubSystemType.timeToBuild = 300
-NewSubSystemType.isResearch = 0 
+NewSubSystemType.isResearch = 0
 NewSubSystemType.visible = 1
 LoadHODFile(NewSubSystemType, 1)
 NewSubSystemType.BuildFamily = "SubSystem_Hgn"

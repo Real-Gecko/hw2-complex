@@ -1,104 +1,84 @@
--- LuaDC version 0.9.19
--- 5/23/2004 7:30:57 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
-effects = 
-{ 
-    animations = 
-    { 
-        animation1 = 
-        { 
-            name = "Weapon_Launcher", 
-            length = 1.2, 
-            loop = 0, 
-            parent = "", 
-            minimum = 0, 
-            maximum = 0, 
-            markers = 
-                { "", }, },
-        animation1 = 
-        { 
-            name = "Weapon_Launcher1", 
-            length = 1.2, 
-            loop = 0, 
-            parent = "", 
-            minimum = 0, 
-            maximum = 0, 
-            markers = 
-                { "", }, },
-        animation1 = 
-        { 
-            name = "Weapon_Launcher2", 
-            length = 1.2, 
-            loop = 0, 
-            parent = "", 
-            minimum = 0, 
-            maximum = 0, 
-            markers = 
-                { "", }, },
+effects = {
+    animations = {
+        animation1 = {
+            name = "Weapon_Launcher",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = { "", }, },
+        animation1 = {
+            name = "Weapon_Launcher1",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = { "", }, },
+        animation1 = {
+            name = "Weapon_Launcher2",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = { "", }, },
 
-				}, 
-    events = 
-    { 
-        event1 = 
-            { 
-                { "anim", "Weapon_Launcher", }, 
-                { "animtime", "0", }, 
-                { "marker", "Weapon_Launcher_Position", }, 
-                { "fx", "super_beam_flare_spray", },                 
-                { "fx_scale", "0.7", }, 
-                { "fx_nlips", "on", },
-            },       
-				event2 = 
-            { 
-                { "anim", "Weapon_Launcher", }, 
-                { "animtime", "0.5", }, 
-                { "marker", "Weapon_Launcher_Position", }, 
-                { "fx", "super_beam_flare_spray", }, 
-                { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM", }, 
-                { "fx_scale", "1", }, 
-                { "fx_nlips", "on", },    
-            },
-						
-				event3 = 
-            { 
-                { "anim", "Weapon_Launcher1", }, 
-                { "animtime", "0.2", }, 
-                { "marker", "Weapon_Launcher1_Position", }, 
-                { "fx", "super_beam_flare_spray", },                 
-                { "fx_scale", "0.8", }, 
-                { "fx_nlips", "on", },
-            },       
-				event4 = 
-            { 
-                { "anim", "Weapon_Launcher1", }, 
-                { "animtime", "0.7", }, 
-                { "marker", "Weapon_Launcher1_Position", }, 
-                { "fx", "super_beam_flare_spray", }, 
-                { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM", }, 
-                { "fx_scale", "1.1", }, 
-                { "fx_nlips", "on", },    
-            },
+    },
+    events = {
+        event1 = {
+            { "anim", "Weapon_Launcher", },
+            { "animtime", "0", },
+            { "marker", "Weapon_Launcher_Position", },
+            { "fx", "super_beam_flare_spray", },
+            { "fx_scale", "0.7", },
+            { "fx_nlips", "on", },
+        },
+        event2 = {
+            { "anim", "Weapon_Launcher", },
+            { "animtime", "0.5", },
+            { "marker", "Weapon_Launcher_Position", },
+            { "fx", "super_beam_flare_spray", },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM", },
+            { "fx_scale", "1", },
+            { "fx_nlips", "on", },
+        },
 
-        event5 = 
-            { 
-                { "anim", "Weapon_Launcher2", }, 
-                { "animtime", "0.4", }, 
-                { "marker", "Weapon_Launcher2_Position", }, 
-                { "fx", "super_beam_flare_spray", },                 
-                { "fx_scale", "0.9", }, 
-                { "fx_nlips", "on", },
-            },       
-				event6 = 
-            { 
-                { "anim", "Weapon_Launcher2", }, 
-                { "animtime", "0.9", }, 
-                { "marker", "Weapon_Launcher2_Position", }, 
-                { "fx", "super_beam_flare_spray", }, 
-                { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM", }, 
-                { "fx_scale", "1.2", }, 
-                { "fx_nlips", "on", },    
-            },						
+        event3 = {
+            { "anim", "Weapon_Launcher1", },
+            { "animtime", "0.2", },
+            { "marker", "Weapon_Launcher1_Position", },
+            { "fx", "super_beam_flare_spray", },
+            { "fx_scale", "0.8", },
+            { "fx_nlips", "on", },
+        },
+        event4 = {
+            { "anim", "Weapon_Launcher1", },
+            { "animtime", "0.7", },
+            { "marker", "Weapon_Launcher1_Position", },
+            { "fx", "super_beam_flare_spray", },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM", },
+            { "fx_scale", "1.1", },
+            { "fx_nlips", "on", },
+        },
 
-						}, }
+        event5 = {
+            { "anim", "Weapon_Launcher2", },
+            { "animtime", "0.4", },
+            { "marker", "Weapon_Launcher2_Position", },
+            { "fx", "super_beam_flare_spray", },
+            { "fx_scale", "0.9", },
+            { "fx_nlips", "on", },
+        },
+        event6 = {
+            { "anim", "Weapon_Launcher2", },
+            { "animtime", "0.9", },
+            { "marker", "Weapon_Launcher2_Position", },
+            { "fx", "super_beam_flare_spray", },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM", },
+            { "fx_scale", "1.2", },
+            { "fx_nlips", "on", },
+        },
+
+    }, }

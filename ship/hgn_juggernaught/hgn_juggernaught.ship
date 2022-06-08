@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 05/07/2004 20.58.54
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "Juggernaut"
 NewShipType.sobDescription = "Heavy Nuclear Waster"
@@ -84,7 +79,7 @@ NewShipType.antiCorvetteValue = 32
 NewShipType.antiFrigateValue = 46
 NewShipType.totalValue = 70
 NewShipType.buildCost = 4000
-NewShipType.buildTime = 300 
+NewShipType.buildTime = 300
 NewShipType.buildPriorityOrder = 35
 NewShipType.retaliationRange = 0
 NewShipType.retaliationDistanceFromGoal = 160
@@ -141,33 +136,33 @@ addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType, "HyperSpaceCommand", 0, 6, 1000, 100000, 2, 4)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 10, 0.6)
-addAbility(NewShipType, "CanAttack", 1, 1, 1, 0, 0.35, 1.5, "Mothership, BigCapitalShip, SmallCapitalShip, Capturer, Frigate, ResourceLarge, Resource, Corvette, Fighter, Utility", "kamikaze", 
-{ 
-    Capturer = "MoveToTargetAndShoot", 
-},
-{ 
-    Frigate = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Resource = "MoveToTargetAndShoot", 
-},  
-{ 
-    ResourceLarge = "MoveToTargetAndShoot", 
-},  
-{ 
-    Utility = "MoveToTargetAndShoot", 
-},  
-{ 
-    Fighter = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Corvette = "MoveToTargetAndShoot", 
-}, 
-{ 
-    Munition = "MoveToTargetAndShoot", 
-}, 
-{ 
-    SubSystem = "MoveToTargetAndShoot", })
+addAbility(NewShipType, "CanAttack", 1, 1, 1, 0, 0.35, 1.5, "Mothership, BigCapitalShip, SmallCapitalShip, Capturer, Frigate, ResourceLarge, Resource, Corvette, Fighter, Utility", "kamikaze",
+    {
+        Capturer = "MoveToTargetAndShoot",
+    },
+    {
+        Frigate = "MoveToTargetAndShoot",
+    },
+    {
+        Resource = "MoveToTargetAndShoot",
+    },
+    {
+        ResourceLarge = "MoveToTargetAndShoot",
+    },
+    {
+        Utility = "MoveToTargetAndShoot",
+    },
+    {
+        Fighter = "MoveToTargetAndShoot",
+    },
+    {
+        Corvette = "MoveToTargetAndShoot",
+    },
+    {
+        Munition = "MoveToTargetAndShoot",
+    },
+    {
+        SubSystem = "MoveToTargetAndShoot", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 900)
 addAbility(NewShipType, "CanBeCaptured", 290, 0.7)
 addAbility(NewShipType, "CanBeRepaired")
@@ -175,11 +170,11 @@ addAbility(NewShipType, "RetireAbility", 0, 0)
 LoadModel(NewShipType, 1)
 addShield(NewShipType, "EMP", 5000, 60)
 StartShipHardPointConfig(NewShipType, "Engine", "Hardpoint_Engine", "System", "Innate", "Damageable", "hgn_jugg_engine", "", "", "", "", "", "", "", "")
-StartShipHardPointConfig(NewShipType,"experience","Hardpoint_Engine","System","Innate","Damageable","experience","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"efficency","Hardpoint_Engine","System","Innate","Damageable","efficency","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "experience", "Hardpoint_Engine", "System", "Innate", "Damageable", "experience", "", "", "", "", "", "", "", "")
+StartShipHardPointConfig(NewShipType, "efficency", "Hardpoint_Engine", "System", "Innate", "Damageable", "efficency", "", "", "", "", "", "", "", "")
 --StartShipHardPointConfig(NewShipType,"Distance","Hardpoint_Engine","System","Innate","Damageable","Distance","","","","","","","","")
 --StartShipHardPointConfig(NewShipType,"Position","Hardpoint_Engine","System","Innate","Damageable","Position","","","","","","","","")
-StartShipHardPointConfig(NewShipType,"jspeed","Hardpoint_Engine","System","Innate","Damageable","jspeed","","","","","","","","")
+StartShipHardPointConfig(NewShipType, "jspeed", "Hardpoint_Engine", "System", "Innate", "Damageable", "jspeed", "", "", "", "", "", "", "", "")
 SpawnSalvageOnDeath(NewShipType, "Slv_Chunk_Lrg03", 1, 0.6, 0, 0, 0, 50, 0, 0, 0, 200, 0, 0, 0, 65, 0, 0, 0, 50)
 SpawnSalvageOnDeath(NewShipType, "Slv_Chunk_Sml05", 1, 0.4, 60, 30, 150, 25, 35, 125, 65, 75, 0, 0, 0, 70, 0, 0, 0, 50)
 --SpawnSalvageOnDeath(NewShipType, "Slv_Chunk_Sml06", 1, 0.2, 80, 125, 60, 75, 125, 80, 65, 75, 0, 0, 0, 80, 0, 0, 0, 50)
@@ -192,6 +187,6 @@ NewShipType.chanceOfSpecialDeath = 0
 NewShipType.deadSobFadeTime = 0.1
 NewShipType.trailLinger = 3
 setEngineBurn(NewShipType, 9, 0.2, 0.5, 300, 1.02, 0.1, 0.25, 380)
-setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, 
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5,
     { 0.27, 0.47, 0.69, 0.25, })
-loadShipPatchList(NewShipType,"data:sound/sfx/ship/Hiigaran/Carrier/",0,"Engines/HDestroyerEng","",1,"Ambience/HBattleCrusierAmb","")
+loadShipPatchList(NewShipType, "data:sound/sfx/ship/Hiigaran/Carrier/", 0, "Engines/HDestroyerEng", "", 1, "Ambience/HBattleCrusierAmb", "")

@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 28/07/2004 1.30.30
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 CreateGameScreen = 
 { 
     size = 

@@ -1,8 +1,3 @@
--- LuaDC version 0.9.19
--- 28/04/2005 20.04.16
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 setPatchParams("BigExplosion_3d", 175, 1500, 25000, 2, 0)
 setPatchParams("SmallExplosion_3d", 125, 1500, 25000, 3, 0)
 setPatchParams("StrikeBaseExplosion_3d", 125, 1500, 25000, 3, 0)
