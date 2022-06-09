@@ -10,7 +10,7 @@
 
 #### Improvements
 
--   [ ] Remove extra music and music player
+-   [x] Remove extra music
 -   [ ] Crew/Power/Research/Weapon stations hyperspace on level start
 -   [ ] Update interface buttons on each frame, thus RU updated in real time
 -   [ ] Add destroy all production win condition
